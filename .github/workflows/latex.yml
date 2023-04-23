@@ -24,7 +24,7 @@ jobs:
           # LaTeX engine to be used
           #compiler: # optional, default is latexmk
           # Extra arguments to be passed to the latex compiler
-          args: -shell-escape -latexoption=-interaction=nonstopmode # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          args: -pdf -shell-escape -latexoption=-interaction=nonstopmode # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
 
       - name: Push generated files to branch 'gh-pages'
         run: |
