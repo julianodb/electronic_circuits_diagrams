@@ -19,7 +19,8 @@ jobs:
       - name: LaTeX compilation
         uses: dante-ev/latex-action@2021-A
         with:
-          root_file: src/diode.tex
+          root_file: diode.tex
+          working_directory: src
           # LaTeX engine to be used
           #compiler: # optional, default is latexmk
           # Extra arguments to be passed to the latex compiler
@@ -28,8 +29,8 @@ jobs:
       - name: Push generated files to branch 'gh-pages'
         run: |
           mkdir -p static
-          mv *.pdf static
-          mv *.png static
+          mv src/*.pdf static
+          mv src/*.png static
           cd static
           git init -b main
           git config user.name $GITHUB_ACTOR
