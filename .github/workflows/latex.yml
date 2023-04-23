@@ -22,9 +22,9 @@ jobs:
           root_file: diode.tex
           working_directory: src
           # LaTeX engine to be used
-          #compiler: # optional, default is latexmk
+          compiler: pdflatex
           # Extra arguments to be passed to the latex compiler
-          args: -pdf -shell-escape -latexoption=-interaction=nonstopmode # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          args: -interaction=nonstopmode -shell-escape # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
 
       - name: Push generated files to branch 'gh-pages'
         run: |
