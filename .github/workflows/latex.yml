@@ -33,6 +33,7 @@ jobs:
           compiler: pdflatex
           # Extra arguments to be passed to the latex compiler
           args: -interaction=nonstopmode -shell-escape # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          entrypoint: ./release.sh
       
       - name: Move images
         run: mv src/*.png .
