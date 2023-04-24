@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[above]{$V_i$}
+to[Do,o-] ++(0,-2)
+to[R=$R$] ++(0,-2)
+node[ground](GND){}
+;
+\end{circuitikz}
+\end{document}
