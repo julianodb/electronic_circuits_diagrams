@@ -1,8 +1,7 @@
-\documentclass[convert]{standalone}
-\usepackage{circuitikz}
+\documentclass{standalone}
+\usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
-\draw (0,0) to[R=$R_1$] (0,2);
-
+\draw (0,0) node[anchor=north east]{$A$} node[anchor=south east]{Ánodo} to[Do, i>_=$I_D$, v^=$V_D$, o-o] (2,0) node[anchor=south west]{Cátodo} node[anchor=north west]{$K$};
 \end{circuitikz}
 \end{document}
