@@ -35,9 +35,7 @@ jobs:
           args: -interaction=nonstopmode -shell-escape # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
       
       - name: Move images
-        run: |
-          mkdir -p _site
-          mv src/*.png _site
+        run: mv src/*.png .
         
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
