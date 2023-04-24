@@ -23,12 +23,6 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
 
       - name: LaTeX compilation
         uses: dante-ev/latex-action@2021-A
@@ -39,8 +33,18 @@ jobs:
           compiler: pdflatex
           # Extra arguments to be passed to the latex compiler
           args: -interaction=nonstopmode -shell-escape # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
-      - name: Move artifacts
-        run: mv src/*.png _site
+      
+      - name: Move images
+        run: |
+          mkdir -p _site
+          mv src/*.png _site
+        
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
