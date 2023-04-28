@@ -27,3 +27,7 @@
 ## lissajous
 
 ![lissajous](lissajous.png "lissajous")
+
+## ldr
+
+![ldr](ldr.png "ldr")
