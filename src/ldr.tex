@@ -4,7 +4,9 @@
 \begin{circuitikz}
 \ctikzset{bipoles/oscope/waveform=square}
 \draw (0,0) node[ground]{} to[sqV, bipole/is voltage=false, v^>=$5 V_{pp}$, *-] (0,4) -- (2,4) coordinate(LEDA) to[leDo, l_=$D_1$] (2,2) to[R, l_=$R_1$] (2,0) -- (0,0);
-\draw (3.4,-0.4) node[ground]{} to[R=$R_2$] ++(0,2) to[ldR] ++(0,2) node[vcc](VCC){+5V};
+\draw (3.4,-0.4) node[ground]{} to[R=$R_2$] ++(0,2) to[R, resistors/scale=0.8] ++(0,2) node[vcc](VCC){+5V}
+(3.4,2.6) circle[radius=0.6]
+(3,2.2) node[anchor=north east, scale=0.7]{LDR};8
 \draw (2,6) node[oscopeshape](OSC){Oscilloscope};
 \draw[blue] (OSC.in 1) -- ++(0,-0.1) node[anchor=north east, scale=0.5]{CH1} to[short, -*] ( OSC.in 1 |- LEDA);
 \draw[red](OSC.in 2) -- ++(0,-0.1) node[anchor=north west, scale=0.5]{CH2} -- ++(0,-0.5) -- ++(2,0) -- ++(0,-3.4) coordinate(CH2) to[short, -*] (VCC |- CH2);
