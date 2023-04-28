@@ -6,7 +6,8 @@
 \draw (0,0) node[ground]{} to[sV, v=$5 V_{pp}$, a=10 kHz, bipole/is voltage=false, *-] (0,4) 
 to[short] (2,4) to[R=$R$, *-*] (2,2)
 to[C=$C$] (2,0) -- (0,0)
-(4,3) node[oscopeshape](OSC){Osc.};
+(4,3) node[oscopeshape](OSC){Osc.}
+(OSC.right) -- ++(0.5,0)  node[ground]{};
 \draw[blue] (OSC.in 1) -- ++(0,-0.1) node[anchor=north east, scale=0.5]{CH1} -- ++(0,-0.4) -- ++(-1,0) -- ++(0,1.8) -- (2,4);
 \draw[red](OSC.in 2) -- ++(0,-0.1) node[anchor=north west, scale=0.5]{CH2} -- ++(0,-0.6) -- (2,2);
 \end{circuitikz}
