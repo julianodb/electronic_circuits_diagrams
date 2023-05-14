@@ -23,3 +23,11 @@
 ## led_driver
 
 ![led_driver](led_driver.png "led_driver")
+
+## lissajous
+
+![lissajous](lissajous.png "lissajous")
+
+## ldr
+
+![ldr](ldr.png "ldr")
