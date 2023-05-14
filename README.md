@@ -31,3 +31,23 @@
 ## ldr
 
 ![ldr](ldr.png "ldr")
+
+## reverse_diode_resistance
+
+![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
+
+## forward_rectifier_diode
+
+![forward_rectifier_diode](forward_rectifier_diode.png "forward_rectifier_diode")
+
+## zener_rectifier
+
+![zener_rectifier](zener_rectifier.png "zener_rectifier")
+
+## photodiode_photoconductive
+
+![photodiode_photoconductive](photodiode_photoconductive.png "photodiode_photoconductive")
+
+## photodiode_photovoltaic
+
+![photodiode_photovoltaic](photodiode_photovoltaic.png "photodiode_photovoltaic")
