@@ -12,6 +12,10 @@
 
 ![battery_resistor_diode](battery_resistor_diode.png "battery_resistor_diode")
 
+## battery_diode_2R
+
+![battery_diode_2R](battery_diode_2R.png "battery_diode_2R")
+
 ## resistance_led
 
 ![resistance_led](resistance_led.png "resistance_led")
