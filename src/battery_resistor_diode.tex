@@ -4,12 +4,13 @@
 \begin{circuitikz}
 \draw (0,0) node[ground](GND){}
 to[american voltage source, l=$V_{CC}$, *-] (0,2)
-to[R=$R$, -o] ++(2,0) 
+to[R=$R$] ++(2,0) 
 to[Do=D] ++(0,-2)
 -- (0,0)
 ;
-\draw[color=blue]
-(2,2) node[anchor=south west]{$V_D$}
-(2,0.5) to[short, i=$I_D$] ++(0,-0.4);
+% \draw[color=blue]
+% (2,2) node[anchor=south west]{$V_D$}
+% (2,0.5) to[short, i=$I_D$] ++(0,-0.4)
+% ;
 \end{circuitikz}
 \end{document}

@@ -6,15 +6,16 @@
 to[american voltage source, l=$V_{CC}$, *-] (0,4)
 to[short, -*] ++(2,0) 
 to[Do=$D_1$] ++(0,-2) 
-to[R=$R_1$, *-*] ++(0,-2)
+to[R=$R_1$, -*] ++(0,-2)
 -- (0,0)
 (2,4) -- ++(2,0)
 to[R=$R_2$] ++(0,-4)
 -- (2,0)
 ;
-\draw[color=blue]
-(2,2) node[left]{$V_{R_1}$}
-(2,3.8) to[short, i=$I_1$] ++(0,-0.4)
-(4,3.8) to[short, i=$I_2$] ++(0,-0.4);
+% \draw[color=blue]
+% (2,2) node[left]{$V_{R_1}$}
+% (2,3.8) to[short, i=$I_1$] ++(0,-0.4)
+% (4,3.8) to[short, i=$I_2$] ++(0,-0.4)
+% ;
 \end{circuitikz}
 \end{document}
