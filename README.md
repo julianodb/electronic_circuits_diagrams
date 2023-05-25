@@ -69,3 +69,6 @@
 
 ## common_emitter
 ![common_emitter](common_emitter.png "common_emitter")
+
+## common_emitter_no_re
+![common_emitter_no_re](common_emitter_no_re.png "common_emitter_no_re")
