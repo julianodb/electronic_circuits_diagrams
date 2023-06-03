@@ -72,3 +72,6 @@
 
 ## common_emitter_no_re
 ![common_emitter_no_re](common_emitter_no_re.png "common_emitter_no_re")
+
+## amplifier_non_inverting
+![amplifier_non_inverting](amplifier_non_inverting.png "amplifier_non_inverting")
