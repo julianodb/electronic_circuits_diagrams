@@ -1,0 +1,39 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[above]{$v_S$} to[short, o-] ++(0.5,0)
+;
+
+\draw[green!70!black, dashed] 
+(0.5,-2) rectangle ++(2,6)
+(1.5,4) node[above]{monoestable*};
+
+\draw (2.5,0) -- ++(0.5,0) to[R=$R_B$] ++(2,0)
+node[npn, anchor=base](Q3){$Q_3$}
+(Q3.E) node[ground](GND){}
+(Q3.C) -- ++(0.6,0) -- ++(0,-2) -- ++(1.8,0) coordinate(LEDIN);
+
+\draw[green!70!black, dashed] 
+(2.8,-2) rectangle ++(4,6)
+(4.8,4) node[above]{driver LEDs};
+
+\draw
+(LEDIN) to[leDo, l=$D_1$, invert, mirror, *-] ++(0,2)
+to[R, l=$RL_1$] ++(0,2)
+-- ++(2,0) node[vcc](VCC){5V}
+to[R, l_=$RL_2$, *-] ++(0,-2)
+to[leDo, l_=$D_2$, -*] ++(0,-2)
+-- ++(2,0)
+to[leDo, l=$D_3$, invert, mirror] ++(0,2)
+to[R, l=$RL_3$] ++(0,2)
+-- ++(-2,0)
+(LEDIN) -- ++(2,0)
+;
+
+\draw[green!70!black, dashed] 
+(7.1,-2) rectangle ++(6.1,6)
+(10.15,4) node[above]{LEDs};
+
+\end{circuitikz}
+\end{document}
