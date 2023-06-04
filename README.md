@@ -84,3 +84,6 @@
 
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png, "full_bridge_rectifier")
+
+## full_bridge_and_7805
+![full_bridge_and_7805](full_bridge_and_7805.png, "full_bridge_and_7805")
