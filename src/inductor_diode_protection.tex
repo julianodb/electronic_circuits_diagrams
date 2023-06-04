@@ -1,0 +1,25 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.7, diodes/scale=0.8}
+\ctikzset{bipoles/oscope/waveform=square}
+\draw (0,0) 
+to[sqV, bipole/is voltage=false, l2={$V_{low}=0$} and {$V_{high}=10V$}, a=5 kHz] ++(0,4)
+-- ++(2,0) coordinate(top)
+to[L=L, *-] ++(0,-2) coordinate(middle)
+to[R=R, *-*] ++(0,-2)
+node[ground](GND){}
+-- ++(-2,0)
+(top) --++(1.5,0)
+to[Do=D, invert] ++(0,-2)
+--++(-1.5,0)
+;
+\draw (5,3) node[oscopeshape](OSC){Osc.}
+(OSC.right) -- ++(0.5,0)  node[ground]{};
+\draw[blue] (OSC.in 1) -- ++(0,-0.1) node[anchor=north east, scale=0.5]{CH1} -- (OSC.in 1 |- middle)
+--++(0,-0.2)
+-| (middle)
+;
+\end{circuitikz}
+\end{document}
