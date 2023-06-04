@@ -93,3 +93,6 @@
 
 ## half_wave_rectifier
 ![half_wave_rectifier](half_wave_rectifier.png "half_wave_rectifier")
+
+## half_wave_rectifier_negative
+![half_wave_rectifier_negative](half_wave_rectifier_negative.png "half_wave_rectifier_negative")
