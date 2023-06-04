@@ -86,10 +86,10 @@
 ![full_bridge_rectifier](full_bridge_rectifier.png, "full_bridge_rectifier")
 
 ## full_bridge_and_7805
-![full_bridge_and_7805](full_bridge_and_7805.png, "full_bridge_and_7805")
+![full_bridge_and_7805](full_bridge_and_7805.png "full_bridge_and_7805")
 
 ## inductor_diode_protection
-![inductor_diode_protection](inductor_diode_protection.png, "inductor_diode_protection")
+![inductor_diode_protection](inductor_diode_protection.png "inductor_diode_protection")
 
 ## half_wave_rectifier
-![half_wave_rectifier](half_wave_rectifier.png, "half_wave_rectifier")
+![half_wave_rectifier](half_wave_rectifier.png "half_wave_rectifier")
