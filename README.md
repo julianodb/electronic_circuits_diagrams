@@ -90,3 +90,6 @@
 
 ## inductor_diode_protection
 ![inductor_diode_protection](inductor_diode_protection.png, "inductor_diode_protection")
+
+## half_wave_rectifier
+![half_wave_rectifier](half_wave_rectifier.png, "half_wave_rectifier")

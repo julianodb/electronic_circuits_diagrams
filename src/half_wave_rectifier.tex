@@ -1,0 +1,12 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[ground](GND){}
+to[sV, l=$v_{AC}$, *-] (0,2)
+to[Do=D] ++(2,0) node[above]{$v_o$} 
+to[R=$R_L$] ++(0,-2)
+-- (0,0)
+;
+\end{circuitikz}
+\end{document}
