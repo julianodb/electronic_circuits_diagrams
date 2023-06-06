@@ -99,3 +99,9 @@
 
 ## full_bridge_no_transformer_no_cap
 ![full_bridge_no_transformer_no_cap](full_bridge_no_transformer_no_cap.png "full_bridge_no_transformer_no_cap")
+
+## diode_2R_with_currents_A
+![diode_2R_with_currents_A](diode_2R_with_currents_A.png "diode_2R_with_currents_A")
+
+## diode_2R_with_currents_B
+![diode_2R_with_currents_B](diode_2R_with_currents_A.png "diode_2R_with_currents_B")
