@@ -105,3 +105,6 @@
 
 ## diode_2R_with_currents_B
 ![diode_2R_with_currents_B](diode_2R_with_currents_A.png "diode_2R_with_currents_B")
+
+## two_diode_3R_with_currents
+![two_diode_3R_with_currents](two_diode_3R_with_currents.png, "two_diode_3R_with_currents")
