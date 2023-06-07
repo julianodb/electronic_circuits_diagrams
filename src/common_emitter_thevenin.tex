@@ -1,0 +1,19 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) to[R, l_=$R_E$] ++(0,-2) node[ground](GND){}
+(Q1.C) to[R=$R_C$] ++(0,2) node[vcc](VCC){$V_{CC}$}
+(Q1.B) to[R, l_=$R_{th}$] ++(-1.5,0) 
+to[american voltage source, l=$V_{th}$, invert] ++(0,-1.5)
+node[ground]{}
+;
+\draw[color=blue]
+(Q1.B) to[short, i_=$I_B$] ++(0.4,0)
+(Q1.C) to[short, i=$I_{C_Q}$] ++(0,-0.4)
+(Q1.E) to[short, i=$I_E$] ++(0,-0.4)
+;
+\end{circuitikz}
+\end{document}
