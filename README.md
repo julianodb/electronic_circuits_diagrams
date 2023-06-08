@@ -111,3 +111,6 @@
 
 ## common_emitter_thevenin
 ![common_emitter_thevenin](common_emitter_thevenin.png "common_emitter_thevenin")
+
+## common_emitter_small_signal
+![common_emitter_small_signal](common_emitter_small_signal.png "common_emitter_small_signal")
