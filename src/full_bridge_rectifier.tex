@@ -5,7 +5,7 @@
 \ctikzset{resistors/scale=0.6, capacitors/scale=0.7, diodes/scale=0.5}
 \draw (0,0) node[transformer core] (T) {}
 (T.A2) -- ++(-0.5,0) coordinate(A2) to[american voltage source, l=220 VAC] (A2 |- T.A1) -- (T.A1)
-(T.B1) -- ++(1,0) 
+(T.B1) -- ++(1,0) node[above]{$v_i$}
 to[Do] ++(1,-1) coordinate (VO)
 to[Do, invert, *-*] ++(-1,-1) coordinate (VL)
 to[Do, invert] ++(-1,1) node[ground]{}
