@@ -120,3 +120,6 @@
 
 ## npn_characterization_ac
 ![npn_characterization_ac](npn_characterization_ac.png "npn_characterization_ac")
+
+## npn_characterization_vce
+![npn_characterization_vce](npn_characterization_vce.png "npn_characterization_vce")
