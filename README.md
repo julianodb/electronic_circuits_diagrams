@@ -117,3 +117,6 @@
 
 ## npn_characterization
 ![npn_characterization](npn_characterization.png "npn_characterization")
+
+## npn_characterization_ac
+![npn_characterization_ac](npn_characterization_ac.png "npn_characterization_ac")

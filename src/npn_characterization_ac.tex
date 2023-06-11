@@ -1,0 +1,27 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) node[ground](GND){}
+(Q1.C) to[R=$R_C$, -*] ++(0,2) node[vcc](VCC){$V_{CC}$}
+(Q1.B) to[R, l_=$R_B$, *-] ++(-2,0) coordinate(VB)
+(Q1.B) --++(0,-1.5) coordinate(CC)
+to[cC=$C_C$] ++(0,-2) 
+to[sV, l=$V_s$] ++(0,-2) node[ground]{}
+;
+\ctikzset{resistors/width=1.5, resistors/zigs=5}
+\draw (VB)
+--++(-0.5,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot}$}
+(POT.right) node[ground]{}
+(POT.left) |- (VCC)
+;
+\ctikzset{bipoles/oscope/waveform=sin}
+\draw (1,2) node[oscopeshape](OSC){Osc.}
+(OSC.right) -- ++(0.5,0)  node[ground]{};
+\draw[blue] (OSC.in 1) -- ++(0,-0.1) node[anchor=north east, scale=0.5]{CH1} -- ( OSC.in 1 |- Q1.C) to[short, -*] (Q1.C);
+\draw[red](OSC.in 2) -- ++(0,-0.1) node[anchor=north west, scale=0.5]{CH2} -- ++(0,-0.5) coordinate(ch2) -- (ch2 |- CC) to[short, -*] (CC);
+\end{circuitikz}
+\end{document}
