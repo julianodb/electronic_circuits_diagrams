@@ -114,3 +114,6 @@
 
 ## common_emitter_small_signal
 ![common_emitter_small_signal](common_emitter_small_signal.png "common_emitter_small_signal")
+
+## npn_characterization
+![npn_characterization](npn_characterization.png "npn_characterization")

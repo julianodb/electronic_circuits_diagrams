@@ -1,0 +1,27 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) node[ground](GND){}
+(Q1.C) to[R=$R_C$] ++(0,2) node[vcc](VCC){$V_{CC}$}
+(Q1.B) to[R=$R_B$] ++(-2,0) coordinate(VB)
+;
+
+\ctikzset{resistors/width=1.5, resistors/zigs=5}
+\draw (VB)
+--++(-0.5,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot}$}
+(POT.right) node[ground]{}
+(POT.left) |- (VCC)
+;
+\draw[color=blue] (VCC) to[short, *-] ++(1,0)
+to[qvprobe=$V_{R_1}$] ++(0,-2)
+to[short, -*] ++(-1,0)
+(VB) to[short, *-] ++(0,-1.5)
+to[qvprobe, l_=$V_{R_B}$] ++(2,0)
+to[short, -*] ++(0,1.5)
+;
+\end{circuitikz}
+\end{document}
