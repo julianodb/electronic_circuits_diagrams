@@ -127,5 +127,8 @@
 ## four_R
 ![four_R](four_R.png "four_R")
 
+## four_R_alt
+![four_R_alt](four_R_alt.png "four_R_alt")
+
 ## four_parallel_R
 ![four_parallel_R](four_parallel_R.png "four_parallel_R")
