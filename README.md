@@ -126,3 +126,6 @@
 
 ## four_R
 ![four_R](four_R.png "four_R")
+
+## four_parallel_R
+![four_parallel_R](four_parallel_R.png "four_parallel_R")

@@ -1,0 +1,26 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (-0.5,0) 
+to[R=$R_{L_i}$, o-o] ++(0,3)
+(0.5,1.5) node{$=$}
+(5,0) to[short, o-*] ++(0,0.5) coordinate(LOW)
+-- ++(-1,0)
+to[R=$330\ \Omega$] ++(0,2)
+-- ++(1,0)
+to[short, *-o] ++(0,0.5)
+(LOW) -- ++(1,0)
+to[R, l=$470\ \Omega$] ++(0,2)
+-- ++(-1,0)
+(LOW) -- ++(1,0)
+to[short,*-] ++(2,0)
+to[R, l=$1\ k\Omega$] ++(0,2)
+to[short,-*] ++(-2,0)
+(LOW) -- ++(-1,0)
+to[short,*-] ++(-2,0)
+to[R, l=$1\ k\Omega$] ++(0,2)
+to[short,-*] ++(2,0)
+;
+\end{circuitikz}
+\end{document}
