@@ -124,6 +124,9 @@
 ## npn_characterization_vce
 ![npn_characterization_vce](npn_characterization_vce.png "npn_characterization_vce")
 
+## three_R
+![three_R](three_R.png "three_R")
+
 ## four_R
 ![four_R](four_R.png "four_R")
 
