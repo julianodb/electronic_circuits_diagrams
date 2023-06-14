@@ -135,3 +135,6 @@
 
 ## four_parallel_R
 ![four_parallel_R](four_parallel_R.png "four_parallel_R")
+
+## temperature_control_1
+![temperature_control_1](temperature_control_1.png "temperature_control_1")
