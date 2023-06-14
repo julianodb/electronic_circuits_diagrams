@@ -4,24 +4,24 @@
 \begin{circuitikz}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
 \draw (0,0) node[ground]{}
-to[twoport, t=$IC_1$, n=TMP236] ++(0,2) node[vcc]{}
+to[twoport, t=$IC_1$, n=TMP236] ++(0,2) node[vcc]{$V_{CC}$}
 (TMP236.south) -- ++(0.5,0) 
 -- ++(0.5,0) node[above]{$V_s$}
 
 node[op amp, anchor=-](OPAMP){}
 (OPAMP.+) node[above]{$V_{set}$} 
-|- ++(-0.5,-2)
+|- ++(-0.3,-2)
 node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
 (POT.270) node[left]{$R_{pot}$}
-(POT.right) node[ground]{}
-(POT.left) node[vcc]{}
+(POT.right) --++(0,-0.3) node[ground]{}
+(POT.left) --++(0,0.3) node[vcc]{$V_{CC}$}
 
 (OPAMP.out) node[above]{$V_o$}
 to[R=$R_B$] ++(2,0)
 node[npn, anchor=B](Q1){$Q_1$}
 (Q1.E) node[ground]{}
 (Q1.C) to[R=$R_{heat}$] ++(0,2)
-node[vcc]{}
+node[vcc]{$V_{heat}$}
 ;
 \end{circuitikz}
 \end{document}
