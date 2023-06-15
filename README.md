@@ -141,3 +141,6 @@
 
 ## temperature_control_2
 ![temperature_control_2](temperature_control_2.png "temperature_control_2")
+
+## temperature_control_3
+![temperature_control_3](temperature_control_3.png "temperature_control_3")
