@@ -10,7 +10,7 @@ to[twoport, t=$IC_1$, n=TMP236] ++(0,2) node[vcc]{$V_{CC}$}
 -- ++(0.5,0)
 to[R=$R_1$, -*] ++(2,0)
 node[op amp, anchor=-](OPAMP){}
---++(0,1)
+--++(0,1.5)
 to[R=$R_2$, *-*] ++(2.5,0) coordinate(R2)
 to[short, -*] (R2 |- OPAMP.out)
 -- (OPAMP.out) node[below]{$V_o$}
@@ -35,6 +35,9 @@ node[npn, anchor=B](Q1){$Q_1$}
 (Q1.E) node[ground]{}
 (Q1.C) to[R=$R_{heat}$] ++(0,2)
 node[vcc]{$V_{heat}$}
+
+(OPAMP.up) node[vcc]{$V_{CC}$}
+(OPAMP.down) node[ground]{}
 ;
 \end{circuitikz}
 \end{document}

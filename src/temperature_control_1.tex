@@ -22,6 +22,9 @@ node[npn, anchor=B](Q1){$Q_1$}
 (Q1.E) node[ground]{}
 (Q1.C) to[R=$R_{heat}$] ++(0,2)
 node[vcc]{$V_{heat}$}
+
+(OPAMP.up) --++(0,0.5) node[vcc]{$V_{CC}$}
+(OPAMP.down) --++(0,-0.5) node[ground]{}
 ;
 \end{circuitikz}
 \end{document}
