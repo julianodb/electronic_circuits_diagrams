@@ -20,13 +20,16 @@ to[C, l_=$C_1$] ++(-2.5,0)
 
 (OPAMP.+) 
 -- ++(0,-1.5) coordinate(R3)
-to[R=$R_3$,*-] ++(-2,0) node[above]{$V_{set}$} 
+to[R=$R_3$] ++(-2,0) node[above]{$V_{set}$} 
 -- ++(-0.5,0)
 node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
 (POT.270) node[left]{$R_{pot}$}
 (POT.right) --++(0,-0.3) node[ground]{}
 (POT.left) --++(0,0.3) node[vcc]{$V_{CC}$}
-(R3) to[R=$R_4$] ++(0,-2) node[ground]{}
+(R3) to[R=$R_4$, *-*] ++(0,-2) node[ground]{}
+(R3) --++(1.5,0)
+to[C=$C_2$] ++(0,-2)
+--++(-1.5,0)
 
 (OPAMP.out) 
 -- ++(0.5,0)
