@@ -159,3 +159,6 @@
 
 ## RC_common_emitter_output
 ![RC_common_emitter_output](RC_common_emitter_output.png "RC_common_emitter_output")
+
+## opamp_bandpass
+![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")

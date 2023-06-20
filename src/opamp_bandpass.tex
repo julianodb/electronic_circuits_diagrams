@@ -1,0 +1,21 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[above]{$v_{i2}$}
+to[C, l_=$C_2$, o-] ++(2,0) coordinate(vplus)
+to[R=$R_{bias}$, *-] ++(0,2) node[vcc]{2.5V}
+(vplus)
+node[op amp, noinv input up, anchor=+](OA){OA1}
+(OA.-) -- ++(0,-1.1) coordinate(FB)
+--++(0,-1.5) coordinate(CF)
+to[R=$R_5$] ++(0,-1.9) node[ground]{}
+(CF) to[C, l_=$C_F$, *-] (CF -| OA.out) --++(0,1.5)
+(FB) to[R, l_=$R_6$, *-*] (FB -| OA.out) -- (OA.out)
+to [short, *-o] ++(1,0) node[above]{$v_{pletis}$} node[below]{$v_{o2}$}
+(OA.up) -- ++(0,0.5) node[vcc](VCC){5V}
+(OA.down) node[ground](GND){}
+;
+\end{circuitikz}
+\end{document}
