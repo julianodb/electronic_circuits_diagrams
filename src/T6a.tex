@@ -11,7 +11,7 @@ node[ground](GND){};
 (Q1.E) node[ground](GND){}
 (Q1.C) -- (Q1.C |- LEDA) coordinate(out)
 to[R, l=$R_2$] ++(0,2) node[vcc]{5V}
-(out) to[short, *-] ++(0.6,0) node[above]{$v_{sensor}$} coordinate(v_sense);
+(out) to[short, *-] ++(0.6,0) node[above]{$v_{sensor}$} node[below]{$v_{i1}$} coordinate(v_sense);
 \draw[blue] (-1,-4) rectangle ++(3.0,1.6)
 (-0.8,-4) node[below]{CNY70};
 
@@ -27,7 +27,7 @@ to[R, l=$R_2$] ++(0,2) node[vcc]{5V}
 to[C=$C_R$, *-] ++(0,-2) node[ground]{}
 (Q2.B) -- ++(-1,0) coordinate(BASE)
 to[R, l_=$R_4$] ++(0,-2) node[ground](GND){}
-(BASE) node[anchor=south east]{$v_{i1}$} to[cC=$C_1$, *-, invert] (v_sense)
+(BASE) node[anchor=south east]{$v_{B1}$} to[cC=$C_1$, *-, invert] (v_sense)
 (BASE) to[R=$R_3$] (BASE |- VCC)
 -- (VCC);
 
