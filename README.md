@@ -85,6 +85,9 @@
 ## T6a
 ![T6a](T6a.png "T6a")
 
+## T6b
+![T6b](T6b.png "T6b")
+
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png "full_bridge_rectifier")
 
