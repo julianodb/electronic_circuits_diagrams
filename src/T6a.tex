@@ -49,9 +49,10 @@ to[R=$R_{bias}$, *-] ++(0,2) node[vcc]{2.5V}
 (vplus)
 node[op amp, noinv input up, anchor=+](OA){OA1}
 (OA.-) -- ++(0,-1.1) coordinate(FB)
---++(0,-1.5) coordinate(CF)
-to[R=$R_5$] ++(0,-1.9) node[ground]{}
-(CF) to[C, l_=$C_F$, *-] (CF -| OA.out) --++(0,1.5)
+--++(0,-1.2) coordinate(CF)
+to[R=$R_5$] ++(0,-1.9)
+to[cC=$C_G$] ++(0,-1) node[ground]{}
+(CF) to[C, l_=$C_F$, *-] (CF -| OA.out) --++(0,1.2)
 (FB) to[R, l_=$R_6$, *-*] (FB -| OA.out) -- (OA.out)
 to [short, *-o] ++(1,0) node[above]{$v_{pletis}$} node[below]{$v_{o2}$}
 (OA.up) -- ++(0,0.5) node[vcc](VCC){5V}
@@ -59,11 +60,11 @@ to [short, *-o] ++(1,0) node[above]{$v_{pletis}$} node[below]{$v_{o2}$}
 ;
 
 \draw[green!70!black, dashed] 
-(8.7,-7.5) rectangle ++(4.4,9.6)
+(8.7,-8.2) rectangle ++(4.4,10.3)
 (10.8,2.1) node[above]{amplificador 2};
 
 \draw[red, dashed] 
-(8.5,-7.7) rectangle ++(4.8,10.3)
+(8.5,-8.4) rectangle ++(4.8,11)
 (10.8,2.6) node[above]{filtro 3};
 
 \end{circuitikz}
