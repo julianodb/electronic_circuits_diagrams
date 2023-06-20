@@ -156,3 +156,6 @@
 
 ## RC_common_emitter_input
 ![RC_common_emitter_input](RC_common_emitter_input.png "RC_common_emitter_input")
+
+## RC_common_emitter_output
+![RC_common_emitter_output](RC_common_emitter_output.png "RC_common_emitter_output")
