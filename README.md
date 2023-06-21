@@ -162,3 +162,6 @@
 
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
+
+## amplifier_non_inverting_potentiometer
+![amplifier_non_inverting_potentiometer](amplifier_non_inverting_potentiometer.png "amplifier_non_inverting_potentiometer")
