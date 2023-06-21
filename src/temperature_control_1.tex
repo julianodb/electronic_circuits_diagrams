@@ -6,7 +6,7 @@
 \draw (0,0) node[ground]{}
 to[twoport, t=$IC_1$, n=TMP236] ++(0,2) node[vcc]{$V_{CC}$}
 (TMP236.south) -- ++(0.5,0) 
--- ++(0.5,0) node[above]{$V_s$}
+-- ++(0.5,0) node[above]{$v_{temp}$}
 
 node[op amp, anchor=-](OPAMP){}
 (OPAMP.+) node[above]{$V_{set}$} 
@@ -16,7 +16,7 @@ node[potentiometershape, rotate=-90,  anchor=wiper](POT){}
 (POT.right) --++(0,-0.3) node[ground]{}
 (POT.left) --++(0,0.3) node[vcc]{$V_{CC}$}
 
-(OPAMP.out) node[above]{$V_o$}
+(OPAMP.out) node[above]{$v_o$}
 to[R=$R_B$] ++(2,0)
 node[npn, anchor=B](Q1){$Q_1$}
 (Q1.E) node[ground]{}
