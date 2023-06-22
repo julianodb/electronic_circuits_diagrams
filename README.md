@@ -76,6 +76,9 @@
 ## amplifier_non_inverting
 ![amplifier_non_inverting](amplifier_non_inverting.png "amplifier_non_inverting")
 
+## amplifier_inverting
+![amplifier_inverting](amplifier_inverting.png "amplifier_inverting")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
