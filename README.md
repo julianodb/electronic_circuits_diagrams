@@ -174,3 +174,9 @@
 
 ## amplifier_non_inverting_potentiometer
 ![amplifier_non_inverting_potentiometer](amplifier_non_inverting_potentiometer.png "amplifier_non_inverting_potentiometer")
+
+## monostable_multivibrator
+![monostable_multivibrator](monostable_multivibrator.png "monostable_multivibrator")
+
+## monostable_multivibrator_b
+![monostable_multivibrator_b](monostable_multivibrator_b.png "monostable_multivibrator_b")
