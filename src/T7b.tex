@@ -2,7 +2,7 @@
 \usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
-\draw (0,0) node[above]{$v_S$} to[C=$C_3$, o-] ++(2,0) coordinate(TRIGGER)
+\draw (0,0) node[above]{$v_{pletis}$} to[C=$C_3$, o-] ++(2,0) coordinate(TRIGGER)
 to[Do=$D_2$, invert, *-*] ++(2,0) coordinate(FB)
 node[op amp, noinv input up, anchor=+](OA2){OA2}
 (FB) --++(0,1.5) coordinate(R2)
