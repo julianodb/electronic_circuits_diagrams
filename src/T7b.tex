@@ -1,0 +1,55 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[above]{$v_S$} to[C=$C_3$, o-] ++(2,0) coordinate(TRIGGER)
+to[Do=$D_2$, invert, *-*] ++(2,0) coordinate(FB)
+node[op amp, noinv input up, anchor=+](OA2){OA2}
+(FB) --++(0,1.5) coordinate(R2)
+to[R=$R_9$, *-] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-] ++(1,0) coordinate(MMOUT) node[above]{$v_o$}
+(R2) to[R=$R_8$] ++(0,2) node[vcc]{$V_{bias}$}
+(TRIGGER) to[R=$R_7$] ++(0,2) node[vcc]{$V_{bias}$}
+(OA2.-) -- ++(0,-2.5) coordinate(OA1M)
+to[R=$R_{10}$, *-] (OA1M -| OA2.out)
+-- (OA2.out)
+(OA1M) -- ++(-1,0) coordinate(CD)
+to[C, l_=$C_4$, *-] ++(0,2) node[vcc]{$V_{bias}$}
+(CD) --++(-1,0)
+to[Do=$D_3$] ++(0,2) node[vcc]{$V_{bias}$}
+(OA2.up) node[vcc]{$V_{CC}$}
+(OA2.down) node[ground]{}
+;
+
+\draw[green!70!black, dashed] 
+(0.5,-4) rectangle ++(6.3,9)
+(3.4,5) node[above]{monoestable};
+
+\draw (MMOUT) to[R=$R_B$] ++(2,0)
+node[npn, anchor=base](Q3){$Q_3$}
+(Q3.E) node[ground](GND){}
+(Q3.C) -- ++(0.6,0) -- ++(0,-2) -- ++(1.8,0) coordinate(LEDIN);
+
+\draw[green!70!black, dashed] 
+(7.1,-2.5) rectangle ++(4,4)
+(9.1,1.5) node[above]{driver LEDs};
+
+\draw
+(LEDIN) to[leDo, l=$D_4$, invert, mirror, *-] ++(0,2)
+to[R, l=$RL_1$] ++(0,2)
+-- ++(2,0) node[vcc](VCC){5V}
+to[R, l_=$RL_2$, *-] ++(0,-2)
+to[leDo, l_=$D_5$, -*] ++(0,-2)
+-- ++(2,0)
+to[leDo, l=$D_6$, invert, mirror] ++(0,2)
+to[R, l=$RL_3$] ++(0,2)
+-- ++(-2,0)
+(LEDIN) -- ++(2,0)
+;
+
+\draw[green!70!black, dashed] 
+(11.4,-2.5) rectangle ++(6.1,6)
+(14.45,3.5) node[above]{LEDs};
+
+\end{circuitikz}
+\end{document}
