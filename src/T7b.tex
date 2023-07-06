@@ -3,7 +3,7 @@
 \begin{document}
 \begin{circuitikz}
 \draw (0,0) node[above]{$v_{pletis}$} to[C=$C_3$, o-] ++(2,0) coordinate(TRIGGER)
-to[Do=$D_2$, invert, *-*] ++(2,0) coordinate(FB)
+to[Do, l_=$D_2$, *-*] ++(2,0) coordinate(FB)
 node[op amp, noinv input up, anchor=+](OA2){OA2}
 (FB) --++(0,1.5) coordinate(R2)
 to[R=$R_9$, *-] (R2 -| OA2.out) -- (OA2.out)
@@ -16,7 +16,7 @@ to[R=$R_{10}$, *-] (OA1M -| OA2.out)
 (OA1M) -- ++(-1,0) coordinate(CD)
 to[C, l_=$C_4$, *-] ++(0,2) node[vcc]{$V_{bias}$}
 (CD) --++(-1,0)
-to[Do=$D_3$] ++(0,2) node[vcc]{$V_{bias}$}
+to[Do, invert, l_=$D_3$] ++(0,2) node[vcc]{$V_{bias}$}
 (OA2.up) node[vcc]{$V_{CC}$}
 (OA2.down) node[ground]{}
 ;
