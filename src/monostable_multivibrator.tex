@@ -4,7 +4,7 @@
 \begin{circuitikz}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
 \draw (0,0) node[above]{$v_i$} to[C=$C_3$, o-] ++(2,0) coordinate(TRIGGER)
-to[Do, l_=$D_2$, *-*] ++(2,0) coordinate(FB) --++(1,0)
+to[Do=$D_2$, *-*] ++(2,0) coordinate(FB) --++(1,0)
 node[op amp, noinv input up, anchor=+](OA2){OA2}
 (FB) --++(0,1.5) coordinate(R2)
 to[R=$R_9$] (R2 -| OA2.out) -- (OA2.out)
@@ -17,7 +17,7 @@ to[R=$R_{10}$, *-] (OA1M -| OA2.out)
 (OA1M) coordinate(CD)
 to[C=$C_4$] ++(0,-2) node[ground]{}
 (CD) --++(-1,0)
-to[Do=$D_3$, invert] ++(0,-2) node[ground]{}
+to[Do, l_=$D_3$, invert] ++(0,-2) node[ground]{}
 (OA2.up) node[vcc]{$+V_{bias}$}
 (OA2.down) node[vee]{$-V_{bias}$}
 ;
