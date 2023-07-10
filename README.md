@@ -183,3 +183,6 @@
 
 ## half_voltage_divider
 ![half_voltage_divider](half_voltage_divider.png, "half_voltage_divider")
+
+## astable_multivibrator
+![astable_multivibrator](astable_multivibrator.png "astable_multivibrator")
