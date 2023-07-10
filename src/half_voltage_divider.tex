@@ -1,0 +1,13 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[ground](GND){}
+to[R=$R_X$, -*] ++(0,2) 
+to[R=$R_X$] ++(0,2) node[vcc]{$V_{CC}$}
+(0,2) -- ++(1.5,0)
+to[C=$C_{bias}$, *-] ++(0,-2) node[ground](GND){}
+(1.5,2) to[short, -o] ++(1,0) node[above]{$V_{bias}$}
+;
+\end{circuitikz}
+\end{document}
