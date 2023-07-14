@@ -189,3 +189,6 @@
 
 ## comparator_schmitt_inverting
 ![comparator_schmitt_inverting](comparator_schmitt_inverting.png "comparator_schmitt_inverting")
+
+## comparator_schmitt_non_inverting
+![comparator_schmitt_non_inverting](comparator_schmitt_non_inverting.png "comparator_schmitt_non_inverting")
