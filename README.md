@@ -186,3 +186,6 @@
 
 ## astable_multivibrator
 ![astable_multivibrator](astable_multivibrator.png "astable_multivibrator")
+
+## comparator_schmitt_inverting
+![comparator_schmitt_inverting](comparator_schmitt_inverting.png "comparator_schmitt_inverting")

@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0)  coordinate(FB) --++(2,0)
+node[op amp, noinv input up, anchor=+](OA2){}
+(FB) --++(0,1.5) coordinate(R2)
+to[R=$R_9$] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$}
+(FB) to[R=$R_8$, *-] ++(0,-2) node[ground]{}
+(OA2.-) to[short, -o] ++(-0.5,0) node[above]{$v_i$} 
+(OA2.up) node[vcc]{$+V_{CC}$}
+(OA2.down) node[vee]{$-V_{CC}$}
+;
+\end{circuitikz}
+\end{document}
