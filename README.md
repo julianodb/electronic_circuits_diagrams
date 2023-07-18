@@ -192,3 +192,6 @@
 
 ## comparator_schmitt_non_inverting
 ![comparator_schmitt_non_inverting](comparator_schmitt_non_inverting.png "comparator_schmitt_non_inverting")
+
+## comparator
+![comparator](comparator.png "comparator")
