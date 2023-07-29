@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) node[ground](GND){}
+(Q1.C) to[R] ++(0,2) node[vcc](VCC){$V_{CC}$}
+(Q1.B) to[short, -*] ++(-0.5,0) node[above]{OUT} -- ++(-1,0) coordinate(BASE)
+to[R, l=$347\ k\Omega$] ++(0,-2) node[ground](GND){}
+(BASE) to[cC=$4.7\ \mu F$, *-o] ++(-2,0) node[above]{IN}
+(BASE) to[R, l_=$1.1\ M\Omega$] (BASE |- VCC)
+to[short, -*] (VCC)
+;
+\end{circuitikz}
+\end{document}
