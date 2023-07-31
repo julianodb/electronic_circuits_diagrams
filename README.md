@@ -198,3 +198,6 @@
 
 ## comparator
 ![comparator](comparator.png "comparator")
+
+## oscillator_wien
+![oscillator_wien](oscillator_wien.png "oscillator_wien")
