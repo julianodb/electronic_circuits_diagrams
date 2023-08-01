@@ -1,0 +1,28 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0)
+node[op amp, anchor=-, xscale=-1](OA){}
+(OA.+) |- ++(-2,-3) coordinate(zener)
+to[zzDo=$D_z$, *-, invert] ++(0,-2) node[ground]{}
+(zener) to[R=$R_z$] ++(0,2) node[vcc]{}
+(OA.out) -- ++ (0,1.5)
+node[npn, anchor=B, rotate=90](NPN){}
+
+(NPN.E) -- (OA.- |- NPN.E) -- ++(1,0) coordinate(out)
+to[R=$R_1$, *-*] (out |- OA.-)
+to[R=$R_2$] ++(0,-2) node[ground]{}
+(OA.-) -- (out |- OA.-)
+
+(out) -- ++ (2,0) node[above]{$V_o$}
+to[generic=$R_L$] ++(0,-2) node[ground]{}
+
+(NPN.C) -- ++(-1,0) 
+to[american voltage source, l=$V_{i}$, invert] ++(0,-2) node[ground]{}
+
+
+;
+\end{circuitikz}
+\end{document}
