@@ -163,7 +163,7 @@
 ## temperature_control_3
 ![temperature_control_3](temperature_control_3.png "temperature_control_3")
 
-## active_highpass
+## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
 ## sallen_key_low_2
