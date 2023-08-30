@@ -24,6 +24,9 @@
 
 ![resistance_led](resistance_led.png "resistance_led")
 
+## eight_leds
+![eight_leds](eight_leds.png "eight_leds")
+
 ## cny70_circuit
 
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")

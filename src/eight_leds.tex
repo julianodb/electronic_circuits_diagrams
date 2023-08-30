@@ -1,0 +1,49 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{bipoles/cuteswitch/thickness=0.2}
+\draw (0,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_1$] ++(0,-2)
+to[leDo, l_=$D_1$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (2,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_2$] ++(0,-2)
+to[leDo, l_=$D_2$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (4,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_3$] ++(0,-2)
+to[leDo, l_=$D_3$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (6,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_4$] ++(0,-2)
+to[leDo, l_=$D_4$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (8,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_5$] ++(0,-2)
+to[leDo, l_=$D_5$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (10,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_6$] ++(0,-2)
+to[leDo, l_=$D_6$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (12,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_7$] ++(0,-2)
+to[leDo, l_=$D_7$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw (14,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_8$] ++(0,-2)
+to[leDo, l_=$D_8$] ++(0,-2)
+to[nos] ++(0,-2)
+node[vee]{-5V};
+\draw[blue, dashed] (-1,-7) rectangle ++(16,2)
+(-1,-6) node[anchor=east]{circuito de control};
+\end{circuitikz}
+\end{document}
