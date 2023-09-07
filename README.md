@@ -112,6 +112,9 @@
 ## inductor_diode_protection
 ![inductor_diode_protection](inductor_diode_protection.png "inductor_diode_protection")
 
+## envelope_detector
+![envelope_detector](envelope_detector.png "envelope_detector")
+
 ## half_wave_rectifier
 ![half_wave_rectifier](half_wave_rectifier.png "half_wave_rectifier")
 
