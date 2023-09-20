@@ -1,4 +1,4 @@
-\documentclass{standalone}
+\documentclass[convert]{standalone}
 \usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
@@ -59,7 +59,7 @@ to[Do, l_=$D_{B_6}$, *-] (D -| T7.B)
 (T7.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
 to[Do, l_=$D_{B_7}$, *-] (D -| T8.B)
 (T8.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
-(D) to[short, -o] ++(-1,0) node[above]{$V_{peak}$}
+(D) to[short, -o] ++(-1,0) node[above]{$V_{envelope}$}
 ;
 \end{circuitikz}
 \end{document}
