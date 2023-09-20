@@ -42,6 +42,18 @@
 
 ![led_driver](led_driver.png "led_driver")
 
+## led_control
+
+![led_control](led_control.png "led_control")
+
+## led_control_2
+
+![led_control_2](led_control_2.png "led_control_2")
+
+## led_control_4
+
+![led_control_4](led_control_4.png "led_control_4")
+
 ## lissajous
 
 ![lissajous](lissajous.png "lissajous")
