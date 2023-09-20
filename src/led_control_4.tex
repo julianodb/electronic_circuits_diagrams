@@ -1,0 +1,23 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{bipoles/cuteswitch/thickness=0.2}
+\draw (0,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_4$] ++(0,-2)
+to[leDo, l_=$D_4$,-*] ++(0,-2)
+to[Tnpn, invert, name=T1, label=$T_4$] ++(0,-2)
+node[vee]{-5V};
+\draw
+(T1.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1)
+to[Do, l=$D_{B_3}$, invert] ++(-2,0) 
+to[Do, l=$D_{B_2}$, invert] ++(-2,0) 
+to[Do, l=$D_{B_1}$, invert, -o] ++(-2,0) 
+node[above]{$V_{peak}$}
+;
+\draw[color=blue]
+(T1.B) to[open, i=$i_B$] ++(0.1,0)
+(0,-5) node[left]{$V_C$} to[open, i=$i_C$] ++(0,-0.5)
+;
+\end{circuitikz}
+\end{document}
