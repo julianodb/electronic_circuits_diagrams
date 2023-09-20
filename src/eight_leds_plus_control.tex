@@ -1,0 +1,65 @@
+\documentclass{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{bipoles/cuteswitch/thickness=0.2}
+\draw (0,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_1$] ++(0,-2)
+to[leDo, l_=$D_1$] ++(0,-2)
+to[Tnpn, invert, name=T1, label=$T_1$] ++(0,-2)
+node[vee]{-5V};
+\draw (2,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_2$] ++(0,-2)
+to[leDo, l_=$D_2$] ++(0,-2)
+to[Tnpn, invert, name=T2, label=$T_2$] ++(0,-2)
+node[vee]{-5V};
+\draw (4,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_3$] ++(0,-2)
+to[leDo, l_=$D_3$] ++(0,-2)
+to[Tnpn, invert, name=T3, label=$T_3$] ++(0,-2)
+node[vee]{-5V};
+\draw (6,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_4$] ++(0,-2)
+to[leDo, l_=$D_4$] ++(0,-2)
+to[Tnpn, invert, name=T4, label=$T_4$] ++(0,-2)
+node[vee]{-5V};
+\draw (8,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_5$] ++(0,-2)
+to[leDo, l_=$D_5$] ++(0,-2)
+to[Tnpn, invert, name=T5, label=$T_5$] ++(0,-2)
+node[vee]{-5V};
+\draw (10,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_6$] ++(0,-2)
+to[leDo, l_=$D_6$] ++(0,-2)
+to[Tnpn, invert, name=T6, label=$T_6$] ++(0,-2)
+node[vee]{-5V};
+\draw (12,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_7$] ++(0,-2)
+to[leDo, l_=$D_7$] ++(0,-2)
+to[Tnpn, invert, name=T7, label=$T_7$] ++(0,-2)
+node[vee]{-5V};
+\draw (14,0) node[vcc]{5V} -- ++(0,-1)
+to[R, l_=$R_8$] ++(0,-2)
+to[leDo, l_=$D_8$] ++(0,-2)
+to[Tnpn, invert, name=T8, label=$T_8$] ++(0,-2)
+node[vee]{-5V};
+\draw
+(T1.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) coordinate(D)
+to[Do, l_=$D_{B_1}$, *-] (D -| T2.B)
+(T2.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_2}$, *-] (D -| T3.B)
+(T3.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_3}$, *-] (D -| T4.B)
+(T4.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_4}$, *-] (D -| T5.B)
+(T5.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_5}$, *-] (D -| T6.B)
+(T6.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_6}$, *-] (D -| T7.B)
+(T7.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_7}$, *-] (D -| T8.B)
+(T8.B) to[R, l_=$R_B$] ++(0,-2) -- ++(0,-1) 
+(D) to[short, -o] ++(-1,0) node[above]{$V_{peak}$}
+;
+\end{circuitikz}
+\end{document}
