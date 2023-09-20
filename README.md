@@ -27,6 +27,9 @@
 ## eight_leds
 ![eight_leds](eight_leds.png "eight_leds")
 
+## eight_leds_plus_control
+![eight_leds_plus_control](eight_leds_plus_control.png "eight_leds_plus_control")
+
 ## cny70_circuit
 
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")
