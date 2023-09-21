@@ -3,46 +3,58 @@
 \begin{document}
 \begin{circuitikz}
 \ctikzset{bipoles/cuteswitch/thickness=0.2}
-\draw (0,0) node[vcc]{5V}
+\draw (0,0) 
 to[R, l_=$R_1$] ++(0,-2)
 to[leDo, l_=$D_1$] ++(0,-2)
-to[Tnpn, invert, name=T1, label=$T_1$] ++(0,-2)
-node[vee]{-5V};
-\draw (2,0) node[vcc]{5V}
+to[Tnpn, invert, name=T1, label=$T_1$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (2,0)
 to[R, l_=$R_2$] ++(0,-2)
 to[leDo, l_=$D_2$] ++(0,-2)
-to[Tnpn, invert, name=T2, label=$T_2$] ++(0,-2)
-node[vee]{-5V};
-\draw (4,0) node[vcc]{5V}
+to[Tnpn, invert, name=T2, label=$T_2$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (4,0) 
 to[R, l_=$R_3$] ++(0,-2)
 to[leDo, l_=$D_3$] ++(0,-2)
-to[Tnpn, invert, name=T3, label=$T_3$] ++(0,-2)
-node[vee]{-5V};
-\draw (6,0) node[vcc]{5V}
+to[Tnpn, invert, name=T3, label=$T_3$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (6,0) 
 to[R, l_=$R_4$] ++(0,-2)
 to[leDo, l_=$D_4$] ++(0,-2)
-to[Tnpn, invert, name=T4, label=$T_4$] ++(0,-2)
-node[vee]{-5V};
-\draw (8,0) node[vcc]{5V}
+to[Tnpn, invert, name=T4, label=$T_4$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (8,0) 
 to[R, l_=$R_5$] ++(0,-2)
 to[leDo, l_=$D_5$] ++(0,-2)
-to[Tnpn, invert, name=T5, label=$T_5$] ++(0,-2)
-node[vee]{-5V};
-\draw (10,0) node[vcc]{5V}
+to[Tnpn, invert, name=T5, label=$T_5$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (10,0) 
 to[R, l_=$R_6$] ++(0,-2)
 to[leDo, l_=$D_6$] ++(0,-2)
-to[Tnpn, invert, name=T6, label=$T_6$] ++(0,-2)
-node[vee]{-5V};
-\draw (12,0) node[vcc]{5V}
+to[Tnpn, invert, name=T6, label=$T_6$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (12,0) 
 to[R, l_=$R_7$] ++(0,-2)
 to[leDo, l_=$D_7$] ++(0,-2)
-to[Tnpn, invert, name=T7, label=$T_7$] ++(0,-2)
-node[vee]{-5V};
-\draw (14,0) node[vcc]{5V}
+to[Tnpn, invert, name=T7, label=$T_7$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw (14,0) 
 to[R, l_=$R_8$] ++(0,-2)
 to[leDo, l_=$D_8$] ++(0,-2)
-to[Tnpn, invert, name=T8, label=$T_8$] ++(0,-2)
-node[vee]{-5V};
+to[Tnpn, invert, name=T8, label=$T_8$] ++(0,-1.5)
+-- ++(0,-0.5) node[vee]{-5V};
+\draw
+(0,0) -- (2,0)
+to[short, *-*] (4,0)
+-- (6,0)
+to[short, *-*] (7,0) 
+-- ++(0,0.5) node[vcc]{+5V}
+(7,0)
+to[short, -*] (8,0)
+-- (10,0)
+to[short, *-*] (12,0)
+-- (14,0)
+;
 \draw
 (T1.B) to[R, l_=$R_{B_1}$] ++(0,-2) -- ++(0,-1) coordinate(D)
 to[Do, l_=$D_{B_1}$, *-] (D -| T2.B)
@@ -63,6 +75,7 @@ to[Do, l_=$D_{B_7}$, *-] (D -| T8.B)
 ;
 \draw[color=blue]
 (D) -- ++(-0.7,0) to[open, i_=$i_{envelope}$] ++(0.4,0)
+(7,0.6) to[open, i=$i_{VCC}$] ++(0,-0.2)
 ;
 \end{circuitikz}
 \end{document}
