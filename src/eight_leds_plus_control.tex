@@ -59,7 +59,10 @@ to[Do, l_=$D_{B_6}$, *-] (D -| T7.B)
 (T7.B) to[R, l_=$R_{B_7}$] ++(0,-2) -- ++(0,-1) 
 to[Do, l_=$D_{B_7}$, *-] (D -| T8.B)
 (T8.B) to[R, l_=$R_{B_8}$] ++(0,-2) -- ++(0,-1) 
-(D) to[short, -o] ++(-1,0) node[above]{$V_{envelope}$}
+(D) to[short, -o] ++(-1,0) node[anchor=south east]{$V_{envelope}$}
+;
+\draw[color=blue]
+(D) -- ++(-0.7,0) to[open, i_=$i_{envelope}$] ++(0.4,0)
 ;
 \end{circuitikz}
 \end{document}
