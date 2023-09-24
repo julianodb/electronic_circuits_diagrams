@@ -85,6 +85,9 @@
 ## npn_inverter
 ![npn_inverter](npn_inverter.png "npn_inverter")
 
+## npn_re_rc
+![npn_re_rc](npn_re_rc.png "npn_re_rc")
+
 ## common_emitter
 ![common_emitter](common_emitter.png "common_emitter")
 
