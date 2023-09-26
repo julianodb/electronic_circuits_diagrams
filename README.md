@@ -16,6 +16,9 @@
 
 ![battery_diode_2R](battery_diode_2R.png "battery_diode_2R")
 
+## battery_2diode_2R
+![battery_2diode_2R](battery_2diode_2R.png "battery_2diode_2R")
+
 ## battery_2diode_3R
 
 ![battery_2diode_3R](battery_2diode_3R.png "battery_2diode_3R")
