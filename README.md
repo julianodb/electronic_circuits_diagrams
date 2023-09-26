@@ -70,6 +70,9 @@
 
 ![forward_rectifier_diode](forward_rectifier_diode.png "forward_rectifier_diode")
 
+## forward_diode_resistance
+![forward_diode_resistance](forward_diode_resistance.png "forward_diode_resistance")
+
 ## zener_rectifier
 
 ![zener_rectifier](zener_rectifier.png "zener_rectifier")
