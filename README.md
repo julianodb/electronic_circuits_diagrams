@@ -66,6 +66,9 @@
 
 ![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
 
+## reverse_diode_resistance_2
+![reverse_diode_resistance_2](reverse_diode_resistance_2.png "reverse_diode_resistance_2")
+
 ## forward_rectifier_diode
 
 ![forward_rectifier_diode](forward_rectifier_diode.png "forward_rectifier_diode")
