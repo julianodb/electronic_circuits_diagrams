@@ -12,6 +12,9 @@
 
 ![battery_resistor_diode](battery_resistor_diode.png "battery_resistor_diode")
 
+## battery_resistor_diode_with_currents
+![battery_resistor_diode_with_currents](battery_resistor_diode_with_currents.png "battery_resistor_diode_with_currents")
+
 ## battery_diode_2R
 
 ![battery_diode_2R](battery_diode_2R.png "battery_diode_2R")

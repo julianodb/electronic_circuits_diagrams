@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[ground](GND){}
+to[american voltage source, l=$V_{CC}$, *-] (0,2)
+to[R=$R$] ++(2,0) 
+to[Do=D] ++(0,-2)
+-- (0,0)
+;
+\draw[color=blue]
+(2,2) node[anchor=south west, color=blue]{$V_D$}
+(2,0.5) to[short, i=$I$] ++(0,-0.4)
+;
+\end{circuitikz}
+\end{document}
