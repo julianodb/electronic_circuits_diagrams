@@ -1,0 +1,48 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{bipoles/cuteswitch/thickness=0.2}
+\draw (5,6) 
+to[R, l_=$R_1$] ++(0,-2)
+to[leDo, l_=$D_2$] ++(0,-2)
+to[Tnpn, invert, name=T1, label=$T_1$] ++(0,-1.5)
+-- ++(0,-0.5) node[ground]{};
+\draw (7,6)
+to[R, l_=$R_2$] ++(0,-2)
+to[leDo, l_=$D_3$] ++(0,-2)
+to[Tnpn, invert, name=T2, label=$T_2$] ++(0,-1.5)
+-- ++(0,-0.5) node[ground]{};
+\draw (9,6) 
+to[R, l_=$R_3$] ++(0,-2)
+to[leDo, l_=$D_4$] ++(0,-2)
+to[Tnpn, invert, name=T3, label=$T_3$] ++(0,-1.5)
+-- ++(0,-0.5) node[ground]{};
+\draw
+(T1.B) to[R, l_=$R_{B_1}$] ++(0,-2) -- ++(0,-1) coordinate(D)
+to[Do, l_=$D_{B_1}$, *-] (D -| T2.B)
+(T2.B) to[R, l_=$R_{B_2}$] ++(0,-2) -- ++(0,-1) 
+to[Do, l_=$D_{B_2}$, *-] (D -| T3.B)
+(T3.B) to[R, l_=$R_{B_3}$] ++(0,-2) -- ++(0,-1) 
+;
+\draw
+(5,6) -- ++(2,0) node[vcc]{$V_{CC}$}
+to[short, *-] ++(2,0)
+;
+\draw (0,0) node[vcc]{$V_{CC}$}
+to[R, l_=$R_1$] ++(0,-2)
+coordinate(LEDA)
+to[leDo, l_=$D_1$] ++(0,-2)
+node[ground](GND){};
+\draw (1.4,-3.4) node[npn, nobase](Q1){$Q_1$}
+(Q1.E) node[ground](GND){}
+(Q1.C) -- (Q1.C |- LEDA) coordinate(out)
+to[R, l=$R_2$] ++(0,2) node[vcc]{$V_{CC}$}
+(out) to[short, *-] ++(1,0) node[above]{$V_o$} -| (D);
+\draw[blue] (-1,-4) rectangle ++(3.0,1.6)
+(2,-4) node[right]{CNY70}
+(3,-3) rectangle ++(7,10)
+(6.5, -3) node[below]{LEDs indicadores}
+;
+\end{circuitikz}
+\end{document}
