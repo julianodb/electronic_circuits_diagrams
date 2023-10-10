@@ -4,19 +4,19 @@
 \begin{circuitikz}
 \ctikzset{bipoles/cuteswitch/thickness=0.2}
 \draw (5,6) 
-to[R, l_=$R_1$] ++(0,-2)
+to[R, l_=$R_{D_2}$] ++(0,-2)
 to[leDo, l_=$D_2$] ++(0,-2)
-to[Tnpn, invert, name=T1, label=$T_1$] ++(0,-1.5)
+to[Tnpn, invert, name=T1, label=$Q_2$] ++(0,-1.5)
 -- ++(0,-0.5) node[ground]{};
 \draw (7,6)
-to[R, l_=$R_2$] ++(0,-2)
+to[R, l_=$R_{D_3}$] ++(0,-2)
 to[leDo, l_=$D_3$] ++(0,-2)
-to[Tnpn, invert, name=T2, label=$T_2$] ++(0,-1.5)
+to[Tnpn, invert, name=T2, label=$Q_3$] ++(0,-1.5)
 -- ++(0,-0.5) node[ground]{};
 \draw (9,6) 
 to[R, l_=$R_3$] ++(0,-2)
-to[leDo, l_=$D_4$] ++(0,-2)
-to[Tnpn, invert, name=T3, label=$T_3$] ++(0,-1.5)
+to[leDo, l_=$D_{D_4}$] ++(0,-2)
+to[Tnpn, invert, name=T3, label=$Q_4$] ++(0,-1.5)
 -- ++(0,-0.5) node[ground]{};
 \draw
 (T1.B) to[R, l_=$R_{B_1}$] ++(0,-2) -- ++(0,-1) coordinate(D)
