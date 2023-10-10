@@ -77,6 +77,9 @@
 
 ![ldr](ldr.png "ldr")
 
+## ldr_cc
+![ldr_cc](ldr_cc.png "ldr_cc")
+
 ## reverse_diode_resistance
 
 ![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
