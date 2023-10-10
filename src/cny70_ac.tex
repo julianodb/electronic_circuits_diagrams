@@ -1,0 +1,18 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{bipoles/oscope/waveform=square}
+\draw (0,0) node[ground]{} to[sqV, bipole/is voltage=false, l=0 to $V_{CC}$, *-] (0,4) -- (2,4) coordinate(LEDA) to[leDo, l_=$D_1$] (2,2) to[R, l_=$R_1$] (2,0) -- (0,0);
+\draw 
+(3.4,2.6) node[npn, nobase](Q1){$Q_1$}
+(Q1.E)  to[R=$R_2$] ++(0,-2) node[ground]{}
+(Q1.C) -- ++ (0,0.5)  node[vcc](VCC){$V_{CC}$}
+(Q1.E) to[short, *-o] ++(1,0) node[above]{$v_o$}
+;
+\draw[blue] (1,2) rectangle ++(3.0,1.6)
+(2,-4) node[right]{CNY70}
+(2.7,2) node[below]{CNY70}
+;
+\end{circuitikz}
+\end{document}

@@ -52,6 +52,9 @@
 ## cny70_cc
 ![cny70_cc](cny70_cc.png "cny70_cc")
 
+## cny70_ac
+![cny70_ac](cny70_ac.png "cny70_ac")
+
 ## led_circuit
 
 ![led_circuit](led_circuit.png "led_circuit")
