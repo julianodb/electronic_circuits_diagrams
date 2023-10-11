@@ -136,6 +136,9 @@
 ## amplifier_inverting
 ![amplifier_inverting](amplifier_inverting.png "amplifier_inverting")
 
+## instrumentation_amplifier
+![instrumentation_amplifier](instrumentation_amplifier.png "instrumentation_amplifier")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
