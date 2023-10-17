@@ -1,0 +1,23 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.6, capacitors/scale=0.7, diodes/scale=0.5}
+\draw (0,0) to[sV, l=$v_{i_{AC}}$] ++(0,2.5)
+-- ++(2,0) node[above]{$v_{i_+}$}
+to[Do] ++(1,-1) coordinate (VO)
+to[Do, invert, *-*] ++(-1,-1) coordinate (VL) node[anchor= north west]{$v_{i_-}$}
+to[Do, invert] ++(-1,1) node[ground]{}
+to[Do, *-*] ++(1,1)
+(VL) |- (0,0)
+(VO) --++(0.5,0) coordinate(V1)
+to[cC=$C_1$, *-] ++(0,-1.5) node[ground]{}
+(V1) --++(1,0) node[twoportshape, anchor=left, t=7805](reg){}
+(reg.south) node[ground]{}
+(reg.right) --++(1,0) coordinate(V1)
+to[cC=$C_2$, *-] ++(0,-1.5) node[ground]{}
+(V1) -- ++ (1.2,0) node[above]{$v_o$}
+to[R=$R_L$] ++(0,-1.5) node[ground]{}
+;
+\end{circuitikz}
+\end{document}

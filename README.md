@@ -166,6 +166,9 @@
 ## full_bridge_and_7805
 ![full_bridge_and_7805](full_bridge_and_7805.png "full_bridge_and_7805")
 
+## full_bridge_and_7805_without_transformer
+![full_bridge_and_7805_without_transformer](full_bridge_and_7805_without_transformer.png "full_bridge_and_7805_without_transformer")
+
 ## inductor_diode_protection
 ![inductor_diode_protection](inductor_diode_protection.png "inductor_diode_protection")
 
