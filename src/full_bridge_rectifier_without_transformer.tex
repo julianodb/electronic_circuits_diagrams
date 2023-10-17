@@ -1,0 +1,21 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.6, capacitors/scale=0.7, diodes/scale=0.5}
+\ctikzset{bipole label style/.style={font=\footnotesize}}
+\draw (0,0) to[sV, l=$v_{i_{AC}}$] 
+++(0,2.5)
+-| ++(2,-0.25) 
+to[Do=$D_2$] ++(1,-1) coordinate (VO)
+to[Do=$D_4$, invert, *-*] ++(-1,-1) coordinate (VL)
+to[Do=$D_3$, invert] ++(-1,1) node[ground]{}
+to[Do=$D_1$, *-*] ++(1,1)
+(VL) |- (0,0)
+(VO) --++(0.5,0) coordinate(V1) 
+to[R=$R_L$, *-] ++(0,-1.5) node[ground]{}
+(V1) --++(1.2,0) node[above]{$v_o$}
+to[cC=$C_L$] ++(0,-1.5) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
