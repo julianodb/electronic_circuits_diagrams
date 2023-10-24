@@ -250,6 +250,9 @@
 ## sallen_key_bandpass
 ![sallen_key_bandpass](sallen_key_bandpass.png "sallen_key_bandpass")
 
+## sallen_key_high_2
+![sallen_key_high_2](sallen_key_high_2.png "sallen_key_high_2")
+
 ## RC_common_emitter_input
 ![RC_common_emitter_input](RC_common_emitter_input.png "RC_common_emitter_input")
 
