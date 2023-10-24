@@ -1,0 +1,24 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0)
+to[R, l_=$R_2$, o-o] ++(2,0)
+(2.4,0) node[]{=}
+(3,0)
+to[R, l_=$R_{2_{fija}}$, o-] ++(2,0)
+to[pR, l2_=$R_{2_{variable}}$ and {$[0\ a\ 10\ k\Omega]$}, n=RVAR2, -*] ++(2,0) coordinate(R2)
+to[short, -o] ++(0.5,0)
+(RVAR2.wiper) --++(0,0.1) -| (R2)
+
+(0,-2)
+to[R, l_=$R_3$, o-o] ++(2,0)
+(2.4,-2) node[]{=}
+(3,-2)
+to[R, l_=$R_{3_{fija}}$, o-] ++(2,0)
+to[pR, l2_=$R_{3_{variable}}$ and {$[0\ a\ 10\ k\Omega]$}, n=RVAR2, n=RVAR3, -*] ++(2,0) coordinate(R3)
+to[short, -o] ++(0.5,0)
+(RVAR3.wiper) --++(0,0.1) -| (R3)
+;
+\end{circuitikz}
+\end{document}
