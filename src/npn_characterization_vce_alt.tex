@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) node[ground](GND){}
+(Q1.C) --++(0,0.5) coordinate(COL)
+to[pR, l_=$R_{var}$, n=RVAR, *-] ++(0,2)
+to[R=$R_C$, -*] ++(0,2) node[vcc](VCC){$V_{CC}$}
+(Q1.B) -| ++(-2,1.5) to[R=$R_B$, n=RB] ++(0,2) |- (VCC)
+(RVAR.wiper) --++(-0.5,0) |- (COL)
+;
+\draw[color=blue] 
+(VCC) to[short, *-] ++(1,0)
+to[qvprobe=$V_{R_C}$] ++(0,-2)
+to[short, -*] ++(-1,0)
+(Q1.C) to[short, i=$I_C$] ++(0,-0.4)
+;
+\end{circuitikz}
+\end{document}

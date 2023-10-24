@@ -208,6 +208,9 @@
 ## npn_characterization_vce
 ![npn_characterization_vce](npn_characterization_vce.png "npn_characterization_vce")
 
+## npn_characterization_vce_alt
+![npn_characterization_vce_alt](npn_characterization_vce_alt.png "npn_characterization_vce_alt")
+
 ## three_R
 ![three_R](three_R.png "three_R")
 
