@@ -130,6 +130,9 @@
 ## common_emitter_lab8
 ![common_emitter_lab8](common_emitter_lab8.png "common_emitter_lab8")
 
+## common_emitter_double
+![common_emitter_double](common_emitter_double.png "common_emitter_double")
+
 ## amplifier_non_inverting
 ![amplifier_non_inverting](amplifier_non_inverting.png "amplifier_non_inverting")
 
