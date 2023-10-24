@@ -3,12 +3,12 @@
 \begin{document}
 \begin{circuitikz}
 \draw 
-(0,-1) node[op amp, anchor=-](OA){}
+(6,3) node[op amp, anchor=-](OA){}
 (OA.up)  node[vcc]{+5V}
 (OA.down) node[vee]{-5V}
-(3,0) to[R=$R_1$] ++(2,0)
-(3,1) to[R=$R_2$] ++(2,0)
-(3,2) to[R=$R_3$] ++(2,0)
+(3,1) to[R=$R_1$] ++(2,0)
+(3,2) to[R=$R_2$] ++(2,0)
+(3,3) to[R=$R_3$] ++(2,0)
 (2,1) node[ground]{}
 (2,2.5) node[vcc]{+5V}
 (0,1) node[above]{$v_{i}$} to[short, o-] ++(1,0)
