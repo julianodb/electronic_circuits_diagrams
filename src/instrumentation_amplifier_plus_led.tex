@@ -17,10 +17,10 @@ to[R=$R_2$] ++(3,0) coordinate(R2b)
 -- ++(0,-1)
 node[op amp, anchor=out](OA3){}
 to[short, *-o] ++(1,0) node[above]{$V_o$}
-to[R=$R_B$] ++(2,0) node[npn, anchor=B](Q1){}
+to[R=$R_B$] ++(2,0) node[npn, anchor=B](Q1){Q}
 (Q1.E) node[ground]{}
 (Q1.C) to[R=$R_L$] ++(0,2)
-to[leDo, invert] ++(0,2) node[vcc]{$V_{CC}$}
+to[leDo, invert, l_=$LED$] ++(0,2) node[vcc]{$V_{CC}$}
 (RG2) to[R=$R_6$] (RG2 -| OA2.out)
 -- (OA2.out) to[R=$R_3$, *-*] ++(2,0) coordinate(R2c)
 to[R=$R_4$] ++(3,0) node[ground]{}
