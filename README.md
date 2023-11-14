@@ -187,6 +187,9 @@
 ## envelope_detector
 ![envelope_detector](envelope_detector.png "envelope_detector")
 
+## envelope_detector_negative
+![envelope_detector_negative](envelope_detector_negative.png "envelope_detector_negative")
+
 ## half_wave_rectifier
 ![half_wave_rectifier](half_wave_rectifier.png "half_wave_rectifier")
 
