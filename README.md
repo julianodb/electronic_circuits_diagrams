@@ -145,6 +145,9 @@
 ## instrumentation_amplifier_plus_led
 ![instrumentation_amplifier_plus_led](instrumentation_amplifier_plus_led.png "instrumentation_amplifier_plus_led")
 
+## instrumentation_amplifier_plus_npn_with_annotations
+![instrumentation_amplifier_plus_npn_with_annotations](instrumentation_amplifier_plus_npn_with_annotations.png "instrumentation_amplifier_plus_npn_with_annotations")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
