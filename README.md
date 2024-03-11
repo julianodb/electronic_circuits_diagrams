@@ -39,6 +39,9 @@
 
 ![resistance_led](resistance_led.png "resistance_led")
 
+## resistance_led_plus_minus_5_volts
+![resistance_led_plus_minus_5_volts](resistance_led_plus_minus_5_volts "resistance_led_plus_minus_5_volts")
+
 ## eight_leds
 ![eight_leds](eight_leds.png "eight_leds")
 
