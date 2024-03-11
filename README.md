@@ -1,22 +1,18 @@
 # electronic_circuits_diagrams
 
 ## diode
-
 ![diode](diode.png "diode")
 
 ## resistance_diode
-
 ![resistance_diode](resistance_diode.png "resistance_diode")
 
 ## battery_resistor_diode
-
 ![battery_resistor_diode](battery_resistor_diode.png "battery_resistor_diode")
 
 ## battery_resistor_diode_with_currents
 ![battery_resistor_diode_with_currents](battery_resistor_diode_with_currents.png "battery_resistor_diode_with_currents")
 
 ## battery_diode_2R
-
 ![battery_diode_2R](battery_diode_2R.png "battery_diode_2R")
 
 ## battery_2diode_2R
@@ -32,11 +28,9 @@
 ![battery_2diode_2R_alt_with_currents](battery_2diode_2R_alt_with_currents.png "battery_2diode_2R_alt_with_currents")
 
 ## battery_2diode_3R
-
 ![battery_2diode_3R](battery_2diode_3R.png "battery_2diode_3R")
 
 ## resistance_led
-
 ![resistance_led](resistance_led.png "resistance_led")
 
 ## resistance_led_plus_minus_5_volts
@@ -67,23 +61,18 @@
 ![led_driver](led_driver.png "led_driver")
 
 ## led_control
-
 ![led_control](led_control.png "led_control")
 
 ## led_control_2
-
 ![led_control_2](led_control_2.png "led_control_2")
 
 ## led_control_4
-
 ![led_control_4](led_control_4.png "led_control_4")
 
 ## lissajous
-
 ![lissajous](lissajous.png "lissajous")
 
 ## ldr
-
 ![ldr](ldr.png "ldr")
 
 ## ldr_cc
@@ -93,29 +82,24 @@
 ![ldr_ac](ldr_ac.png "ldr_ac")
 
 ## reverse_diode_resistance
-
 ![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
 
 ## reverse_diode_resistance_2
 ![reverse_diode_resistance_2](reverse_diode_resistance_2.png "reverse_diode_resistance_2")
 
 ## forward_rectifier_diode
-
 ![forward_rectifier_diode](forward_rectifier_diode.png "forward_rectifier_diode")
 
 ## forward_diode_resistance
 ![forward_diode_resistance](forward_diode_resistance.png "forward_diode_resistance")
 
 ## zener_rectifier
-
 ![zener_rectifier](zener_rectifier.png "zener_rectifier")
 
 ## photodiode_photoconductive
-
 ![photodiode_photoconductive](photodiode_photoconductive.png "photodiode_photoconductive")
 
 ## photodiode_photovoltaic
-
 ![photodiode_photovoltaic](photodiode_photovoltaic.png "photodiode_photovoltaic")
 
 ## npn_inverter
