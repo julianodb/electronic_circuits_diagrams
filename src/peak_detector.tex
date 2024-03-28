@@ -1,0 +1,11 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[above]{$v_i$}
+to[Do=$D_3$, o-*] ++(2,0) 
+to[C=$C_1$] ++(0,-2) node[ground]{}
+(2,0) to[short, *-o] ++(1,0) node[above]{$v_o$} 
+;
+\end{circuitikz}
+\end{document}
