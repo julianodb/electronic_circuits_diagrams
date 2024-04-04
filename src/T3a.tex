@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[npn](Q1){}
+(Q1.C) -- ++(2,0) coordinate(C1)
+to[C=$C_1$] ++(0,-2) node[ground]{}
+(Q1.E) node[ground]{}
+(Q1.B) to[R=$R_5$] ++(-2,0) 
+to[Do, invert, -o] ++(-2,0) node[left]{RESET}
+;
+
+\draw[color=red] 
+(C1) -- ++(-0.2,0) to[short, i=$I_D$] ++(-0.4,0)
+(2,-1.5) -- ++(0,0.2) to[short, i=$I_D$] ++(0,0.4)
+(Q1.E) -- ++(0,0.2) to[short, i=$I_D$] ++(0,-0.4)
+(Q1.B) -- ++(-0.2,0) to[short, i=$I_B$] ++(0.4,0)
+;
+\end{circuitikz}
+\end{document}

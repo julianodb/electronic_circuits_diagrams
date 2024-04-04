@@ -141,6 +141,9 @@
 ## instrumentation_amplifier_plus_npn_with_annotations
 ![instrumentation_amplifier_plus_npn_with_annotations](instrumentation_amplifier_plus_npn_with_annotations.png "instrumentation_amplifier_plus_npn_with_annotations")
 
+## T3a
+![T3a](T3a.png "T3a")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
