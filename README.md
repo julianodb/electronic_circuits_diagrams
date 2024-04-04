@@ -105,6 +105,9 @@
 ## photodiode_photovoltaic
 ![photodiode_photovoltaic](photodiode_photovoltaic.png "photodiode_photovoltaic")
 
+## npn
+![npn](npn.png "npn")
+
 ## npn_inverter
 ![npn_inverter](npn_inverter.png "npn_inverter")
 
