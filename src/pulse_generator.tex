@@ -1,0 +1,13 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vee]{-5V}
+to[R=$R_4$, -*] ++(0,2) coordinate(A1)
+to[push button] ++ (0,2) 
+node[vcc]{+5V}
+
+(A1) to[C=$C_3$, -o] ++(2,0)  node[right]{RESET}
+;
+\end{circuitikz}
+\end{document}

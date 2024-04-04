@@ -291,6 +291,9 @@
 ## RC_lowpass
 ![RC_lowpass](RC_lowpass.png "RC_lowpass")
 
+## pulse_generator
+![pulse_generator](pulse_generator.png "pulse_generator")
+
 ## astable_multivibrator
 ![astable_multivibrator](astable_multivibrator.png "astable_multivibrator")
 
