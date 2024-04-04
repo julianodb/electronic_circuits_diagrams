@@ -2,12 +2,12 @@
 \usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
-\draw (0,0) node[npn](Q1){}
+\draw (0,0) node[npn](Q1){$Q_1$}
 (Q1.C) -- ++(2,0) coordinate(C1)
 to[C=$C_1$] ++(0,-2) node[ground]{}
 (Q1.E) node[ground]{}
 (Q1.B) to[R=$R_5$] ++(-2,0) 
-to[Do, invert, -o] ++(-2,0) node[left]{RESET}
+to[Do=$D_4$, invert, -o] ++(-2,0) node[left]{RESET}
 ;
 
 \draw[color=red] 
