@@ -147,6 +147,9 @@
 ## T3b
 ![T3b](T3b.png "T3b")
 
+## T3c
+![T3c](T3c.png "T3c")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
