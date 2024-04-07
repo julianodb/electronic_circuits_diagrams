@@ -123,6 +123,9 @@
 ## common_emitter_base_polarized
 ![common_emitter_base_polarized](common_emitter_base_polarized.png "common_emitter_base_polarized")
 
+## common_emitter_base_polarized_no_ce
+![common_emitter_base_polarized_no_ce](common_emitter_base_polarized_no_ce.png "common_emitter_base_polarized_no_ce")
+
 ## common_emitter_lab8
 ![common_emitter_lab8](common_emitter_lab8.png "common_emitter_lab8")
 
