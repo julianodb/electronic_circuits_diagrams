@@ -1,0 +1,12 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[npn](Q1){$Q_1$}
+(Q1.E) to[R, l_=$R_E$] ++(0,-2) node[ground](GND){}
+(Q1.B) to[R, l_=$R_B$] ++(-2,0)
+to[short, -o] ++(0,1) node[above]{$V_i$}
+(Q1.C) to[R=$R_C$] ++(0,2) node[vcc]{$V_{CC}$}
+;
+\end{circuitikz}
+\end{document}

@@ -114,6 +114,9 @@
 ## npn_re_rc
 ![npn_re_rc](npn_re_rc.png "npn_re_rc")
 
+## npn_re_rc_rb
+![npn_re_rc_rb](npn_re_rc_rb.png "npn_re_rc_rb")
+
 ## common_emitter
 ![common_emitter](common_emitter.png "common_emitter")
 
