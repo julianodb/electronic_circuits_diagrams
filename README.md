@@ -144,6 +144,9 @@
 ## differential_amplifier_no_re
 ![differential_amplifier_no_re](differential_amplifier_no_re.png "differential_amplifier_no_re")
 
+## differential_signal
+![differential_signal](differential_signal.png "differential_signal")
+
 ## amplifier_non_inverting
 ![amplifier_non_inverting](amplifier_non_inverting.png "amplifier_non_inverting")
 
