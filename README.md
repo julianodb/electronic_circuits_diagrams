@@ -138,6 +138,9 @@
 ## common_emitter_double
 ![common_emitter_double](common_emitter_double.png "common_emitter_double")
 
+## differential_amplifier
+![differential_amplifier](differential_amplifier.png "differential_amplifier")
+
 ## amplifier_non_inverting
 ![amplifier_non_inverting](amplifier_non_inverting.png "amplifier_non_inverting")
 
