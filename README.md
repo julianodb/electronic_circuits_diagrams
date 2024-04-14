@@ -111,6 +111,9 @@
 ## npn_inverter
 ![npn_inverter](npn_inverter.png "npn_inverter")
 
+## current_source
+![current_source](current_source.png "current_source")
+
 ## npn_re_rc
 ![npn_re_rc](npn_re_rc.png "npn_re_rc")
 
