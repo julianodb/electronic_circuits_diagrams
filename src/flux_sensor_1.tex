@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) 
+node[ground]{}
+node[thermistorshape, anchor=left, rotate=90](T){}
+(T.label) node[below, rotate=90]{°C} ++(-0.5,0) node[anchor=south east]{$R_{th1}$}
+(T.right) -- ++(0,0.5)
+to[R=$R_{sens1}$, -o] ++(0,2)
+node[above]{$V_{bias}$}
+(T.right) ++(0,0.5) to[short, *-o] ++(1,0) node[above]{$v_1$}
+;
+\end{circuitikz}
+\end{document}

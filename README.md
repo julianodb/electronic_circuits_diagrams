@@ -46,7 +46,6 @@
 ![eight_leds_plus_control](eight_leds_plus_control.png "eight_leds_plus_control")
 
 ## cny70_circuit
-
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")
 
 ## cny70_cc
@@ -56,11 +55,9 @@
 ![cny70_ac](cny70_ac.png "cny70_ac")
 
 ## led_circuit
-
 ![led_circuit](led_circuit.png "led_circuit")
 
 ## led_driver
-
 ![led_driver](led_driver.png "led_driver")
 
 ## led_control
@@ -83,6 +80,9 @@
 
 ## ldr_ac
 ![ldr_ac](ldr_ac.png "ldr_ac")
+
+## flux_sensor_1
+![flux_sensor_1](flux_sensor_1.png "flux_sensor_1")
 
 ## reverse_diode_resistance
 ![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
