@@ -84,6 +84,9 @@
 ## flux_sensor_1
 ![flux_sensor_1](flux_sensor_1.png "flux_sensor_1")
 
+## flux_sensor_2
+![flux_sensor_2](flux_sensor_2.png "flux_sensor_2")
+
 ## reverse_diode_resistance
 ![reverse_diode_resistance](reverse_diode_resistance.png "reverse_diode_resistance")
 
