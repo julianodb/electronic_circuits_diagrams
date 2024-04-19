@@ -30,6 +30,9 @@
 ## battery_2diode_3R
 ![battery_2diode_3R](battery_2diode_3R.png "battery_2diode_3R")
 
+## battery_2diode_3R_with_currents
+![battery_2diode_3R_with_currents](battery_2diode_3R_with_currents.png "battery_2diode_3R_with_currents")
+
 ## resistance_led
 ![resistance_led](resistance_led.png "resistance_led")
 
