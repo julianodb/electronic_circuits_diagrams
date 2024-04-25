@@ -138,10 +138,10 @@
 ## common_emitter_base_polarized_no_ce
 ![common_emitter_base_polarized_no_ce](common_emitter_base_polarized_no_ce.png "common_emitter_base_polarized_no_ce")
 
-## common_emitter_base_polarized_no_ce_isource
+## common_emitter_base_polarized_isource
 ![common_emitter_base_polarized_no_ce_isource](common_emitter_base_polarized_no_ce_isource.png "common_emitter_base_polarized_no_ce_isource")
 
-## common_emitter_base_polarized_no_ce_isource_rl
+## common_emitter_base_polarized_isource_rl
 ![common_emitter_base_polarized_no_ce_isource_rl](common_emitter_base_polarized_no_ce_isource_rl.png "common_emitter_base_polarized_no_ce_isource_rl")
 
 ## common_emitter_lab8
