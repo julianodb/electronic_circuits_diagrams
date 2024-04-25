@@ -300,6 +300,9 @@
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
+## active_low_pass
+![active_low_pass](active_low_pass.png "active_low_pass")
+
 ## sallen_key_low_2
 ![sallen_key_low_2](sallen_key_low_2.png "sallen_key_low_2")
 

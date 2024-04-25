@@ -1,0 +1,19 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[above]{$v_i$}
+to[short, o-] ++(0.5,0)
+to[R=$R$, -*] ++(2,0) coordinate(R2) node[above]{$v_1$}
+--++(1,0)
+node[op amp, anchor=+, noinv input up](OPAMP){}
+(R2) to[C=$C$] ++(0,-2) node[ground]{}
+(OPAMP.out) coordinate(VO)
+to[short, *-] ++(0,-1.5)
+-| (OPAMP.-)
+(VO)
+to[short, -o] ++(1,0) node[above]{$promedio$}
+;
+\end{circuitikz}
+\end{document}
