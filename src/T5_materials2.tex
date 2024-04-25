@@ -1,0 +1,19 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(6,3) node[op amp, anchor=-](OA){}
+(OA.up)  node[vcc]{+5V}
+(OA.down) node[vee]{-5V}
+(3,1) to[R=$R_1$] ++(2,0)
+(3,2) to[R=$R_2$] ++(2,0)
+(3,3) to[R=$R_3$] ++(2,0)
+(3,4) to[R=$R_4$] ++(2,0)
+(2,1) node[ground]{}
+(0,1) node[above]{$v_{i}$} to[short, o-] ++(1,0)
+(0,2) node[above]{$promedio$} to[short, o-] ++(1,0)
+(0,3) to[short, -o] ++(1,0) node[above]{$v_{o}$}
+;
+\end{circuitikz}
+\end{document}
