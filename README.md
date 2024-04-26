@@ -264,6 +264,9 @@
 ## common_emitter_rb_small_signal
 ![common_emitter_rb_small_signal](common_emitter_rb_small_signal.png "common_emitter_rb_small_signal")
 
+## common_emitter_rb_small_signal_with_rl
+![common_emitter_rb_small_signal_with_rl](common_emitter_rb_small_signal_with_rl.png "common_emitter_rb_small_signal_with_rl")
+
 ## common_emitter_with_re_small_signal
 ![common_emitter_with_re_small_signal](common_emitter_with_re_small_signal.png "common_emitter_with_re_small_signal")
 
