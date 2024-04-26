@@ -261,6 +261,9 @@
 ## amplifier_thevenin_rl
 ![amplifier_thevenin_rl](amplifier_thevenin_rl.png "amplifier_thevenin_rl")
 
+## amplifier_thevenin_rl_rs
+![amplifier_thevenin_rl_rs](amplifier_thevenin_rl_rs.png "amplifier_thevenin_rl_rs")
+
 ## common_emitter_small_signal
 ![common_emitter_small_signal](common_emitter_small_signal.png "common_emitter_small_signal")
 
