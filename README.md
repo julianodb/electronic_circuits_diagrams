@@ -258,6 +258,9 @@
 ## common_emitter_thevenin
 ![common_emitter_thevenin](common_emitter_thevenin.png "common_emitter_thevenin")
 
+## amplifier_thevenin_rl
+![amplifier_thevenin_rl](amplifier_thevenin_rl.png "amplifier_thevenin_rl")
+
 ## common_emitter_small_signal
 ![common_emitter_small_signal](common_emitter_small_signal.png "common_emitter_small_signal")
 
