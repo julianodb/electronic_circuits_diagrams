@@ -1,0 +1,14 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0)
+node[op amp, noinv input up, anchor=+](OA){}
+(OA.+) -- ++(-1,0) node[above]{$V_+$} 
+(OA.-) -- ++(-1,0) node[above]{$V_-$} 
+(OA.up) -- ++(0,0.5) node[vcc](VCC){$V_{CC}$}
+(OA.down) -- ++(0,-0.5) node[vee](GND){$V_{EE}$}
+(OA.out) -- ++(1,0) node[above]{$V_o$}
+;
+\end{circuitikz}
+\end{document}

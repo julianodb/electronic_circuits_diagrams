@@ -339,6 +339,9 @@
 ## RC_common_emitter_double
 ![RC_common_emitter_double](RC_common_emitter_double.png "RC_common_emitter_double")
 
+## opamp
+![opamp](opamp.png "opamp")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 
