@@ -342,6 +342,9 @@
 ## opamp
 ![opamp](opamp.png "opamp")
 
+## integrator
+![integrator](integrator.png "integrator")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 
