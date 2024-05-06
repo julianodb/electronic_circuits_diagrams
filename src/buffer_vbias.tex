@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[above]{$V_{bias\_weak}$}
+to[short, o-] ++(0.5,0)
+node[op amp, anchor=+, noinv input up](OPAMP){}
+(OPAMP.out) coordinate(VO)
+to[short, *-] ++(0,-1.5)
+-| (OPAMP.-)
+(VO)
+to[short, -o] ++(1,0) node[above]{$V_{bias}$}
+;
+\end{circuitikz}
+\end{document}

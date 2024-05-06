@@ -342,6 +342,9 @@
 ## opamp
 ![opamp](opamp.png "opamp")
 
+## buffer_vbias
+![buffer_vbias](buffer_vbias.png "buffer_vbias")
+
 ## integrator
 ![integrator](integrator.png "integrator")
 
