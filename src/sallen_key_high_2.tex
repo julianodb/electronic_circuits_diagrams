@@ -9,7 +9,7 @@ to[C=$C_1$] ++(2,0) coordinate(R1)
 to[C=$C_2$, *-*] ++(2,0) coordinate(R2)
 --++(1,0)
 node[op amp, anchor=+, noinv input up](OPAMP){}
-(R2) to[R=$R_2$] ++(0,-2) node[ground]{}
+(R2) to[R=$R_2$, -o] ++(0,-2) node[below]{$V_{bias}$}
 (OPAMP.out) coordinate(VO)
 to[short, *-] ++(0,-1.5)
 -| (OPAMP.-)
