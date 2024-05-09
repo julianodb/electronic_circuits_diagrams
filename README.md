@@ -327,6 +327,9 @@
 ## sallen_key_low_2_with_gain
 ![sallen_key_low_2_with_gain](sallen_key_low_2_with_gain.png "sallen_key_low_2_with_gain")
 
+## sallen_key_low_2_samevalues
+![sallen_key_low_2_samevalues](sallen_key_low_2_samevalues.png "sallen_key_low_2_samevalues")
+
 ## sallen_key_bandpass
 ![sallen_key_bandpass](sallen_key_bandpass.png "sallen_key_bandpass")
 
