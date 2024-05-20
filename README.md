@@ -318,6 +318,9 @@
 ## avl
 ![avl](avl.png "avl")
 
+## avr
+![avr](avr.png "avr")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
