@@ -10,14 +10,14 @@
 (2,0) coordinate(FB) --++(1,0)
 node[op amp, noinv input up, anchor=+](OA2){OA2}
 (FB) --++(0,1.5) coordinate(R2)
-to[R=$R_9$] (R2 -| OA2.out) -- (OA2.out)
+to[R=$R_{m2}$] (R2 -| OA2.out) -- (OA2.out)
 to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$}
-(FB) to[R=$R_8$, *-] ++(0,-2) node[ground]{}
+(FB) to[R=$R_{m1}$, *-] ++(0,-2) node[ground]{}
 (OA2.-) -- ++(0,-2) coordinate(OA1M)
-to[R=$R_{10}$, *-] (OA1M -| OA2.out)
+to[R=$R_{m3}$, *-] (OA1M -| OA2.out)
 -- (OA2.out)
 (OA1M) coordinate(CD)
-to[cC=$C_4$] ++(0,-2) node[ground]{}
+to[C=$C_{m1}$] ++(0,-2) node[ground]{}
 (CD) --++(-1,0)
 to[Do, l_=$D_3$, invert] ++(0,-2) node[ground]{}
 (OA2.up) node[vcc]{$+V_{bias}$}
