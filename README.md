@@ -378,6 +378,9 @@
 ## monostable_multivibrator_c
 ![monostable_multivibrator_c](monostable_multivibrator_c.png "monostable_multivibrator_c")
 
+## trigger
+![trigger](trigger.png "trigger")
+
 ## half_voltage_divider
 ![half_voltage_divider](half_voltage_divider.png "half_voltage_divider")
 
