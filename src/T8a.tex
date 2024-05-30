@@ -22,8 +22,10 @@ node[vee]{-5V}
 node[above]{RESET}
 -- ++(1,0) coordinate(RESET)
 |- ++(0.5,2) node[right]{peak detector reset}
+++ (0, -0.5) rectangle ++(3.1,1)
 (RESET) to[short, *-] ++(0.5,0) node[right]{TRIGGER}
+++ (0, -0.5) rectangle ++(2,1)
 (RESET) |- ++(0.5,-2) node[right]{integrador reset}
-;
+++ (0, -0.5) rectangle ++(2.6,1)
 \end{circuitikz}
 \end{document}
