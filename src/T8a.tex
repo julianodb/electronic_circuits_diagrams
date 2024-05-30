@@ -1,0 +1,25 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) node[npn](Q1){$Q_1$}
+(Q1.E) node[vee]{-5V}
+(Q1.B) to[R, l_=$R_{16}$] ++(-2,0) 
+to[Do=$D_4$, invert, -*] ++(-2,0) coordinate(A2)
+to[C, l_=$C_3$, -*] ++(-2,0) coordinate(A1)
+to[push button] ++ (0,2)
+node[vcc]{+5V}
+(A1) to[R, l_=$R_{13}$] ++(0,-2)
+node[vee]{-5V}
+(A2) to[R, l_=$R_{14}$] ++(0,-2)
+node[vee]{-5V}
+(Q1.B) to[R, l_=$R_{17}$, *-] ++(0,-2)
+node[vee]{-5V}
+
+(Q1.C) to[R=$R_{18}$] ++(0,2) node[vcc]{+5V}
+(Q1.C) to[inline invschmitt, a=U1, *-o] ++(2.5,0)
+node[anchor= south west]{RESET}
+;
+\end{circuitikz}
+\end{document}

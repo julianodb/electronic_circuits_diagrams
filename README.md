@@ -210,6 +210,9 @@
 ## T7b
 ![T7b](T7b.png "T7b")
 
+## T8a
+![T8a](T8a.png "T8a")
+
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png "full_bridge_rectifier")
 
