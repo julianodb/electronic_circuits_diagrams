@@ -19,7 +19,11 @@ node[vee]{-5V}
 
 (Q1.C) to[R=$R_{18}$] ++(0,2) node[vcc]{+5V}
 (Q1.C) to[inline invschmitt, a=U1, *-o] ++(2.5,0)
-node[anchor= south west]{RESET}
+node[above]{RESET}
+-- ++(1,0) coordinate(RESET)
+|- ++(0.5,2) node[right]{peak detector reset}
+(RESET) to[short, *-] ++(0.5,0) node[right]{TRIGGER}
+(RESET) |- ++(0.5,-2) node[right]{integrador reset}
 ;
 \end{circuitikz}
 \end{document}
