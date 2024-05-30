@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[above]{$v_1$} to[R=$R_{DA1}$, o-*] ++(2,0) coordinate(RDA1)
+-- ++(1,0) node[op amp, noinv input up, anchor=+](OA1){}
+(RDA1) to[R, l_=$R_{DA2}$] ++(0,-2) node[ground]{}
+
+(OA1.-) -- ++(0,-2.5) coordinate(RG1)
+to[R=$R_{DA3}$, *-o] ++(-2,0) node[above]{$v_2$}
+(RG1) to[R, l_=$R_{DA4}$] (RG1 -| OA1.out)
+-- (OA1.out) 
+to[short, *-o] ++(1,0) node[above]{$v_o$}
+;
+\end{circuitikz}
+\end{document}

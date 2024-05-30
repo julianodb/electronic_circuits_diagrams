@@ -165,6 +165,9 @@
 ## amplifier_inverting
 ![amplifier_inverting](amplifier_inverting.png "amplifier_inverting")
 
+## difference_amplifier
+![difference_amplifier](difference_amplifier.png "difference_amplifier")
+
 ## instrumentation_amplifier
 ![instrumentation_amplifier](instrumentation_amplifier.png "instrumentation_amplifier")
 
