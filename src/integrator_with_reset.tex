@@ -18,7 +18,9 @@ to[short, -o] ++(1,0) node[above]{$v_o$}
 to[inline double tgate, name=TG] ++(-2,0)
 to[R, l_=$R_{reset}$] (T -| R) 
 to[short, -*] ++ (0,-1.5)
-(TG.bgate) to[short, -o] ++(0,1) node[above]{RESET}
+(TG.bgate) to[short, -o] ++(0,1) node[above]{CONTROL}
+(TG.in) node[anchor=south]{in}
+(TG.out) node[anchor=south]{out\ \ \ }
 ;
 \end{circuitikz}
 \end{document}
