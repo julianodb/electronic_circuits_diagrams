@@ -1,0 +1,24 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7, logic ports/scale=0.5}
+\draw (0,0) node[above]{$v_i$}
+to[short, o-] ++(0.5,0)
+to[R=$R$, -*] ++(2,0) coordinate(R)
+--++(1,0)
+node[op amp, anchor=-](OPAMP){}
+(OPAMP.out) coordinate(VO)
+to[short, *-] ++(0,1.5) coordinate(C)
+to[C, l_=$C$] (C -| R) -- (R)
+(VO)
+to[short, -o] ++(1,0) node[above]{$v_o$}
+(OPAMP.+) node[ground]{}
+(C) to[short, *-] ++(0,1.5) coordinate(T)
+to[inline double tgate, name=TG] ++(-2,0)
+to[R, l_=$R_{reset}$] (T -| R) 
+to[short, -*] ++ (0,-1.5)
+(TG.bgate) to[short, -o] ++(0,1) node[above]{RESET}
+;
+\end{circuitikz}
+\end{document}

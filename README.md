@@ -372,6 +372,9 @@
 ## integrator
 ![integrator](integrator.png "integrator")
 
+## integrator_with_reset
+![integrator_with_reset](integrator_with_reset.png "integrator_with_reset")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 
