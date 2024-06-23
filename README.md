@@ -426,5 +426,8 @@
 ## buck_converter
 ![buck_converter](buck_converter.png "buck_converter")
 
+## buck_boost_converter
+![buck_boost_converter](buck_boost_converter.png "buck_boost_converter")
+
 ## v_i_square_wave
 ![v_i_square_wave](v_i_square_wave.png "v_i_square_wave")
