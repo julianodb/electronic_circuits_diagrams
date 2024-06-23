@@ -420,5 +420,8 @@
 ## ldo
 ![ldo](ldo.png "ldo")
 
+## boost_converter
+![boost_converter](boost_converter.png "boost_converter")
+
 ## v_i_square_wave
 ![v_i_square_wave](v_i_square_wave.png "v_i_square_wave")

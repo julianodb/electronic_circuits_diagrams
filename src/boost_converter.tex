@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7, diodes/scale=0.8}
+\draw 
+(0,0) node[above]{$V_i$}
+to[L=$L$, o-*] ++(2,0) coordinate(L)
+to[spst, l_=$duty\ D$] ++ (0,-2) node[ground]{}
+(L) to[Do] ++(2,0) coordinate(D)
+to[C=$C$, *-] ++(0,-2) node[ground]{}
+(D) -- ++(2,0) node[above]{$V_o$}
+to[generic=$R_L$, o-] ++(0,-2) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
