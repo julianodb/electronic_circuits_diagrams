@@ -423,5 +423,8 @@
 ## boost_converter
 ![boost_converter](boost_converter.png "boost_converter")
 
+## buck_converter
+![buck_converter](buck_converter.png "buck_converter")
+
 ## v_i_square_wave
 ![v_i_square_wave](v_i_square_wave.png "v_i_square_wave")
