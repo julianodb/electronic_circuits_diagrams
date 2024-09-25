@@ -1,5 +1,8 @@
 # electronic_circuits_diagrams
 
+## potentiometer_5V
+![potentiometer_5V](potentiometer_5V.png "potentiometer_5V")
+
 ## diode
 ![diode](diode.png "diode")
 
