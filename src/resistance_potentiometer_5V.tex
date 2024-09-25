@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) to[short, -o] ++(0.5,0) node[above]{$V_o$}
+(0,0)
+--++(-0.5,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot}$}
+(POT.right) node[ground]{}
+(POT.left) to[R=$R_{21}$] ++(0,2)
+node[vcc]{+5V}
+;
+\end{circuitikz}
+\end{document}

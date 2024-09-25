@@ -3,6 +3,9 @@
 ## potentiometer_5V
 ![potentiometer_5V](potentiometer_5V.png "potentiometer_5V")
 
+## resistance_potentiometer_5V
+![resistance_potentiometer_5V](resistance_potentiometer_5V.png "resistance_potentiometer_5V")
+
 ## diode
 ![diode](diode.png "diode")
 
