@@ -7,10 +7,9 @@
 (0,0)
 --++(-0.5,0)
 node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
-(POT.270) node[left]{$R_{pot2}$}
-(POT.right) node[ground]{}
-(POT.left) to[R=$R_{22}$] ++(0,2)
-node[vcc]{+5V}
+(POT.270) node[left]{$R_{pot3}$}
+(POT.right) to[R=$R_{23}$] ++(0,-2) node[ground]{}
+(POT.left) node[vcc]{+2.5V}
 ;
 \end{circuitikz}
 \end{document}
