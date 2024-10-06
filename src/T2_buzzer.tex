@@ -1,0 +1,13 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[npn](Q1){$Q_3$}
+(Q1.E) node[ground](GND){}
+(Q1.C) to[buzzer] ++(0,2) node[vcc]{+5V}
+(Q1.B) to[R=$R_{21}$, -o] ++(-2,0) node[above]{$V_U$}
+(0.5,0)
+;
+\end{circuitikz}
+\end{document}

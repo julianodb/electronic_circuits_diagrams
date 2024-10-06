@@ -189,6 +189,9 @@
 ## instrumentation_amplifier_plus_npn_with_annotations
 ![instrumentation_amplifier_plus_npn_with_annotations](instrumentation_amplifier_plus_npn_with_annotations.png "instrumentation_amplifier_plus_npn_with_annotations")
 
+## T2_buzzer
+![T2_buzzer](T2_buzzer.png "T2_buzzer")
+
 ## T3a
 ![T3a](T3a.png "T3a")
 
