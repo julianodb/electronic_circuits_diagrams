@@ -1,5 +1,37 @@
 \documentclass[convert]{standalone}
 \usepackage[RPvoltages]{circuitikz}
+
+\makeatletter
+
+\ctikzset{bipoles/buzzer/height/.initial=0.6}%
+\ctikzset{bipoles/buzzer/depth/.initial=.1}%
+\ctikzset{bipoles/buzzer/width/.initial=.4}%
+%
+\pgfcircdeclarebipolescaled{misc}
+{}
+{\ctikzvalof{bipoles/buzzer/depth}}
+{buzzer}
+{\ctikzvalof{bipoles/buzzer/height}}
+{\ctikzvalof{bipoles/buzzer/width}}{%
+    \pgfscope
+        \pgf@circ@setlinewidth{bipoles}{\pgfstartlinewidth}
+        \pgfpathmoveto{\pgfpoint{\pgf@circ@res@left}{0.4\pgf@circ@res@up}}
+        \pgfpathlineto{\pgfpoint{\pgf@circ@res@right}{0.4\pgf@circ@res@up}}
+        \pgfpatharc{0}{180}{\pgf@circ@res@right}
+        \pgf@circ@draworfill
+    \endpgfscope
+    \pgfpathmoveto{\pgfpoint{.6\pgf@circ@res@left}{.4\pgf@circ@res@up}}
+    \pgfpathlineto{\pgfpoint{.6\pgf@circ@res@left}{0pt}}
+    \pgfpathlineto{\pgfpoint{\pgf@circ@res@left}{0pt}}
+    \pgfpathmoveto{\pgfpoint{.6\pgf@circ@res@right}{.4\pgf@circ@res@up}}
+    \pgfpathlineto{\pgfpoint{.6\pgf@circ@res@right}{0pt}}
+    \pgfpathlineto{\pgfpoint{\pgf@circ@res@right}{0pt}}
+    \pgfusepath{draw}
+}
+\pgfcirc@activate@bipole@simple{l}{buzzer}
+
+\makeatother
+
 \begin{document}
 \begin{circuitikz}
 \draw
