@@ -213,6 +213,9 @@
 ## T2_G
 ![T2_G](T2_G.png "T2_G")
 
+## T2_latch
+![T2_latch](T2_latch.png "T2_latch")
+
 ## T3a
 ![T3a](T3a.png "T3a")
 
