@@ -1,0 +1,24 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[above]{$V_B$}
+to[R=$4.3\ k\Omega$, o-] ++(2,0)
+node[npn, anchor=B](QA){$Q_B$}
+(QA.E) node[ground]{}
+(QA.C) to[R=$R_{14}$, *-] ++(0,2) node[vcc]{+5V}
+(QA.C) --++(1,0)
+node[npn, anchor=B](Q1){$Q_2$}
+
+(Q1.C) to[leDo, invert] ++(0,2)
+to[R=$R_{12}$] ++(0,2) node[vcc]{+5V}
+(Q1.E) --++(0,-1.5)
+node[npn, anchor=C](QB){$Q_A$}
+(QB.E) node[ground]{}
+(QB.B) to[R, l_=$4.3\ k\Omega$, -o] ++(-2,0) node[above]{$V_A$}
+
+(QB.C) ++(1,0)
+;
+\end{circuitikz}
+\end{document}

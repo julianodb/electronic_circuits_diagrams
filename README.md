@@ -192,6 +192,27 @@
 ## T2_buzzer
 ![T2_buzzer](T2_buzzer.png "T2_buzzer")
 
+## T2_A
+![T2_A](T2_A.png "T2_A")
+
+## T2_B
+![T2_B](T2_B.png "T2_B")
+
+## T2_C
+![T2_C](T2_C.png "T2_C")
+
+## T2_D
+![T2_D](T2_D.png "T2_D")
+
+## T2_E
+![T2_E](T2_E.png "T2_E")
+
+## T2_F
+![T2_F](T2_F.png "T2_F")
+
+## T2_G
+![T2_G](T2_G.png "T2_G")
+
 ## T3a
 ![T3a](T3a.png "T3a")
 
