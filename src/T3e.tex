@@ -6,9 +6,9 @@
 (0,0) node[npn](Q1){$Q_6$}
 (Q1.C) to[R=$R_{16}$] ++(0,2) node[vcc]{+5V}
 (Q1.E) node[ground]{}
-(Q1.B) to[R=$R_{15}$] ++(-2,0) 
+(Q1.B) to[R, l_=$R_{15}$] ++(-2,0) 
 to[Do, invert] ++(-2,0) coordinate(A2)
-to[C=$C_5$, -o] ++(-2,0) coordinate(A1)
+to[C, l_=$C_5$, -o] ++(-2,0) coordinate(A1)
 node[above]{$V_{in}$}
 (A2) to[R, l_=$R_{13}$] ++(0,-2)
 node[ground]{}
