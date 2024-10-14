@@ -444,6 +444,9 @@
 ## RC_lowpass
 ![RC_lowpass](RC_lowpass.png "RC_lowpass")
 
+## RC_highpass
+![RC_highpass](RC_highpass.png "RC_highpass")
+
 ## pulse_generator
 ![pulse_generator](pulse_generator.png "pulse_generator")
 
