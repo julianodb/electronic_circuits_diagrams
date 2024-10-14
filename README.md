@@ -231,6 +231,9 @@
 ## T3c
 ![T3c](T3c.png "T3c")
 
+## T3d
+![T3d](T3d.png "T3d")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
