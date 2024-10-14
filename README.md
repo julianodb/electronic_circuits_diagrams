@@ -219,6 +219,9 @@
 ## T3_latch_b
 ![T3_latch_b](T3_latch_b.png "T3_latch_b")
 
+## T3_t_flip_flop
+![T3_t_flip_flop](T3_t_flip_flop.png "T3_t_flip_flop")
+
 ## T3a
 ![T3a](T3a.png "T3a")
 
