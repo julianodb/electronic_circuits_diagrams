@@ -45,6 +45,9 @@
 ## battery_diode_zener_2R
 ![battery_diode_zener_2R](battery_diode_zener_2R.png "battery_diode_zener_2R")
 
+## battery_diode_zener_3R
+![battery_diode_zener_3R](battery_diode_zener_3R.png "battery_diode_zener_3R")
+
 ## resistance_led
 ![resistance_led](resistance_led.png "resistance_led")
 
