@@ -491,3 +491,6 @@
 
 ## v_i_square_wave
 ![v_i_square_wave](v_i_square_wave.png "v_i_square_wave")
+
+## motor
+![motor](motor.png "motor")

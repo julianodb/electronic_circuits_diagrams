@@ -1,0 +1,18 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) node[elmech](m){M}
+(m.bottom) -- ++(0,-0.5)
+to[R=$R_1$, a=$1\ \Omega$, -*] ++(0,-2) node[ground]{}
+-- ++(-2,0)
+to[american voltage source, l=$V_{CC}$] ++(0,5)
+to[nos] ++(2,0)
+-- (m.top)
+
+(m.bottom) ++(0,-0.5) to[short, *-o] ++(1,0) node[above]{A}
+(m.top) ++(0,0.5) to[short, *-o] ++(1,0) node[above]{B}
+;
+\end{circuitikz}
+\end{document}
