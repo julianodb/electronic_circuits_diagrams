@@ -4,11 +4,11 @@
 \begin{circuitikz}
 \draw (0,0) node[ground](GND){}
 to[american voltage source, l=$V_{CC}$] (0,2)
-to[R=$R_1$,v^=$V_{R_1}$, -*] ++(2,0) 
+to[R, l_=$R_1$,v^=$V_{R_1}$, -*] ++(2,0) 
 to[R=$R_2$,v=$V_{R_2}$] ++(0,-2) 
 to[Do,l_=$D_1$, v^=$V_{D_1}$, *-*] (0,0)
 (2,2) -- ++(2,0)
-to[zzDo, l=$D_Z$,v^=$V_{D_Z}$, invert] ++(0,-2)
+to[zzDo, l_=$D_Z$,v^=$V_{D_Z}$, invert] ++(0,-2)
 -- (2,0)
 ;
 \draw[color=blue]
