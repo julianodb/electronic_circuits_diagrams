@@ -334,7 +334,10 @@
 ![two_diode_3R_with_currents](two_diode_3R_with_currents.png "two_diode_3R_with_currents")
 
 ## common_emitter_thevenin
-![common_emitter_thevenin](common_emitter_thevenin.png "common_emitter_thevenin")
+![common_emitter_thevenin](common_emitter_thevenin.png "common_emitter_thevenin")2
+
+## common_emitter_thevenin_no_re
+![common_emitter_thevenin_no_re](common_emitter_thevenin_no_re.png "common_emitter_thevenin_no_re")
 
 ## amplifier_thevenin_rl
 ![amplifier_thevenin_rl](amplifier_thevenin_rl.png "amplifier_thevenin_rl")
