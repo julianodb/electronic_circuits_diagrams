@@ -1,0 +1,44 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) 
+node[op amp](OA){CMP.A}
+(OA.down) ++(0,-0.5) node[below]{LM393LVDR}
+(OA.out) to[R=$R_{13}$, *-] ++(0,2) node[vcc]{+5V}
+(OA.out) --++(0.5,0)
+node[npn, anchor=B](Q1){$Q_1$}
+(Q1.C) --++(1,0) coordinate(COM)
+to[leDo, invert, *-] ++(0,2)
+to[R=$R_{12}$] ++(0,2) node[vcc]{+5V}
+(Q1.E) node[ground]{}
+
+(COM) --++(1,0)
+node[op amp, anchor=out, xscale=-1](OA2){\ctikzflipx{CMP.B}}
+(OA2.down) ++(0,-0.5) node[below]{LM393LVDR}
+
+(OA.-) ++(-1,1.7) 
+
+node[above]{$V_{TEMP}$} 
+to[short, o-] ++(0.5,0)
+
+ ++(0,-2)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[above, rotate=90]{ajuste temp. alta}
+(POT.left) node[vcc]{+5V}
+(POT.right) node[ground]{}
+
+(OA2.-) ++(1,1.7)
+
+node[above]{$V_{TEMP}$} 
+to[short, o-] ++(-0.5,0)
+
+++(0.5,-2.5)
+node[potentiometershape, rotate=90,  anchor=left](POT2){} 
+(POT2.270) node[above, rotate=270]{ajuste temp. baja}
+(POT2.right) node[vcc]{+5V}
+(POT2.left) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
