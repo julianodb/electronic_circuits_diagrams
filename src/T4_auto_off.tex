@@ -1,0 +1,35 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[npn](Q5){$Q_5$}
+(Q5.E) node[ground]{}
+(Q5.C) to[R, l_=$R_{25}$, *-] ++(0,2) node[vcc]{+3V}
+(Q5.B) to[R=$R_{27}$] ++(-2,0) coordinate(Q5B)
+
+++(-3,0)
+
+node[npn, xscale=-1, anchor=B](Q4){\ctikzflipx{$Q_4$}}
+(Q4.E) node[ground]{}
+(Q4.C) to[R=$R_{24}$, *-] ++(0,2) node[vcc]{+3V}
+(Q4.B) to[R, l_=$R_{26}$] ++(2,0) coordinate(Q4B)
+
+(Q5B) -- (Q4B |- Q4.C) -- (Q4.C)
+(Q4B) -- (Q5B |- Q5.C) -- (Q5.C)
+
+(Q5.C) ++(-1,0) to[short, *-] ++(0,2.5) coordinate(switch5)
+(Q4.C) ++(1,0) to[short, *-] ++(0,2.5) 
+to[R=$R_{28}$, -*] ++(2,0)
+to[C=$C_{8}$] ++(0,-1.5) node[ground]{}
+++(0,1.5)
+to[push button, l=ON/OFF] (switch5)
+
+(Q5.C) to[short, -o] ++(2,0) node[above]{$V_{ON}$}
+
+++(-1,0)
+to[short, *-] ++(0,-1)
+node[op amp, anchor=out, xscale=-1](OA){\ctikzflipx{CMP.D}}
+;
+\end{circuitikz}
+\end{document}
