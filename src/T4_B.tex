@@ -8,7 +8,9 @@ node[op amp](OA){CMP.B}
 (OA.down) ++(0,-0.5) node[below]{LM393LVDR}
 (OA.out) to[R=$R_{13}$, *-] ++(0,2) node[vcc]{+5V}
 (OA.out) --++(1,0)
-node[npn, anchor=B](Q1){$Q_1$}
+node[npn, anchor=B](Q1){$Q_2$}
+
+(Q1.E) ++(0.5,0)
 
 (OA.-) ++(-1,3) 
 
