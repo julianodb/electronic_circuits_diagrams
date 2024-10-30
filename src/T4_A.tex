@@ -1,0 +1,21 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) 
+node[op amp](OA){COMP1}
+(OA.down) ++(0,-0.5) node[below]{LM393LVDR}
+(OA.out) to[R=$R_{13}$, *-] ++(0,2) node[vcc]{+5V}
+(OA.out) --++(1,0)
+node[npn, anchor=B](Q1){$Q_1$}
+
+(Q1.C) to[leDo, invert] ++(0,2)
+to[R=$R_{12}$] ++(0,2) node[vcc]{+5V}
+(Q1.E) --++(0,-2)
+node[op amp, anchor=out](OA2){COMP2}
+(OA2.down) ++(0,-0.5) node[below]{LM393LVDR}
+
+;
+\end{circuitikz}
+\end{document}
