@@ -243,6 +243,9 @@
 ## T4_C
 ![T4_C](T4_C.png "T4_C")
 
+## T4_D
+![T4_D](T4_D.png "T4_D")
+
 ## T2_latch
 ![T2_latch](T2_latch.png "T2_latch")
 
