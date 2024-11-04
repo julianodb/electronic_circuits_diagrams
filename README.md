@@ -542,3 +542,6 @@
 
 ## motor_mosfet
 ![motor_mosfet](motor_mosfet.png "motor_mosfet")
+
+## motor_mosfet_diode
+![motor_mosfet_diode](motor_mosfet_diode.png "motor_mosfet_diode")
