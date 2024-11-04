@@ -545,3 +545,6 @@
 
 ## motor_mosfet_diode
 ![motor_mosfet_diode](motor_mosfet_diode.png "motor_mosfet_diode")
+
+## motor_gen_func
+![motor_gen_func](motor_gen_func.png "motor_gen_func")

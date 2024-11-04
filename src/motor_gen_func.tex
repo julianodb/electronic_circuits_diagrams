@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{diodes/scale=0.5}
+\draw 
+(0,0) node[elmech](m){M}
+(m.top) to[short,-*] ++(0,0.5) node[vcc]{$V_{CC}$} coordinate(top)
+(m.bottom) node[nmos, anchor=D](n){IRF540} 
+(m.bottom) ++(0,-0.25) to[short, *-o] ++(1.5,0) node[above]{A}
+++(-0.5,0) to[Do, *-] ++(0,1.5) |- (top)
+(n.S) node[ground]{}
+(n.G) --++(-1,0) 
+to[sV, l=gen func] ++(0,-2) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
