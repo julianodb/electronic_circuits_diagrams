@@ -477,6 +477,9 @@
 ## integrator_with_reset
 ![integrator_with_reset](integrator_with_reset.png "integrator_with_reset")
 
+## differentiator
+![differentiator](differentiator.png "differentiator")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 
