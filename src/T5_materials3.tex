@@ -1,0 +1,19 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(6,3) node[op amp, anchor=-](OA){}
+(OA.up)  node[vcc]{+5V}
+(OA.down) node[ground]{}
+(3,1) to[R=$R_1$] ++(2,0)
+(3,2) to[R=$R_2$] ++(2,0)
+(3,3) to[R=$R_3$] ++(2,0)
+(3,4) to[R=$R_4$] ++(2,0)
+(2,1) node[ground]{}
+(0,1) node[above]{$V_{out}$} to[short, o-] ++(1,0)
+(0.5,2) node[vcc]{+5V}
+(0,4) to[short, -o] ++(1,0) node[above]{$V_{temperatura}$}
+;
+\end{circuitikz}
+\end{document}
