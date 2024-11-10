@@ -435,6 +435,9 @@
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
+## active_high_pass2
+![active_high_pass2](active_high_pass2.png "active_high_pass2")
+
 ## active_low_pass
 ![active_low_pass](active_low_pass.png "active_low_pass")
 
