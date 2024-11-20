@@ -438,6 +438,9 @@
 ## avl2
 ![avl2](avl2.png "avl2")
 
+## avl2_annotated
+![avl2_annotated](avl2_annotated.png "avl2_annotated")
+
 ## avr
 ![avr](avr.png "avr")
 
