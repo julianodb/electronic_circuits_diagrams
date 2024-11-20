@@ -480,6 +480,9 @@
 ## mfb_low_pass
 ![mfb_low_pass](mfb_low_pass.png "mfb_low_pass")
 
+## mfb_low_pass_annotated
+![mfb_low_pass_annotated](mfb_low_pass_annotated.png "mfb_low_pass_annotated")
+
 ## RC_common_emitter_input
 ![RC_common_emitter_input](RC_common_emitter_input.png "RC_common_emitter_input")
 
