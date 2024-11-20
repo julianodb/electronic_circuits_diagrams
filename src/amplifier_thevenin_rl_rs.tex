@@ -5,14 +5,14 @@
 \draw 
 (0,-2) node[ground]{}
 to[american voltage source, l_=$v_S$] ++(0,2)
-to[R=$R_S$] ++(2,0) node[above]{$v_{i_{AC}}$}
+to[R=$R_S$] ++(2,0) node[above]{$v_{i}$}
 to[short, *-] ++(1.5,0)
 to[R=$Z_i$] ++(0,-2) node[ground]{}
 
 (5,-2) node[ground]{}
-to[american voltage source, l_=$A_{V_{NL}}*v_{i_{AC}}$] ++(0,2)
+to[american voltage source, l_=$A_{V_{NL}}*v_{i}$] ++(0,2)
 to[R=$Z_o$] ++(2,0)
--- ++(1,0) node[above]{$v_{o_{AC}}$}
+-- ++(1,0) node[above]{$v_{o}$}
 to[R=$R_L$] ++(0,-2) node[ground]{}
 ;
 \draw[dashed]
