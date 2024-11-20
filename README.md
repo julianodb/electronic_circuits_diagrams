@@ -381,6 +381,9 @@
 ## amplifier_thevenin_rs_rl_double_black_box
 ![amplifier_thevenin_rs_rl_double_black_box](amplifier_thevenin_rs_rl_double_black_box.png "amplifier_thevenin_rs_rl_double_black_box")
 
+## amplifier_thevenin_rs_rl_double_black_box2
+![amplifier_thevenin_rs_rl_double_black_box2](amplifier_thevenin_rs_rl_double_black_box2.png "amplifier_thevenin_rs_rl_double_black_box2")
+
 ## amplifier_thevenin_rl_rs
 ![amplifier_thevenin_rl_rs](amplifier_thevenin_rl_rs.png "amplifier_thevenin_rl_rs")
 
