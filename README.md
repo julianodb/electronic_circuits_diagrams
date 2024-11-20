@@ -468,6 +468,9 @@
 ## sallen_key_high_2_with_gain
 ![sallen_key_high_2_with_gain](sallen_key_high_2_with_gain.png "sallen_key_high_2_with_gain")
 
+## mfb_low_pass
+![mfb_low_pass](mfb_low_pass.png "mfb_low_pass")
+
 ## RC_common_emitter_input
 ![RC_common_emitter_input](RC_common_emitter_input.png "RC_common_emitter_input")
 
