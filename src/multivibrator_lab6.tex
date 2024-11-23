@@ -8,7 +8,7 @@ node[op amp, noinv input up, anchor=+](OA2){CMP2}
 (OA2.+) ++(0.4,0) node[anchor=south east]{In 2 +}
 (FB) --++(0,2) coordinate(R2)
 to[R=$R_2$, a=$200k$] (R2 -| OA2.out) -- (OA2.out)
-to [short, *-] ++(1,0) coordinate(MMOUT) node[above]{Out 2}
+to [short, *-] ++(1,0) coordinate(MMOUT) node[anchor=north east]{Out 2}
 (FB) to[R, l_=$R_1$, a^=$200k$, *-] ++(0,-2) node[ground]{}
 (OA2.-) ++(0,-0.5) node[anchor=south east,rotate=90]{In 2 -}
 (OA2.-) -- ++(0,-2) coordinate(OA1M)
@@ -27,6 +27,7 @@ to[R=$R_4$, a=$470k$] ++(2,0) node[npn, anchor=B](Q1){Q1}
 (Q1.E) node[vee]{-12V}
 (Q1.C) to[leDo=VERDE, invert] ++(0,2)
 to[R=$R_5$, a=$2k$] ++(0,2) node[vcc]{+12V}
+(MMOUT) to[R=$R_6$, a=$2k$, *-] ++(0,2) node[vcc]{+12V}
 ;
 \end{circuitikz}
 \end{document}
