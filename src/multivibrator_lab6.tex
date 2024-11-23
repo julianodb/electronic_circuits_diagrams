@@ -3,12 +3,14 @@
 \begin{document}
 \begin{circuitikz}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
-\draw (0,0) coordinate(FB) --++(1,0)
-node[op amp, noinv input up, anchor=+](OA2){OA2}
+\draw (0,0) coordinate(FB) --++(1,0) 
+node[op amp, noinv input up, anchor=+](OA2){CMP2}
+(OA2.+) ++(0.4,0) node[anchor=south east]{In 2 +}
 (FB) --++(0,2) coordinate(R2)
 to[R=$R_2$, a=$200k$] (R2 -| OA2.out) -- (OA2.out)
-to [short, *-] ++(1,0) coordinate(MMOUT) node[above]{$v_o$}
+to [short, *-] ++(1,0) coordinate(MMOUT) node[above]{Out 2}
 (FB) to[R, l_=$R_1$, a^=$200k$, *-] ++(0,-2) node[ground]{}
+(OA2.-) ++(0,-0.5) node[anchor=south east,rotate=90]{In 2 -}
 (OA2.-) -- ++(0,-2) coordinate(OA1M)
 to[R=$R_{3}$, a=$200k$, *-] (OA1M -| OA2.out)
 -- (OA2.out)
