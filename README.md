@@ -549,6 +549,9 @@
 ## comparator
 ![comparator](comparator.png "comparator")
 
+## multivibrator_lab6
+![multivibrator_lab6](multivibrator_lab6.png "multivibrator_lab6")
+
 ## oscillator_wien
 ![oscillator_wien](oscillator_wien.png "oscillator_wien")
 
