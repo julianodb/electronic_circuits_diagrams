@@ -30,8 +30,8 @@ to[push button, l=ON/OFF] (switch5)
 ++(-1,0)
 to[short, *-] ++(0,-1)
 node[op amp, anchor=out, xscale=-1](OA){\ctikzflipx{CMP.D}}
-(OA.-) to[short,-o] ++(-0.5,0) node[above]{$V_{auto-apagado}$}
-(OA.+) to[short,-o] ++(-0.5,0) node[below]{$V_{REF}$}
+(OA.-) to[short,-o] ++(0.5,0) ++(0.1,0) node[above]{$V_{auto-apagado}$}
+(OA.+) to[short,-o] ++(0.5,0) node[below]{$V_{REF}$}
 ;
 \end{circuitikz}
 \end{document}
