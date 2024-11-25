@@ -360,6 +360,9 @@
 ## half_wave_rectifier_negative
 ![half_wave_rectifier_negative](half_wave_rectifier_negative.png "half_wave_rectifier_negative")
 
+## inverting_half_wave_rectifier
+![inverting_half_wave_rectifier](inverting_half_wave_rectifier.png "inverting_half_wave_rectifier")
+
 ## full_bridge_no_transformer_no_cap
 ![full_bridge_no_transformer_no_cap](full_bridge_no_transformer_no_cap.png "full_bridge_no_transformer_no_cap")
 
