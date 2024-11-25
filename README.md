@@ -291,9 +291,6 @@
 ## T4_auto_off
 ![T4_auto_off](T4_auto_off.png "T4_auto_off")
 
-## T6_auto_off
-![T6_auto_off](T6_auto_off.png "T6_auto_off")
-
 ## T5_materials
 ![T5_materials](T5_materials.png "T5_materials")
 
@@ -311,6 +308,12 @@
 
 ## T6b
 ![T6b](T6b.png "T6b")
+
+## T6_auto_off
+![T6_auto_off](T6_auto_off.png "T6_auto_off")
+
+## T6_integrator
+![T6_integrator](T6_integrator.png "T6_integrator")
 
 ## T7a
 ![T7a](T7a.png "T7a")

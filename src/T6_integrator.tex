@@ -1,0 +1,26 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0)  node[above]{$V_o$}
+--++(-0.5,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot3}$}
+(POT.right) to[R=$R_{23}$] ++(0,-2) node[ground]{}
+(POT.left) node[vcc]{+2.5V}
+
+(0,0)
+to[short, o-] ++(0.5,0)
+to[R=$R_{31}$, -*] ++(2,0) coordinate(R)
+--++(1,0)
+node[op amp, anchor=-](OPAMP){}
+(OPAMP.out) coordinate(VO)
+to[short, *-] ++(0,1.5) coordinate(C)
+to[C, l_=$C_7$] (C -| R) -- (R)
+(VO)
+to[short, -o] ++(1,0) node[above]{$V_{auto-apagado}$}
+(OPAMP.+) node[left]{+2.5 V}
+;
+\end{circuitikz}
+\end{document}
