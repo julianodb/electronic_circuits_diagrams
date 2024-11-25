@@ -198,6 +198,9 @@
 ## amplifier_inverting
 ![amplifier_inverting](amplifier_inverting.png "amplifier_inverting")
 
+## inverting_summing_amplifier
+![inverting_summing_amplifier](inverting_summing_amplifier.png "inverting_summing_amplifier")
+
 ## difference_amplifier
 ![difference_amplifier](difference_amplifier.png "difference_amplifier")
 
