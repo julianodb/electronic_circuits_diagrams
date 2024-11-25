@@ -291,6 +291,9 @@
 ## T4_auto_off
 ![T4_auto_off](T4_auto_off.png "T4_auto_off")
 
+## T6_auto_off
+![T6_auto_off](T6_auto_off.png "T6_auto_off")
+
 ## T5_materials
 ![T5_materials](T5_materials.png "T5_materials")
 
