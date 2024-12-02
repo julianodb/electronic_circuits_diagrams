@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[vcc]{+5V} to[R, l_=$R_3$, -*] ++(0,-2) coordinate(RDA1)
+-- ++(1,0) node[op amp, noinv input up, anchor=+](OA1){}
+(RDA1) to[R, l_=$R_4$] ++(0,-2) node[ground]{}
+
+(OA1.-) -- ++(0,-2.5) coordinate(RG1)
+to[R=$R_1$, *-o] ++(-2,0) node[above]{$V_{out}$}
+(RG1) to[R, l_=$R_{2}$] (RG1 -| OA1.out)
+-- (OA1.out) 
+to[short, *-o] ++(1,0) node[above]{$V_{temperatura}$}
+;
+\end{circuitikz}
+\end{document}
