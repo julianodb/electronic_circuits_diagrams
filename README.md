@@ -336,6 +336,9 @@
 ## T8_multivibrator
 ![T8_multivibrator](T8_multivibrator.png "T8_multivibrator")
 
+## T8_trigger1
+![T8_trigger1](T8_trigger1.png "T8_trigger1")
+
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png "full_bridge_rectifier")
 
