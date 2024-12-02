@@ -1,0 +1,36 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\usepackage{cancel}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) node[npn](Q1){$Q_6$}
+(Q1.C) to[R=$R_{16}$] ++(0,2) node[vcc]{+2.5V}
+(Q1.E) node[vee]{-2.5V}
+(Q1.B) to[R, l_=$R_{15}$] ++(-2,0) 
+to[Do, invert] ++(-2,0) coordinate(A2)
+to[C, l_=$C_5$, -*] ++(-2,0) coordinate(A1)
+node[op amp, anchor=out](OA){COMP.C}
+(OA.out) to[R=$R_{31}$] ++(0,2) node[vcc]{+2.5V}
+
+(A2) to[R, l_=$R_{29}$, *-] ++(0,-2)
+node[vee]{-2.5V}
+(Q1.B) to[R, l_=$R_{30}$, *-] ++(0,-2)
+node[vee]{-2.5V}
+(Q1.C) to[R=$R_{17}$, *-] ++(2,0) node[pnp, anchor=B](Q2){$Q_7$}
+(Q2.C) to[short, -o] ++(1,0) node[above]{$V_+$} node[below]{monoestable}
+(Q2.E) node[vcc]{+2.5V}
+
+(OA.+) --++(-1.5,0) 
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot2}$}
+(POT.left) to[R=$R_{22}$] ++(0,2)
+node[vcc]{+2.5V}
+(POT.right) node[ground]{}
+
+(OA.-)
+to[short, -o] ++(-0.1,0)
+node[left]{$\frac{dV_{TEMP}}{dt}$} 
+;
+\end{circuitikz}
+\end{document}

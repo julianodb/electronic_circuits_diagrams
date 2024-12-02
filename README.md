@@ -339,6 +339,9 @@
 ## T8_trigger1
 ![T8_trigger1](T8_trigger1.png "T8_trigger1")
 
+## T8_trigger2
+![T8_trigger2](T8_trigger2.png "T8_trigger2")
+
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png "full_bridge_rectifier")
 
