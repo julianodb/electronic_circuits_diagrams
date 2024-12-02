@@ -1,0 +1,30 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw 
+(-1,-0.5) rectangle (1,0.5)
+(1,0) -- ++(1,0)
+(0,0) node{$TRIGGER$}
+(2,0) coordinate(FB) --++(1,0)
+node[op amp, noinv input up, anchor=+](OA2){OA2}
+(FB) --++(0,1.5) coordinate(R2)
+to[R=$R_{19}$] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$} 
+node[right]{- - a  $Q_3$}
+++(0,-0.5)
+node[right]{(buzzer)}
+(FB) to[R=$R_{18}$, *-] ++(0,-2) node[ground]{}
+(OA2.-) -- ++(0,-2) coordinate(OA1M)
+to[R=$R_{20}$, *-] (OA1M -| OA2.out)
+-- (OA2.out)
+(OA1M) coordinate(CD)
+to[C=$C_6$] ++(0,-2) node[ground]{}
+(CD) --++(-1,0)
+to[Do, invert] ++(0,-2) node[ground]{}
+(OA2.up) node[vcc]{+2.5 V}
+(OA2.down) node[vee]{-2.5 V}
+;
+\end{circuitikz}
+\end{document}
