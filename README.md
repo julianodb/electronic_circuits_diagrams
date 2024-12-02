@@ -327,6 +327,9 @@
 ## T8a
 ![T8a](T8a.png "T8a")
 
+## T8_ampa
+![T8_ampa](T8_ampa.png "T8_ampa")
+
 ## T8_ampb
 ![T8_ampb](T8_ampb.png "T8_ampb")
 
