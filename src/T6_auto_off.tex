@@ -14,6 +14,7 @@ node[npn, xscale=-1, anchor=B](Q4){\ctikzflipx{$Q_4$}}
 (Q4.E) node[ground]{}
 (Q4.C) to[R=$R_{24}$, *-] ++(0,2) node[vcc]{+3V}
 (Q4.B) to[R, l_=$R_{26}$] ++(2,0) coordinate(Q4B)
+(Q4.C) to[short, -o] ++(-1,0) node[above]{$V_{OFF}$} 
 
 (Q5B) -- (Q4B |- Q4.C) -- (Q4.C)
 (Q4B) -- (Q5B |- Q5.C) -- (Q5.C)
