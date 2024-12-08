@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[pnp, rotate=90](Q8){$Q_8$}
+(Q8.E) node[vcc]{+3V}
+(Q8.B) to[R=$R_{33}$, -o] ++(0,-2) node[below]{$V_{OFF}$}
+(Q8.C) -- ++(1,0) coordinate(C)
+to[C=$CR3$] ++(0,-2) node[ground]{}
+(C) to[L=$L_1$, *-] ++(2,0) node[right]{SW} coordinate(SW)
+;
+\draw 
+(SW) |- ++(3,0.5) |- ++(-3,-2) -- (SW) 
+++(1.5,-0.5) node[]{TPS61322A}
+++(0,-1) node[above]{GND} node[ground]{}
+(SW) ++(3,0) node[left]{VOUT} --++(0.5,0) node[vcc]{+5V}
+;
+\end{circuitikz}
+\end{document}
