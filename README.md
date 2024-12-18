@@ -552,6 +552,9 @@
 ## monostable_multivibrator_c
 ![monostable_multivibrator_c](monostable_multivibrator_c.png "monostable_multivibrator_c")
 
+## monostable_multivibrator_d
+![monostable_multivibrator_d](monostable_multivibrator_d.png "monostable_multivibrator_d")
+
 ## trigger
 ![trigger](trigger.png "trigger")
 

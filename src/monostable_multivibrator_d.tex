@@ -1,0 +1,25 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw 
+(1,0) to[push button] ++(0,2) node[vcc]{+V_{CC}}
+(1,0) --++(1,0) coordinate(FB) --++(1,0)
+node[op amp, noinv input up, anchor=+](OA2){OA2}
+(FB) --++(0,1.5) coordinate(R2)
+to[R=$R_{2}$] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-o] ++(1,0) coordinate(MMOUT) node[anchor=south west]{$V_o$}
+(FB) to[R=$R_{1}$, *-] ++(0,-2) node[ground]{}
+(OA2.-) -- ++(0,-2) coordinate(OA1M)
+to[R=$R_{3}$, *-] (OA1M -| OA2.out)
+-- (OA2.out)
+(OA1M) coordinate(CD)
+to[C=$C_{1}$] ++(0,-2) node[ground]{}
+(CD) --++(-1,0)
+to[Do, l_=$D_1$, invert] ++(0,-2) node[ground]{}
+(OA2.up) node[vcc]{$+V_{CC}$}
+(OA2.down) node[vee]{$-V_{CC}$}
+;
+\end{circuitikz}
+\end{document}
