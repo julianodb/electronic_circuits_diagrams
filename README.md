@@ -66,6 +66,9 @@
 ## resistance_led
 ![resistance_led](resistance_led.png "resistance_led")
 
+## resistance_3_led
+![resistance_3_led](resistance_3_led.png "resistance_3_led")
+
 ## resistance_led_5
 ![resistance_led_5](resistance_led_5.png "resistance_led_5")
 
