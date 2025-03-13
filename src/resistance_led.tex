@@ -2,8 +2,8 @@
 \usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
-\draw (0,0) node[above]{$V_i$}
-to[R=$R_1$, o-] ++(0,-2)
+\draw (0,0) node[vcc]{+5V}
+to[R=$R_1$] ++(0,-2)
 to[leDo] ++(0,-2)
 node[ground](GND){}
 ;
