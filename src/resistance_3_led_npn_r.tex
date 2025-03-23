@@ -1,0 +1,15 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc]{+5V}
+to[R=$R_3$] ++(0,-2)
+to[leDo] ++(0,-2)
+to[leDo] ++(0,-2)
+to[leDo] ++(0,-2)
+node[npn, anchor=C](Q2){$Q_2$}
+(Q2.E) node[ground](GND){}
+(Q2.B) to[R=$R_5$, -o] ++(-2,0) node[above]{$V_i$}
+;
+\end{circuitikz}
+\end{document}

@@ -96,6 +96,9 @@
 ## resistance_led_npn_r
 ![resistance_led_npn_r](resistance_led_npn_r.png "resistance_led_npn_r")
 
+## resistance_3_led_npn_r
+![resistance_3_led_npn_r](resistance_3_led_npn_r.png "resistance_3_led_npn_r")
+
 ## led_circuit
 ![led_circuit](led_circuit.png "led_circuit")
 
