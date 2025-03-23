@@ -249,6 +249,9 @@
 ## T2_npn_inverter
 ![T2_npn_inverter](T2_npn_inverter.png "T2_npn_inverter")
 
+## T2_npn_double_inverter
+![T2_npn_double_inverter](T2_npn_double_inverter.png "T2_npn_double_inverter")
+
 ## T4_A
 ![T4_A](T4_A.png "T4_A")
 
