@@ -21,11 +21,11 @@ node[npn, xscale=-1, anchor=B](Q3){\ctikzflipx{$Q_3$}}
 (Q4.C) to[short,-o] ++(1,0) node[above]{$V_{PTT}$}
 
 (Q4.B) --++(0,-1)  node[npn, anchor=C](Q6){$Q_6$}
-(Q6.B) to[R, l_=$R_{46}$, -o] ++(0,-2) node[right]{SET}
+(Q6.B) -- ++(-0.5,0) to[R, l_=$R_{46}$, -o] ++(0,-2) node[right]{SET}
 (Q6.E) node[ground]{}
 
 (Q3.B) --++(0,-1)  node[npn, xscale=-1, anchor=C](Q5){\ctikzflipx{$Q_5$}}
-(Q5.B) to[R=$R_{45}$, -o] ++(0,-2) node[left]{RESET}
+(Q5.B) -- ++(0.5,0) to[R=$R_{45}$, -o] ++(0,-2) node[left]{RESET}
 (Q5.E) node[ground]{}
 ;
 \end{circuitikz}
