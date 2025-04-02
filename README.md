@@ -285,6 +285,9 @@
 ## T3_latch_b
 ![T3_latch_b](T3_latch_b.png "T3_latch_b")
 
+## T3_latch_c
+![T3_latch_c](T3_latch_c.png "T3_latch_c")
+
 ## T3_latch_d
 ![T3_latch_d](T3_latch_d.png "T3_latch_d")
 
