@@ -1,0 +1,43 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[npn](Q4){$Q_4$}
+(Q4.E) node[ground]{}
+(Q4.C) to[R=$R_{8}$, *-] ++(0,2) node[vcc]{+5V}
+(Q4.B) to[R=$R_{7}$, *-] ++(-2,0) coordinate(Q4B)
+
+++(-3,0)
+
+node[npn, xscale=-1, anchor=B](Q3){\ctikzflipx{$Q_3$}}
+(Q3.E) node[ground]{}
+(Q3.C) to[R=$R_{6}$, *-] ++(0,2) node[vcc]{+5V}
+(Q3.B) to[R, l_=$R_{9}$, *-] ++(2,0) coordinate(Q3B)
+
+(Q4B) -- (Q3B |- Q3.C) -- (Q3.C)
+(Q3B) -- (Q4B |- Q4.C) -- (Q4.C)
+
+(Q4.C) to[short,-o] ++(1,0) node[above]{$V_{PTT}$}
+
+(Q4.B) --++(0,-1)  node[npn, anchor=C](Q6){$Q_6$}
+(Q6.B) -- ++(-0.3,0) coordinate(Q6B)
+to[R=$R_{48}$, *-] ++(0,-2) node[ground]{}
+(Q6B) -| ++(-0.5,-1) to[R, l_=$R_{46}$] ++(0,-2) --++(0,-0.5) node[below]{SET'}
+to[Do, invert] ++(2,0) coordinate(Q6Do)
+to[R=$R_{11}$, *-] ++(0,-2) node[ground]{}
+(Q6Do) to[C=$C_2$, -o] ++(2,0) node[above]{SET}
+
+(Q6.E) node[ground]{}
+(Q3.B) --++(0,-1)  node[npn, xscale=-1, anchor=C](Q5){\ctikzflipx{$Q_5$}}
+(Q5.B) -- ++(0.3,0) coordinate(Q5B)
+to[R, l_=$R_{47}$, *-] ++(0,-2) node[ground]{}
+(Q5B) -| ++(0.5,-1.5) to[R=$R_{45}$] ++(0,-2) node[below]{RESET'}
+to[Do, invert] ++(-2,0) coordinate(Q5Do)
+to[R=$R_{10}$, *-] ++(0,-2) node[ground]{}
+(Q5Do) to[C=$C_2$, -o] ++(-2,0) node[above]{RESET}
+
+(Q5.E) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
