@@ -24,7 +24,7 @@ node[npn, xscale=-1, anchor=B](Q3){\ctikzflipx{$Q_3$}}
 (Q6.B) -- ++(-0.3,0) coordinate(Q6B)
 to[R=$R_{48}$, *-] ++(0,-2) node[ground]{}
 (Q6B) -| ++(-0.5,-1) to[R, l_=$R_{46}$] ++(0,-2) --++(0,-0.5) node[below]{SET'}
-to[Do, invert] ++(2,0) coordinate(Q6Do)
+to[Do=$D_3$, invert] ++(2,0) coordinate(Q6Do)
 to[R=$R_{11}$, *-] ++(0,-2) node[ground]{}
 (Q6Do) to[C=$C_2$, -o] ++(2,0) node[above]{SET}
 
@@ -33,7 +33,7 @@ to[R=$R_{11}$, *-] ++(0,-2) node[ground]{}
 (Q5.B) -- ++(0.3,0) coordinate(Q5B)
 to[R, l_=$R_{47}$, *-] ++(0,-2) node[ground]{}
 (Q5B) -| ++(0.5,-1.5) to[R=$R_{45}$] ++(0,-2) node[below]{RESET'}
-to[Do, invert] ++(-2,0) coordinate(Q5Do)
+to[Do, l_=$D_2$, invert] ++(-2,0) coordinate(Q5Do)
 to[R=$R_{10}$, *-] ++(0,-2) node[ground]{}
 (Q5Do) to[C, l_=$C_1$, -o] ++(-2,0) node[above]{RESET}
 
