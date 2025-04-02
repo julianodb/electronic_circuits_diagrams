@@ -303,6 +303,9 @@
 ## T3e
 ![T3e](T3e.png "T3e")
 
+## T3_high_pass
+![T3_high_pass](T3_high_pass.png "T3_high_pass")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
