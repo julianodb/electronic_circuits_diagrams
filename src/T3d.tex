@@ -3,12 +3,12 @@
 \begin{document}
 \begin{circuitikz}
 \draw 
-(0,0) node[npn](Q1){$Q_6$}
-(Q1.C) to[R=$R_{16}$] ++(0,2) node[vcc]{+5V}
+(0,0) node[npn](Q1){$Q_7$}
+(Q1.C) to[R=$R_{15}$] ++(0,2) node[vcc]{+5V}
 (Q1.E) node[ground]{}
-(Q1.B) to[R=$R_{15}$] ++(-2,0) 
+(Q1.B) to[R=$R_{14}$] ++(-2,0) 
 to[Do, invert] ++(-2,0) coordinate(A2)
-to[C=$C_5$, -o] ++(-2,0) coordinate(A1)
+to[C=$C_3$, -o] ++(-2,0) coordinate(A1)
 node[above]{$V_{in}$}
 (Q1.E) ++(0.5,0)
 ;
