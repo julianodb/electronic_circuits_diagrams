@@ -1,0 +1,32 @@
+\documentclass[convert]{standalone}
+\usepackage[americancurrents]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc]{+5V}
+node[pnp, anchor=E](Q9){$Q_9$}
+(Q9.B) to[short] ++(-1,0) 
+node[pnp, xscale=-1, anchor=B](Q8){\ctikzflipx{$Q_{8}$}}
+++(-1.5,0)
+(Q8.E) node[vcc]{+5V}
+(Q8.B) |- (Q8.C)
+to[R=$R_{16}$, *-] ++(0,-2)
+node[npn, anchor=C](Q10){$Q_{10}$}
+(Q10.E) node[ground]{}
+(Q10.B) to[R=$R_{17}$, -o] ++(-2,0) node[above]{PTT}
+(Q9.C)
+to[C=$C_4$] ++(0,-1) node[ground]{}
+++(0,1)
+to[short, *-] ++(2,0) coordinate(vo)
+node[npn, xscale=-1, anchor=C](Q11){\ctikzflipx{$Q_{11}$}}
+(Q11.E) node[ground]{}
+(Q11.B) to[R=$R_{18}$] ++(2,0) coordinate(R19)
+to[R=$R_{19}$, *-] ++(0,2) node[vcc]{+5V}
+(R19) node[npn, xscale=-1, anchor=C](Q12){\ctikzflipx{$Q_{12}$}}
+(Q12.E) node[ground]{}
+(Q12.B) to[R=$R_{20}$,-o] ++(2,0) node[above]{PTT}
+
+(vo) to[short, *-o] ++(1,0)
+node[above]{$v_o$}
+;
+\end{circuitikz}
+\end{document}

@@ -579,6 +579,9 @@
 ## cap_current_mirror_reset_inverted
 ![cap_current_mirror_reset_inverted](cap_current_mirror_reset_inverted.png "cap_current_mirror_reset_inverted")
 
+## cap_current_mirror_reset_inverted_enable
+![cap_current_mirror_reset_inverted_enable](cap_current_mirror_reset_inverted_enable.png "cap_current_mirror_reset_inverted_enable")
+
 ## integrator
 ![integrator](integrator.png "integrator")
 
