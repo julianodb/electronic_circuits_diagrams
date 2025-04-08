@@ -558,6 +558,9 @@
 ## buffer_vbias
 ![buffer_vbias](buffer_vbias.png "buffer_vbias")
 
+## cap_isource
+![cap_isource](cap_isource.png "cap_isource")
+
 ## integrator
 ![integrator](integrator.png "integrator")
 
