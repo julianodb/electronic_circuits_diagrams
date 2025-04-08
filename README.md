@@ -576,6 +576,9 @@
 ## cap_pnp_reset_inverted
 ![cap_pnp_reset_inverted](cap_pnp_reset_inverted.png "cap_pnp_reset_inverted")
 
+## cap_current_mirror_reset_inverted
+![cap_current_mirror_reset_inverted](cap_current_mirror_reset_inverted.png "cap_current_mirror_reset_inverted")
+
 ## integrator
 ![integrator](integrator.png "integrator")
 
