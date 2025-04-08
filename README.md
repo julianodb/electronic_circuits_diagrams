@@ -561,6 +561,9 @@
 ## cap_isource
 ![cap_isource](cap_isource.png "cap_isource")
 
+## cap_isource_reset
+![cap_isource_reset](cap_isource_reset.png "cap_isource_reset")
+
 ## integrator
 ![integrator](integrator.png "integrator")
 
