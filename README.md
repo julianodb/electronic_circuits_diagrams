@@ -162,6 +162,9 @@
 ## current_source
 ![current_source](current_source.png "current_source")
 
+## pnp_diode_connection
+![pnp_diode_connection](pnp_diode_connection.png "pnp_diode_connection")
+
 ## npn_re_rc
 ![npn_re_rc](npn_re_rc.png "npn_re_rc")
 

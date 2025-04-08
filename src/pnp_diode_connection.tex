@@ -1,0 +1,13 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[pnp, xscale=-1](Q8){\ctikzflipx{$Q_{8}$}}
+(Q8.E) node[vcc]{+5V}
+(Q8.B) |- (Q8.C)
+to[R=$R_{16}$, *-] ++(0,-2)
+node[ground]{}
+;
+\end{circuitikz}
+\end{document}
