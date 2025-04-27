@@ -342,6 +342,9 @@
 ## T5_comp_pulse_gen
 ![T5_comp_pulse_gen](T5_comp_pulse_gen.png "T5_comp_pulse_gen")
 
+## T5_ir_detect
+![T5_ir_detect](T5_ir_detect.png "T5_ir_detect")
+
 ## T6a
 ![T6a](T6a.png "T6a")
 

@@ -1,0 +1,29 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) 
+node[npn, photo](Q1){}
+++(1,0)
+node[npn, photo](Q2){}
+++(1,0)
+node[npn, photo](Q3){}
+
+(Q1.E) node[ground]{}
+(Q2.E) node[ground]{}
+(Q3.E) node[ground]{}
+
+(Q1.C) -- (Q2.C) to[R=$R_{49}$, *-] ++(0,2) node[vcc]{+5V}
+(Q2.C) -- (Q3.C)
+to[short, *-] ++(1.5,0)
+
+node[op amp, anchor=-](OA){COMP1}
+(OA.+) -- ++(0,-0.8) 
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.right) node[ground]{}
+(POT.left) node[vcc]{+5V}
+
+;
+\end{circuitikz}
+\end{document}
