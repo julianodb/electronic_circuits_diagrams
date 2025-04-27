@@ -339,6 +339,9 @@
 ## T5_r_var
 ![T5_r_var](T5_r_var.png "T5_r_var")
 
+## T5_comp_pulse_gen
+![T5_comp_pulse_gen](T5_comp_pulse_gen.png "T5_comp_pulse_gen")
+
 ## T6a
 ![T6a](T6a.png "T6a")
 
