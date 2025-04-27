@@ -621,6 +621,9 @@
 ## half_voltage_divider
 ![half_voltage_divider](half_voltage_divider.png "half_voltage_divider")
 
+## half_voltage_divider_b
+![half_voltage_divider_b](half_voltage_divider_b.png "half_voltage_divider_b")
+
 ## RC_lowpass
 ![RC_lowpass](RC_lowpass.png "RC_lowpass")
 
