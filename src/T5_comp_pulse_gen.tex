@@ -6,10 +6,13 @@
 (0,0) 
 node[npn](Q1){$Q_7$}
 (Q1.C) to[R=$R_{15}$] ++(0,2) node[vcc]{+5V}
+(Q1.C) to[short, *-o] ++(0.7,0) node[above]{PULSE}
 (Q1.E) node[ground]{}
 (Q1.B) to[R, l_=$R_{14}$] ++(-2,0) 
 to[Do=$D_1$, invert] ++(-2,0) coordinate(A2)
-to[C, l_=$C_3$] ++(-2,0) coordinate(A1)
+to[C, l_=$C_3$] ++(-2,0) 
+-- ++(-0.5,0)
+coordinate(A1)
 
 node[op amp, anchor=out, noinv input up](OA){COMP1}
 (OA.+) to[short, -o] ++(-1,0) node[above]{PPG}
@@ -19,11 +22,16 @@ node[potentiometershape, rotate=-90,  anchor=wiper](POT){}
 (POT.right) node[ground]{}
 (POT.left) node[vcc]{+5V}
 
+(A1) to[R=$R_{50}$, *-] ++(0,2) node[vcc]{+5V}
+
 (A2) to[R, l_=$R_{12}$, *-] ++(0,-2)
 node[ground]{}
 (Q1.B) to[R, l_=$R_{13}$, *-] ++(0,-2)
 node[ground]{}
 (Q1.E) ++(0.5,0)
+;
+\draw[blue] (-6.5,-3) rectangle (1.5,4)
+(-2.5,-3) node[below]{generador de pulso}
 ;
 \end{circuitikz}
 \end{document}
