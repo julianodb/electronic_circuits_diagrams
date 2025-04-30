@@ -14,7 +14,7 @@ node[npn, photo](Q3){}
 (Q2.E) node[ground]{}
 (Q3.E) node[ground]{}
 
-(Q1.C) -- (Q2.C) to[R=$R_{49}$, *-] ++(0,2) node[vcc]{+5V}
+(Q1.C) -- (Q2.C) to[R=$R_{29}$, *-] ++(0,2) node[vcc]{+5V}
 (Q2.C) -- (Q3.C)
 to[short, *-] ++(1.5,0)
 
@@ -23,6 +23,9 @@ node[op amp, anchor=-](OA){COMP1}
 node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
 (POT.right) node[ground]{}
 (POT.left) node[vcc]{+5V}
+
+(OA.out) to[R=$R_{49}$] ++(0,2) node[vcc]{+5V}
+(OA.out) to[short, *-o] ++(1,0) node[above]{IR\_DETECT}
 
 ;
 \end{circuitikz}
