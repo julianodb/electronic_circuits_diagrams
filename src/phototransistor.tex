@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{diodes/scale=0.5}
+\draw (0,0) 
+node[npn, photo](Q2){}
+
+++(1,0) node[]{$=$}
+
+++(2,0)
+node[npn](Q1){}
+(Q1.B) to[pDo] (Q1.C -| Q1.B) --(Q1.C)
+to[short, *-] ++(0,0.5)
+;
+\end{circuitikz}
+\end{document}
