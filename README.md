@@ -234,6 +234,9 @@
 ## transimpedance_amplifier
 ![transimpedance_amplifier](transimpedance_amplifier.png "transimpedance_amplifier")
 
+## compensated_transimpedance_amplifier
+![compensated_transimpedance_amplifier](compensated_transimpedance_amplifier.png "compensated_transimpedance_amplifier")
+
 ## T2_buzzer
 ![T2_buzzer](T2_buzzer.png "T2_buzzer")
 
