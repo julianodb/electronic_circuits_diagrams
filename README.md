@@ -231,6 +231,9 @@
 ## instrumentation_amplifier_plus_npn_with_annotations
 ![instrumentation_amplifier_plus_npn_with_annotations](instrumentation_amplifier_plus_npn_with_annotations.png "instrumentation_amplifier_plus_npn_with_annotations")
 
+## transimpedance_amplifier
+![transimpedance_amplifier](transimpedance_amplifier.png "transimpedance_amplifier")
+
 ## T2_buzzer
 ![T2_buzzer](T2_buzzer.png "T2_buzzer")
 
