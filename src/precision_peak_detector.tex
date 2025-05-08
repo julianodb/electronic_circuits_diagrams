@@ -9,15 +9,17 @@ node[op amp, anchor=+](OA1){OA1}
 (OA1.out)
 to[Do=$D_4$, -*] ++(2,0) coordinate(VO) 
 to[short, -o] ++(2,0) node[above]{$v_o$} 
+(VO) 
+to[C, l_=$C_{13}$] ++(0,-2) node[ground]{}
 (VO) ++(1,0)
-to[C=$C_{13}$, *-] ++(0,-2) node[ground]{}
+to[R=$R_{44}$, *-] ++(0,-2)
+node[npn, anchor=C](Q){$Q_{14}$}
+(Q.E) node[ground]{}
+(Q.B) to[R=$R_{43}$, -o] ++(-2,0) node[above]{$V_{PTT}$}
 (OA1.-)
 -- ++(0,1) 
 -| (VO)
 ;
-\draw[color=blue]
-(VO) ++(0.3, 1.8) rectangle (0.5, -0.8) 
-++(2.8,0) node[below]{rectificador de precisión}
-;
 \end{circuitikz}
 \end{document}
+    
