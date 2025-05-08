@@ -159,6 +159,9 @@
 ## phototransistor
 ![phototransistor](phototransistor.png "phototransistor")
 
+## photodiode_resistor
+![photodiode_resistor](photodiode_resistor.png "photodiode_resistor")
+
 ## npn_inverter
 ![npn_inverter](npn_inverter.png "npn_inverter")
 
