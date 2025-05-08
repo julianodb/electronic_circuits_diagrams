@@ -1,0 +1,23 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[above]{$v_i$}
+to[short, o-] ++(1,0)
+node[op amp, anchor=+](OA1){OA1}
+(OA1.out)
+to[Do=$D_4$, -*] ++(2,0) coordinate(VO) 
+to[short, -o] ++(2,0) node[above]{$v_o$} 
+(VO) ++(1,0)
+to[R=$R_L$, *-] ++(0,-2) node[ground]{}
+(OA1.-)
+-- ++(0,1) 
+-| (VO)
+;
+\draw[color=blue]
+(VO) ++(0.3, 1.8) rectangle (0.5, -0.8) 
+++(2.6,0) node[below]{rectificador de precisión}
+;
+\end{circuitikz}
+\end{document}

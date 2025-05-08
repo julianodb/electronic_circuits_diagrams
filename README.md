@@ -438,6 +438,9 @@
 ## inverting_half_wave_rectifier
 ![inverting_half_wave_rectifier](inverting_half_wave_rectifier.png "inverting_half_wave_rectifier")
 
+## half_wave_precision_rectifier
+![half_wave_precision_rectifier](half_wave_precision_rectifier.png "half_wave_precision_rectifier")
+
 ## full_bridge_no_transformer_no_cap
 ![full_bridge_no_transformer_no_cap](full_bridge_no_transformer_no_cap.png "full_bridge_no_transformer_no_cap")
 
