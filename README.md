@@ -426,6 +426,9 @@
 ## peak_detector_thevenin
 ![peak_detector_thevenin](peak_detector_thevenin.png "peak_detector_thevenin")
 
+## precision_peak_detector
+![precision_peak_detector](precision_peak_detector.png "precision_peak_detector")
+
 ## half_wave_rectifier
 ![half_wave_rectifier](half_wave_rectifier.png "half_wave_rectifier")
 
