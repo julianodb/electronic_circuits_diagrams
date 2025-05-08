@@ -1,0 +1,22 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) 
+node[above]{$v_o$}
+to[R=$R_{24}$, o-] ++(2,0) coordinate(R24)
+-- ++(0,-1)
+node[op amp, anchor=+, noinv input up](OA){OA1}
+to[short, *-] ++(-1,0)
+to[C, l_=$C_6$] ++(0,-2) node[ground]{}
+(R24) to[R=$R_{25}$, *-] (R24 -| OA.out)
+-- (OA.out)
+(OA.-) -- ++(0,-1) coordinate(R27)
+to[R=$R_{27}$] ++(0,-2) node[ground]{}
+(R27) to[R=$R_{26}$, *-] (R27 -| OA.out)
+to[short, -*] (OA.out)
+to[short, -o] ++(1,0) node[above]{$v_{integrated}$}
+;
+\end{circuitikz}
+\end{document}

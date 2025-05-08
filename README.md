@@ -606,6 +606,9 @@
 ## integrator_with_reset
 ![integrator_with_reset](integrator_with_reset.png "integrator_with_reset")
 
+## deboo_integrator
+![deboo_integrator](deboo_integrator.png "deboo_integrator")
+
 ## differentiator
 ![differentiator](differentiator.png "differentiator")
 
