@@ -369,6 +369,9 @@
 ## T6_integrator
 ![T6_integrator](T6_integrator.png "T6_integrator")
 
+## T6_tia_plus_filter_1
+![T6_tia_plus_filter_1](T6_tia_plus_filter_1.png "T6_tia_plus_filter_1")
+
 ## T7a
 ![T7a](T7a.png "T7a")
 
