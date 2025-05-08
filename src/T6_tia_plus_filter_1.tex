@@ -10,7 +10,7 @@ to[pDo, l_=$D_P$, v^=$V_D$] ++(0,2) coordinate(P)
 node[op amp, anchor=-](OA1){OA1}
 (OA1.+) node[ground]{}
 (P) to[short, *-] ++(0,1.2) coordinate(R)
-to[R=$R_{24}$] (R-|OA1.out) -- (OA1.out)
+to[R=$R_{23}$] (R-|OA1.out) -- (OA1.out)
 (R) to[short, *-] ++(0,1.2) coordinate(C)
 to[C=$C_5$] (C -| OA1.out)
 to[short, -*] (R-|OA1.out)
