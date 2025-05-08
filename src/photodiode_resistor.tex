@@ -4,12 +4,12 @@
 \begin{circuitikz}
 \draw (0,0) 
 node[ground]{}
-to[pDo, l_=$D_P$, v^=$V_D$] ++(0,2) coordinate(P)
-to[R=$R$] ++(0,2) node[vcc]{+5V}
+to[R=$R$] ++(0,2) coordinate(P)
+to[pDo, l_=$D_P$, v^=$V_D$] ++(0,2) node[vcc]{+5V}
 (P) to[short, *-o] ++(1,0) node[above]{$v_o$}
 ;
 \draw[color=red]
-(P) ++(0,-0.3)
+(P) ++(0,2) ++(0,-0.3)
 to[short, i=$i_p$] ++(0,-0.3)
 ;
 \end{circuitikz}
