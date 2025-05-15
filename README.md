@@ -378,6 +378,9 @@
 ## T7b
 ![T7b](T7b.png "T7b")
 
+## T7_sallen_key_low_2_with_gain
+![T7_sallen_key_low_2_with_gain](T7_sallen_key_low_2_with_gain.png "T7_sallen_key_low_2_with_gain")
+
 ## T8a
 ![T8a](T8a.png "T8a")
 
