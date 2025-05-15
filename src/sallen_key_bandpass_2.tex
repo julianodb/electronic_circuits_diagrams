@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[above]{$v_i$}
+to[short, o-] ++(0.5,0)
+to[R=$R_{30}$] ++(2,0) coordinate(R30)
+to[C=$C_9$, *-*] ++(2,0) coordinate(R31)
+--++(1,0)
+node[op amp, anchor=+, noinv input up](OPAMP){}
+(R30) to[C=$C_8$] ++(0,-2) node[ground]{}
+(R31) to[R=$R_{31}$] ++(0,-2) node[ground]{}
+(OPAMP.out) coordinate(VO)
+to[R=$R_{33}$, *-*] ++(0,-2) coordinate(RA)
+-| (OPAMP.-)
+(RA) to[R=$R_{34}$] ++(0,-2) node[ground]{}
+(R30) --++(0,1.5) 
+--++(0.5,0) coordinate(C1)
+to[R=$R_{32}$] (VO |- C1)
+--++(0.5,0) coordinate(C1X)
+to[short,-*] (C1X |- VO)
+(VO)
+to[short, -o] ++(1,0) node[above]{$v_o$}
+;
+\end{circuitikz}
+\end{document}
