@@ -381,6 +381,9 @@
 ## T7_sallen_key_low_2_with_gain
 ![T7_sallen_key_low_2_with_gain](T7_sallen_key_low_2_with_gain.png "T7_sallen_key_low_2_with_gain")
 
+## T7_RC_highpass
+![T7_RC_highpass](T7_RC_highpass.png "T7_RC_highpass")
+
 ## T8a
 ![T8a](T8a.png "T8a")
 
