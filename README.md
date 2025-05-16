@@ -378,8 +378,8 @@
 ## T7b
 ![T7b](T7b.png "T7b")
 
-## T7_sallen_key_low_2_with_gain
-![T7_sallen_key_low_2_with_gain](T7_sallen_key_low_2_with_gain.png "T7_sallen_key_low_2_with_gain")
+## T7_sallen_key_low_2
+![T7_sallen_key_low_2](T7_sallen_key_low_2.png "T7_sallen_key_low_2")
 
 ## T7_RC_highpass
 ![T7_RC_highpass](T7_RC_highpass.png "T7_RC_highpass")
