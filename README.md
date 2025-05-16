@@ -387,6 +387,9 @@
 ## T7_RC_lowpass
 ![T7_RC_lowpass](T7_RC_lowpass.png "T7_RC_lowpass")
 
+## T7_RC_bandpass
+![T7_RC_bandpass](T7_RC_bandpass.png "T7_RC_bandpass")
+
 ## T8a
 ![T8a](T8a.png "T8a")
 

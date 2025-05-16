@@ -1,0 +1,14 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[above]{$V_{in}$} to[C=$C_8$, o-*] ++(2,0)
+to[R=$R_{30}$] ++(0,-1.5) node[ground]{}
+(2,0) to[short] ++(1,0) node[above]{$V_1$}
+node[below]{$V_2$} to[R=$R_{31}$, -*] ++(2,0)
+to[C=$C_9$] ++(0,-1.5) node[ground]{}
+(5,0) to[short, -o] ++(1,0) node[above]{$V_{out}$}
+;
+\end{circuitikz}
+\end{document}
