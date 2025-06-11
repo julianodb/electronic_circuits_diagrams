@@ -417,6 +417,9 @@
 ## T8_trigger2
 ![T8_trigger2](T8_trigger2.png "T8_trigger2")
 
+## T8_trigger3
+![T8_trigger3](T8_trigger3.png "T8_trigger3")
+
 ## T9_Q8
 ![T9_Q8](T9_Q8.png "T9_Q8")
 
