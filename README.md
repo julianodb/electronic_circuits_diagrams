@@ -408,6 +408,9 @@
 ## T8_multivibrator
 ![T8_multivibrator](T8_multivibrator.png "T8_multivibrator")
 
+## T8_multivibrator_b
+![T8_multivibrator_b](T8_multivibrator_b.png "T8_multivibrator_b")
+
 ## T8_trigger1
 ![T8_trigger1](T8_trigger1.png "T8_trigger1")
 
