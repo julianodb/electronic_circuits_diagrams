@@ -4,23 +4,23 @@
 \begin{circuitikz}
 \draw 
 (0,0) node[npn](Q1){$Q_7$}
-(Q1.C) to[R=$R_{15}$] ++(0,2) node[vcc]{+5V}
-(Q1.E) node[ground]{}
+(Q1.C) to[R=$R_{15}$] ++(0,2) node[vcc]{+2.5V}
+(Q1.E) node[vee]{-2.5V}
 (Q1.B) to[R, l_=$R_{14}$] ++(-2,0) 
 to[Do=$D_1$, invert] ++(-2,0) coordinate(A2)
 to[C, l_=$C_3$, -o] ++(-2,0) coordinate(A1)
 node[above]{$V_{in}$}
 (A2) to[R, l_=$R_{12}$, *-] ++(0,-2)
-node[ground]{}
+node[vee]{-2.5V}
 (Q1.B) to[R, l_=$R_{13}$, *-] ++(0,-2)
-node[ground]{}
+node[vee]{-2.5V}
 (Q1.E) ++(0.5,0)
 
 (Q1.C) node[left]{$\overline{V_{TRIGGER}}$}
 to[R=$R_{39}$, *-] ++(2,0) 
 node[pnp, anchor=B](Q2){$Q_{13}$}
 (Q2.C) to[short, -o] ++(1,0) node[above]{$V_+$} node[below]{monoestable}
-(Q2.E) node[vcc]{+5V}
+(Q2.E) node[vcc]{+2.5V}
 ;
 \end{circuitikz}
 \end{document}
