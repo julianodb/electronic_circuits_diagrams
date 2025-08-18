@@ -237,6 +237,9 @@
 ## compensated_transimpedance_amplifier
 ![compensated_transimpedance_amplifier](compensated_transimpedance_amplifier.png "compensated_transimpedance_amplifier")
 
+## T1_volume_control
+![T1_volume_control](T1_volume_control.png "T1_volume_control")
+
 ## T2_buzzer
 ![T2_buzzer](T2_buzzer.png "T2_buzzer")
 
