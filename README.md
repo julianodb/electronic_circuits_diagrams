@@ -492,6 +492,9 @@
 ## amplifier_black_box
 ![amplifier_black_box](amplifier_black_box.png "amplifier_black_box")
 
+## amplifier_thevenin_output
+![amplifier_thevenin_output](amplifier_thevenin_output.png "amplifier_thevenin_output")
+
 ## amplifier_thevenin_rl
 ![amplifier_thevenin_rl](amplifier_thevenin_rl.png "amplifier_thevenin_rl")
 
