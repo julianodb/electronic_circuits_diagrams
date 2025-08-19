@@ -1,5 +1,8 @@
 # electronic_circuits_diagrams
 
+## voltage_divider
+![voltage_divider](voltage_divider.png "voltage_divider")
+
 ## potentiometer_5V
 ![potentiometer_5V](potentiometer_5V.png "potentiometer_5V")
 
