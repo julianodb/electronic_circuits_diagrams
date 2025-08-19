@@ -2,19 +2,19 @@
 \usepackage[RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
-\draw (2,0) node[above]{$v_{i_{AC}}$}
+\draw (2,0) node[above]{$v_{i}$}
 to[short, o-] ++(1.5,0)
-to[R=$R_B$] ++(0,-2) node[ground]{}
+to[R=$R_i$] ++(0,-2) node[ground]{}
 
 (5,-2) node[ground]{}
-to[american voltage source, l_=$A_{V_{NL}}*v_{i_{AC}}$] ++(0,2)
-to[R=$R_C$] ++(2,0)
--- ++(1,0) node[above]{$v_{o_{AC}}$}
+to[american voltage source, l_=$A_{V}*v_{i}$] ++(0,2)
+to[R=$R_o$] ++(2,0)
+-- ++(1,0) node[above]{$v_{o}$}
 to[R=$R_L$] ++(0,-2) node[ground]{}
 ;
 \draw[dashed]
 (2.5,-2) rectangle ++(4.8,3)
-(4.9,1) node[above]{amplificador 1}
+(4.9,1) node[above]{amplificador}
 ;
 \end{circuitikz}
 \end{document}
