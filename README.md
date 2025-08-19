@@ -498,6 +498,9 @@
 ## amplifier_thevenin
 ![amplifier_thevenin](amplifier_thevenin.png "amplifier_thevenin")
 
+## amplifier_thevenin_rl_av
+![amplifier_thevenin_rl_av](amplifier_thevenin_rl_av.png "amplifier_thevenin_rl_av")
+
 ## amplifier_thevenin_rl
 ![amplifier_thevenin_rl](amplifier_thevenin_rl.png "amplifier_thevenin_rl")
 
