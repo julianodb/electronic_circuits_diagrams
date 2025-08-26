@@ -45,6 +45,23 @@ to[R=$R_8$] ++(0,-2) node[vee]{$V_{EE}$}
 (OA3.out) to[C=$C_5$, *-] ++(2,0)
 to[loudspeaker] ++(0,-2) node[vee]{$V_{EE}$}
 ++(0.8,1) node[right]{altavoz}
+
+(1,-7)
+node[vee]{$V_{EE}$}
+to[R=$R_{10}$, -*] ++(0,2) 
+to[R=$R_{9}$] ++(0,2) node[vcc]{$V_{CC}$}
+++(0,-2) -- ++(1.5,0)
+to[C=$C_{7}$, *-] ++(0,-2) node[vee]{$V_{EE}$}
+++(0,2)
+-- ++(1.5,0)
+node[op amp, anchor=+, noinv input up](OA4){OA3}
+(OA4.up) -- ++(0,0.5) node[vcc](VCC){$V_{CC}$}
+(OA4.down) -- ++(0,-0.5) node[vee](GND){$V_{EE}$}
+(OA4.out) coordinate(VO)
+to[short, *-] ++(0,-2.3)
+-| (OA4.-)
+(VO)
+to[short, -] ++(1,0) node[ground]{}
 ;
 \draw[blue, dashed] 
 (1.7,-1.9) rectangle (6.7,4)
@@ -55,6 +72,19 @@ to[loudspeaker] ++(0,-2) node[vee]{$V_{EE}$}
 
 (12.7,-7.1) rectangle (18.2,0.3)
 (15.5,-7.15) node[below]{Amplificador de audio}
+
+(0,-8.2) -- (0,-2.3) 
+-- ++(0.5,0)
+-- ++(0,0.5)
+-- ++(0.9,0)
+-- ++(0,-1.5)
+-- ++(5,0)
+-- ++(0,-1.5)
+-- ++(2,0)
+-- ++(0,-3.4)
+++(0.2,1.8) node[right]{Tierra virtual}
+++(-0.2,-1.8)
+-- (0,-8.2)
 ;
 \end{circuitikz}
 \end{document}
