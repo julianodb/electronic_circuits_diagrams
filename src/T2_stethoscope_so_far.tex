@@ -1,0 +1,60 @@
+\documentclass[convert]{standalone}
+\usepackage[americancurrents]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw 
+(0,0) circle (0.6)
+(-0.6,0) ++(0,0.6) -- ++(0,-1.2)
+(0,0.45) 
+to[C] ++(0,-0.9)
+(0,0.6)  -- ++(0,0.4) coordinate(vs)
+to[R=$R_1$] ++(0,2) node[vcc]{$V_{CC}$}
+(0,-0.6) -- ++(0,-0.4) node[vee]{$V_{EE}$}
+
+(vs) to[short, *-] ++(0.5,0) 
+
+to[C=$C_1$] ++(1.2,0)
+to[R=$R_2$, -*] ++(2,0) coordinate(FB)
+node[op amp, anchor=-](OA){OA1}
+(OA.up) -- ++(0,0.5) node[vcc](VCC){$V_{CC}$}
+(OA.down) -- ++(0,-0.5) node[vee](GND){$V_{EE}$}
+(OA.+) -- ++(0,-1) node[ground]{}
+(FB) --++(0,2.3) coordinate(R2)
+to[R=$R_3$] (R2 -| OA.out) -- (OA.out)
+to [short, *-] ++(1,0)
+
+to[R=$R_6$] ++(2,0) 
+node[potentiometershape, rotate=180, anchor=right](POT){} 
+(POT.270) node[above]{$R_{pot1}$}
+(POT.wiper) --++(0,-1) 
+node[op amp, anchor=-](OA2){OA2}
+(OA2.up)  node[vcc](VCC){$V_{CC}$}
+(OA2.down)  node[vee](GND){$V_{EE}$}
+(OA2.+) -- ++(0,-1) node[ground]{}
+(POT.left) to[R=$R_7$] (POT.left -| OA2.out) -- (OA2.out)
+to [short, *-] ++(0.5,0) 
+
+to[C=$C_4$] ++(2,0)
+node[op amp, anchor=+, noinv input up](OA3){LM386}
+(OA3.up) -- ++(0,0.5) node[vcc](VCC){$V_{CC}$}
+(OA3.down) -- ++(0,-0.5) node[vee](GND){$V_{EE}$}
+(OA3.-) node[ground]{}
+(OA3.out) to[C=$C_6$] ++(0,-2)
+to[R=$R_8$] ++(0,-2) node[vee]{$V_{EE}$}
+(OA3.out) to[C=$C_5$, *-] ++(2,0)
+to[loudspeaker] ++(0,-2) node[vee]{$V_{EE}$}
+++(0.8,1) node[right]{altavoz}
+;
+\draw[blue, dashed] 
+(1.7,-1.9) rectangle (6.7,4)
+(4.3,-1.95) node[below]{Amplificador 1}
+
+(6.9,-3.7) rectangle (12.5,1.3)
+(10,-3.75) node[below]{Control de volúmen}
+
+(12.7,-7.1) rectangle (18.2,0.3)
+(15.5,-7.15) node[below]{Amplificador de audio}
+;
+\end{circuitikz}
+\end{document}

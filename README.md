@@ -309,6 +309,9 @@
 ## T2_electret_amplify_second_try
 ![T2_electret_amplify_second_try](T2_electret_amplify_second_try.png "T2_electret_amplify_second_try")
 
+## T2_stethoscope_so_far
+![T2_stethoscope_so_far](T2_stethoscope_so_far.png "T2_stethoscope_so_far")
+
 ## T3_latch_b
 ![T3_latch_b](T3_latch_b.png "T3_latch_b")
 
