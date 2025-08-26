@@ -306,6 +306,9 @@
 ## T2_electret_amplify_first_try
 ![T2_electret_amplify_first_try](T2_electret_amplify_first_try.png "T2_electret_amplify_first_try")
 
+## T2_electret_amplify_second_try
+![T2_electret_amplify_second_try](T2_electret_amplify_second_try.png "T2_electret_amplify_second_try")
+
 ## T3_latch_b
 ![T3_latch_b](T3_latch_b.png "T3_latch_b")
 
