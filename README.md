@@ -755,3 +755,6 @@
 
 ## electret_mic_model
 ![electret_mic_model](electret_mic_model.png "electret_mic_model")
+
+## electret_polarized
+![electret_polarized](electret_polarized.png "electret_polarized")

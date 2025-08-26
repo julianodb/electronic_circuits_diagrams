@@ -1,0 +1,18 @@
+\documentclass[convert]{standalone}
+\usepackage[americancurrents]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw 
+(0,0) circle (0.6)
+(-0.6,0) ++(0,0.6) -- ++(0,-1.2)
+(0,0.45) 
+to[C] ++(0,-0.9)
+(0,0.6)  -- ++(0,0.4) coordinate(vs)
+to[R=$R_1$] ++(0,2) node[vcc]{$V_{CC}$}
+(0,-0.6) -- ++(0,-0.4) node[vee]{$V_{EE}$}
+
+(vs) to[short, *-o] ++(0.5,0) node[above]{$v_s$}
+;
+\end{circuitikz}
+\end{document}
