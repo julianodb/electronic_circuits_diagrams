@@ -1,5 +1,5 @@
 \documentclass[convert]{standalone}
-\usepackage[RPvoltages]{circuitikz}
+\usepackage[americancurrents]{circuitikz}
 \begin{document}
 \begin{circuitikz}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
@@ -8,8 +8,13 @@
 (-0.6,0) ++(0,0.6) -- ++(0,-1.2)
 (0,0.45) 
 to[C] ++(0,-0.9)
-(0,0.6)  to[short,-*] ++(0,0.4) node[above]{terminal 1}
-(0,-0.6) to[short,-*] ++(0,-0.4) node[below]{terminal 2}
+(0,0.6)  to[short,-*] ++(0,0.4)
+(0,-0.6) to[short,-*] ++(0,-0.4)
+
+(1,0) node[]{=}
+
+(2,1)
+to[isource, l=$i_s$, *-*] ++(0,-2)
 ;
 \end{circuitikz}
 \end{document}

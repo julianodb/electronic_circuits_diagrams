@@ -752,3 +752,6 @@
 
 ## electret_mic
 ![electret_mic](electret_mic.png "electret_mic")
+
+## electret_mic_model
+![electret_mic_model](electret_mic_model.png "electret_mic_model")
