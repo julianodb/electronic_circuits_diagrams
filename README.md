@@ -749,3 +749,6 @@
 
 ## motor_gen_func
 ![motor_gen_func](motor_gen_func.png "motor_gen_func")
+
+## electret_mic
+![electret_mic](electret_mic.png "electret_mic")
