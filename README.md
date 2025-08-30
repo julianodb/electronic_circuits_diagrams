@@ -402,9 +402,6 @@
 ## T7_RC_lowpass
 ![T7_RC_lowpass](T7_RC_lowpass.png "T7_RC_lowpass")
 
-## RC_lowpass_DC
-![RC_lowpass_DC](RC_lowpass_DC.png "RC_lowpass_DC")
-
 ## T7_RC_bandpass
 ![T7_RC_bandpass](T7_RC_bandpass.png "T7_RC_bandpass")
 
@@ -710,6 +707,12 @@
 
 ## RC_lowpass
 ![RC_lowpass](RC_lowpass.png "RC_lowpass")
+
+## RC_lowpass_DC
+![RC_lowpass_DC](RC_lowpass_DC.png "RC_lowpass_DC")
+
+## RC_lowpass_transient
+![RC_lowpass_transient](RC_lowpass_transient.png "RC_lowpass_transient")
 
 ## RC_highpass
 ![RC_highpass](RC_highpass.png "RC_highpass")
