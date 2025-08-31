@@ -717,6 +717,9 @@
 ## RC_highpass
 ![RC_highpass](RC_highpass.png "RC_highpass")
 
+## transient_example
+![transient_example](transient_example.png "transient_example")
+
 ## pulse_generator
 ![pulse_generator](pulse_generator.png "pulse_generator")
 
