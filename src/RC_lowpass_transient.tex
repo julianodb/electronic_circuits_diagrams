@@ -3,8 +3,8 @@
 \begin{document}
 \begin{circuitikz}
 \draw (0,0) 
-node[above]{$V_{in}$} to[R=$R$, o-*] ++(2,0)
-to[R=$\frac{1}{Cs}$] ++(0,-1.5) node[ground]{}
+node[above]{$V_{in}$} to[generic=$R$, o-*] ++(2,0)
+to[generic=$\frac{1}{Cs}$] ++(0,-1.5) node[ground]{}
 (2,0) to[short, -o] ++(1,0) node[above]{$V_{out}$}
 ;
 \end{circuitikz}
