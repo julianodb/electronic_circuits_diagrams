@@ -717,6 +717,9 @@
 ## RC_highpass
 ![RC_highpass](RC_highpass.png "RC_highpass")
 
+## sensor_passive_high_pass
+![sensor_passive_high_pass](sensor_passive_high_pass.png "sensor_passive_high_pass")
+
 ## transient_example
 ![transient_example](transient_example.png "transient_example")
 
