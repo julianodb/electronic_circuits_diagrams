@@ -720,6 +720,9 @@
 ## transient_example
 ![transient_example](transient_example.png "transient_example")
 
+## transient_example2
+![transient_example2](transient_example2.png "transient_example2")
+
 ## pulse_generator
 ![pulse_generator](pulse_generator.png "pulse_generator")
 
