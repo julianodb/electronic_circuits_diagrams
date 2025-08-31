@@ -678,6 +678,9 @@
 ## differentiator
 ![differentiator](differentiator.png "differentiator")
 
+## sensor_active_high_pass
+![sensor_active_high_pass](sensor_active_high_pass.png "sensor_active_high_pass")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 

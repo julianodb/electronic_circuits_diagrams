@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[ground]{}
+to[american voltage source, l_=$v_S$] ++(0,2)
+to[R=$R_S$] ++(2,0)
+to[C=$C$, -*] ++(2,0) coordinate(R)
+--++(1,0)
+node[op amp, anchor=-](OPAMP){}
+(OPAMP.out) coordinate(VO)
+to[short, *-] ++(0,1.5) coordinate(C)
+to[R, l_=$R_1$] (C -| R) -- (R)
+(VO)
+to[short, -o] ++(1,0) node[above]{$v_o$}
+(OPAMP.+) node[ground]{}
+;
+\end{circuitikz}
+\end{document}
