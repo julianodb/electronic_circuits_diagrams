@@ -5,7 +5,7 @@
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
 \draw 
 (0,0) circle (0.6)
-(-0.6,0) ++(0,0.6) -- ++(0,-1.2)
+(-0.6,0) ++(0,0.6) -- ++(0,-0.6) node[left]{mic} -- ++(0,-0.6)
 (0,0.45) 
 to[C] ++(0,-0.9)
 (0,0.6)  -- ++(0,0.4) coordinate(vs)
@@ -43,6 +43,7 @@ node[op amp, anchor=+, noinv input up](OA3){LM386}
 (OA3.out) to[C=$C_6$] ++(0,-2)
 to[R=$R_8$] ++(0,-2) node[vee]{$V_{EE}$}
 (OA3.out) to[C=$C_5$, *-] ++(2,0)
+to[short, *-o] ++(0.5,0) node[above]{$v_o$} ++(-0.5,0)
 to[loudspeaker] ++(0,-2) node[vee]{$V_{EE}$}
 ++(0.8,1) node[right]{altavoz}
 
