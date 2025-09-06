@@ -5,22 +5,22 @@
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
 \draw (0,0) node[above]{$v_i$}
 to[short, o-] ++(0.5,0)
-to[R=$R_{35}$] ++(2,0) coordinate(R1)
-to[R=$R_{36}$, *-*] ++(2,0) coordinate(R2)
+to[R=$R_{19}$] ++(2,0) coordinate(R1)
+to[R=$R_{20}$, *-*] ++(2,0) coordinate(R2)
 --++(1,0)
 node[op amp, anchor=+, noinv input up](OPAMP){}
-(R2) to[C, l_=$C_{10}$] ++(0,-2) node[ground]{}
+(R2) to[C, l_=$C_{15}$] ++(0,-2) node[ground]{}
 (OPAMP.out) coordinate(VO)
 to[short, *-] ++(0,-1.5)
 -| (OPAMP.-)
 (R1) --++(0,1.5) 
 --++(0.5,0) coordinate(C1)
-to[C=$C_{11}$] (VO |- C1)
+to[C=$C_{14}$] (VO |- C1)
 --++(0.5,0) coordinate(C1X)
 to[short,-*] (C1X |- VO)
 (C1) ++(-0.5,0) to[short,*-] ++(0,1.5)
 --++(0.5,0) coordinate(C1b)
-to[C=$C_{11}$] (VO |- C1b)
+to[C=$C_{14}$] (VO |- C1b)
 --++(0.5,0) coordinate(C1bX)
 to[short,-*] (C1bX |- C1X)
 (VO)
