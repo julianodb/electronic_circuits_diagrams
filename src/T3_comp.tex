@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+(0,0) 
+node[op amp, anchor=out, noinv input up](OA){}
+(OA.out) to[short, -o] ++(0.5,0) node[above]{$v_o$}
+(OA.up) --++(0,0.2) node[vcc]{+2.5V}
+(OA.down) --++(0,-0.2) node[vee]{-2.5V}
+(OA.+) to[short, -o] ++(-1,0) node[above]{$v_i$}
+(OA.-) node[anchor=north east]{$V_{umbral}$}
+-- ++(-2,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.right) node[ground]{}
+(POT.left) node[vcc]{+2.5V}
+++(-0.2,0)
+;
+\end{circuitikz}
+\end{document}
