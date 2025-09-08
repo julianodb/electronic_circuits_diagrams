@@ -1,0 +1,13 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[above]{$V_{i}$} to[generic=$R_1$, o-] ++(2,0) coordinate(COM)
+(COM) to[generic=$\frac{1}{C_1 s}$] ++(0,-2) node[ground]{}
+(COM) to[generic=$R_2$, *-] ++(2,0) coordinate (COM2)
+to[generic=$\frac{1}{C_2 s}$] ++(0,-2) node[ground]{}
+(COM2) to[short, *-o] ++(1,0) node[above]{$V_{o}$}
+;
+\end{circuitikz}
+\end{document}
