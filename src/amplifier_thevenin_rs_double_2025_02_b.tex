@@ -5,25 +5,25 @@
 \draw 
 (-2,-2) node[ground]{}
 to[american voltage source, l_=$v_S$] ++(0,2)
-to[R=$R_S$, -o] ++(2,0) node[above]{$v_{i2}$}
+to[R=$R_S$, -o] ++(2,0) node[above]{$v_{i1}$}
 -- ++(1,0)
 -- ++(1.5,0)
 to[R=$R_{i2}$] ++(0,-2) node[ground]{}
 
 (4,-2) node[ground]{}
-to[american voltage source, l_=$A_{V_{NL2}}*v_{i2}$] ++(0,2)
+to[american voltage source, l_=$A_{V_{NL2}}*v_{i1}$] ++(0,2)
 to[R=$R_{o2}$] ++(2,0)
 -- ++(1,0) 
 
-node[above]{$v_{o2}$}
-to[short, o-o] ++(1,0) node[above]{$v_{i1}$}
+node[above]{$v_{o1}$}
+to[short, o-o] ++(1,0) node[above]{$v_{i2}$}
 -- ++(1.5,0)
 to[R=$R_{i1}$] ++(0,-2) node[ground]{}
 
 (11,-2) node[ground]{}
-to[american voltage source, l_=$A_{V_{NL1}}*v_{i1}$] ++(0,2)
+to[american voltage source, l_=$A_{V_{NL1}}*v_{i2}$] ++(0,2)
 to[R=$R_{o1}$] ++(2,0)
--- ++(1,0)  node[above]{$v_{o}$}
+to[short, -o] ++(1.5,0)  node[above]{$v_{o}$}
 ++(-0.5,0)
 to[R=$R_L$, *-] ++(0,-2) node[ground]{}
 ;
