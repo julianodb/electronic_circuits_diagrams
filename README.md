@@ -525,6 +525,12 @@
 ## amplifier_thevenin_rs_double
 ![amplifier_thevenin_rs_double](amplifier_thevenin_rs_double.png "amplifier_thevenin_rs_double")
 
+## amplifier_thevenin_rs_double_2025_02_a
+![amplifier_thevenin_rs_double_2025_02_a](amplifier_thevenin_rs_double_2025_02_a.png "amplifier_thevenin_rs_double_2025_02_a")
+
+## amplifier_thevenin_rs_double_2025_02_b
+![amplifier_thevenin_rs_double_2025_02_b](amplifier_thevenin_rs_double_2025_02_b.png "amplifier_thevenin_rs_double_2025_02_b")
+
 ## amplifier_thevenin_rs_rl_double_black_box
 ![amplifier_thevenin_rs_rl_double_black_box](amplifier_thevenin_rs_rl_double_black_box.png "amplifier_thevenin_rs_rl_double_black_box")
 
