@@ -606,6 +606,9 @@
 ## avr_annotated
 ![avr_annotated](avr_annotated.png "avr_annotated")
 
+## avr3_annotated
+![avr3_annotated](avr3_annotated.png "avr3_annotated")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
