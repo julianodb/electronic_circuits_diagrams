@@ -699,6 +699,9 @@
 ## sensor_active_high_pass
 ![sensor_active_high_pass](sensor_active_high_pass.png "sensor_active_high_pass")
 
+## sensor_active_high_pass_laplace
+![sensor_active_high_pass_laplace](sensor_active_high_pass_laplace.png "sensor_active_high_pass_laplace")
+
 ## opamp_bandpass
 ![opamp_bandpass](opamp_bandpass.png "opamp_bandpass")
 
