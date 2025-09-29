@@ -3,7 +3,7 @@
 \begin{document}
 \begin{circuitikz}
 \ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
-\draw 
+\draw (0,0)
 node[vee]{$V_{EE}$}
 to[american voltage source, invert, l=$v_s$] ++(0,2)
 to[R=$R_1$] ++(2,0) 
@@ -16,10 +16,6 @@ to[R=$R_3$] (R2 -| OA.out) -- (OA.out)
 to [short, *-o] ++(1,0) node[above]{$v_{o1}$}
 (OA.up) -- ++(0,0.5) node[vcc](VCC){$V_{CC}$}
 (OA.down) -- ++(0,-0.5) node[vee](GND){$V_{EE}$}
-;
-\draw[blue, dashed] 
-(0.7,-1.9) rectangle (5.5,4)
-(3.1,-1.95) node[below]{Amplificador 1}
 ;
 \end{circuitikz}
 \end{document}
