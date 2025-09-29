@@ -818,3 +818,6 @@
 
 ## electret_polarized
 ![electret_polarized](electret_polarized.png "electret_polarized")
+
+## electret_thevenin
+![electret_thevenin](electret_thevenin.png "electret_thevenin")
