@@ -357,6 +357,9 @@
 ## T4_auto_off
 ![T4_auto_off](T4_auto_off.png "T4_auto_off")
 
+## T4_electret_thevenin
+![T4_electret_thevenin](T4_electret_thevenin.png "T4_electret_thevenin")
+
 ## T5_materials
 ![T5_materials](T5_materials.png "T5_materials")
 
