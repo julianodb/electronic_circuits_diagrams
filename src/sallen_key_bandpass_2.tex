@@ -12,9 +12,9 @@ node[op amp, anchor=+, noinv input up](OPAMP){}
 (R30) to[C=$C$] ++(0,-2) node[ground]{}
 (R31) to[R=$4R$] ++(0,-2) node[ground]{}
 (OPAMP.out) coordinate(VO)
-to[R=$R_a=R$, *-*] ++(0,-2) coordinate(RA)
+to[R={$R_a=R$}, *-*] ++(0,-2) coordinate(RA)
 -| (OPAMP.-)
-(RA) to[R_b=$R$] ++(0,-2) node[ground]{}
+(RA) to[R={$R_b=R$}] ++(0,-2) node[ground]{}
 (R30) --++(0,1.5) 
 --++(0.5,0) coordinate(C1)
 to[R=$2R$] (VO |- C1)
