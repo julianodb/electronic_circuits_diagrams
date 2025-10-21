@@ -69,6 +69,9 @@
 ## battery_diode_zener_3R_alt_with_currents
 ![battery_diode_zener_3R_alt_with_currents](battery_diode_zener_3R_alt_with_currents.png "battery_diode_zener_3R_alt_with_currents")
 
+## battery_diode_zener_3R_alt2
+![battery_diode_zener_3R_alt2](battery_diode_zener_3R_alt2.png "battery_diode_zener_3R_alt2")
+
 ## resistance_led
 ![resistance_led](resistance_led.png "resistance_led")
 
