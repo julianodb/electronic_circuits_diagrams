@@ -384,6 +384,9 @@
 ## T5_ir_detect
 ![T5_ir_detect](T5_ir_detect.png "T5_ir_detect")
 
+## T5_active_envelope_detector
+![T5_active_envelope_detector](T5_active_envelope_detector.png "T5_active_envelope_detector")
+
 ## T6a
 ![T6a](T6a.png "T6a")
 
