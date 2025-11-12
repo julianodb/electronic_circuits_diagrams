@@ -390,6 +390,9 @@
 ## T5_stethoscope_board_1_so_far
 ![T5_stethoscope_board_1_so_far](T5_stethoscope_board_1_so_far.png "T5_stethoscope_board_1_so_far")
 
+## T5_stethoscope_board_2_so_far
+![T5_stethoscope_board_2_so_far](T5_stethoscope_board_2_so_far.png "T5_stethoscope_board_2_so_far")
+
 ## T6a
 ![T6a](T6a.png "T6a")
 
