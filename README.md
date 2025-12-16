@@ -165,6 +165,9 @@
 ## npn
 ![npn](npn.png "npn")
 
+## nmosfet
+![nmosfet](nmosfet.png "nmosfet")
+
 ## phototransistor
 ![phototransistor](phototransistor.png "phototransistor")
 
