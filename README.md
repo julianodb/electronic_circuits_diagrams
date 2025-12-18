@@ -411,6 +411,9 @@
 ## T6_tia_plus_filter_1
 ![T6_tia_plus_filter_1](T6_tia_plus_filter_1.png "T6_tia_plus_filter_1")
 
+## T6_comp1
+![T6_comp1](T6_comp1.png "T6_comp1")
+
 ## T7a
 ![T7a](T7a.png "T7a")
 
