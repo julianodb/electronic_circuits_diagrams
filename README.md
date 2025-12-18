@@ -93,6 +93,9 @@
 ## eight_leds_plus_control
 ![eight_leds_plus_control](eight_leds_plus_control.png "eight_leds_plus_control")
 
+## resistance_led_mosfet
+![resistance_led_mosfet](resistance_led_mosfet.png "resistance_led_mosfet")
+
 ## cny70_circuit
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")
 
