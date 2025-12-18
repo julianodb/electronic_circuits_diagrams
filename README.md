@@ -414,6 +414,9 @@
 ## T6_comp1
 ![T6_comp1](T6_comp1.png "T6_comp1")
 
+## T6_comp2
+![T6_comp2](T6_comp2.png "T6_comp2")
+
 ## T7a
 ![T7a](T7a.png "T7a")
 
