@@ -1,23 +1,23 @@
 \documentclass[convert]{standalone}
-\usepackage[RPvoltages]{circuitikz}
+\usepackage[american, RPvoltages]{circuitikz}
 \begin{document}
 \begin{circuitikz}
 \draw (0,0) node[ground](GND){}
-to[american voltage source, l=$V_{CC}$] (0,2)
-to[zzDo=$D_Z$, invert, -*] ++(2,0) 
-to[R=$R_4$] ++(0,-2) 
-to[R=$R_3$, *-*] (0,0)
-(2,2) -- ++(2,0)
-to[Do=$D_3$] ++(0,-2)
--- (2,0)
+to[american voltage source, l=$V_{CC}$] (0,3)
+to[zzDo, l=$D_Z$, invert, v>=$V_{D_Z}$, -*] ++(3,0) 
+to[R, l=$R_4$, v=$V_{R_4}$] ++(0,-3) 
+to[R, l=$R_3$, v=$V_{R_3}$, *-*] (0,0)
+(3,3) -- ++(3,0)
+to[Do=$D_3$,v=$V_{D_3}$] ++(0,-3)
+-- (3,0)
 ;
 \draw[color=blue]
-(2,2) node[above]{$V_2$}
-(2,0) node[anchor=north west]{$V_1$}
-(0,2) to[short, i=$I_{D_Z}$] ++(0.4,0)
-(2,2) to[short, i=$I_{R_4}$] ++(0,-0.4)
-(3,2) to[short, i=$I_{D_3}$] ++(0.4,0)
-(2,0) to[short, i=$I_{R_3}$] ++(-0.4,0)
+(3,3) node[above]{$V_2$}
+(3,0) node[anchor=north west]{$V_1$}
+(0,3) to[short, i=$I_{D_Z}$] ++(0.4,0)
+(3,3) to[short, i=$I_{R_4}$] ++(0,-0.6)
+(4.5,3) to[short, i=$I_{D_3}$] ++(0.4,0)
+(3,0) to[short, i=$I_{R_3}$] ++(-0.6,0)
 ;
 \end{circuitikz}
 \end{document}
