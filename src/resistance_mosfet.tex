@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc](VCC){$V_2$}
+to[R={$R_1$}, *-] ++(0,-2)
+node[nigfete, anchor=D](Q1){}
+(Q1.S) node[ground](GND){}
+(Q1.G) to[R=$R_2$] ++(-2,0) 
+
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot}\ (V_1)$}
+(POT.right) node[ground]{}
+(POT.left) |- (VCC)
+;
+\end{circuitikz}
+\end{document}
