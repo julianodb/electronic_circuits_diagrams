@@ -222,6 +222,9 @@
 ## common_emitter_double
 ![common_emitter_double](common_emitter_double.png "common_emitter_double")
 
+## mosfet_amplifier
+![mosfet_amplifier](mosfet_amplifier.png "mosfet_amplifier")
+
 ## differential_amplifier
 ![differential_amplifier](differential_amplifier.png "differential_amplifier")
 
