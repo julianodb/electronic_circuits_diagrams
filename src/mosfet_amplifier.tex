@@ -4,11 +4,11 @@
 \begin{circuitikz}
 \draw (0,0) node[vcc]{+10V}
 to[R={$R_1$}] ++(0,-2)
-node[nigfete, anchor=D](Q1){}
+node[nigfete, anchor=D](Q1){$Q_1$}
 (Q1.S) node[ground](GND){}
 (Q1.D) to[R=$R_{2}$, *-] ++(-2,0) coordinate(A)
 -- (A |- Q1.G) coordinate (B) -- (Q1.G)
-(B) to[short, *-o] ++ (-1,0)
+(B) to[C=$C_1$, *-o] ++ (-2,0)
 node[above]{$v_i$}
 (Q1.D) to[short, -o] ++ (1,0)
 node[above]{$v_o$}
