@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages, americancurrents]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[ground]{} ++(1,0)
+to[R={$R_1$}] ++(0,-2) coordinate(D)
+to[isource] ++(0,-1.5)
+node[ground](GND){}
+(D) to[R=$R_{2}$, *-] ++(-2,0) coordinate(A)
+-- ++(0,-0.75) coordinate (B) to[short, -o] ++(0.5,0)
+(B) to[short, *-o] ++ (-2,0)
+node[above]{$v_i$}
+(D) to[short, -o] ++ (1,0)
+node[above]{$v_o$}
+;
+\end{circuitikz}
+\end{document}

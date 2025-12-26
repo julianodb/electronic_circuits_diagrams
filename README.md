@@ -231,6 +231,9 @@
 ## mosfet_amplifier
 ![mosfet_amplifier](mosfet_amplifier.png "mosfet_amplifier")
 
+## mosfet_amplifier_small_signal
+![mosfet_amplifier_small_signal](mosfet_amplifier_small_signal.png "mosfet_amplifier_small_signal")
+
 ## differential_amplifier
 ![differential_amplifier](differential_amplifier.png "differential_amplifier")
 
