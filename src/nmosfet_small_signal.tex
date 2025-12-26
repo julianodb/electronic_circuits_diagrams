@@ -16,13 +16,12 @@ to[isource, l_={$\Delta I_D=g_{ _{FS}} \Delta V_{GS}$}, invert] ++(0,2.5)
 node[anchor=east]{$D$} coordinate(newd)
 ;
 \draw[color=red] 
-(Q1.S) -- ++(0,0.3) to[short, i=$I_D$] ++(0,-0.4)
-(Q1.D) -- ++(0,-0.3) to[short, i<=$I_D$] ++(0,0.4)
+(Q1.S) -- ++(0,0.3) to[short, i=$\Delta I_D$] ++(0,-0.4)
+(Q1.D) -- ++(0,-0.3) to[short, i<=$\Delta I_D$] ++(0,0.4)
 (news) ++ (0,0.3) -- ++(0,0.3) to[short, i=$\Delta I_D$] ++(0,-0.4)
 (newd) ++ (0,-0.3) -- ++(0,-0.3) to[short, i<=$\Delta I_D$] ++(0,0.4)
 ;
-\draw[color=blue] (Q1.D) to[open] ++(0.1,-0.1) to[open, v^=$V_{DS}$] ++(0,-1.3) ;
-\draw[color=blue] (Q1.G) to[open] ++(0.1,-0.1) to[open, v=$V_{GS}$] (Q1.E) ;
+\draw[color=blue] (Q1.G) to[open] ++(0.1,-0.1) to[open, v=$\Delta V_{GS}$] (Q1.E) ;
 \draw[color=blue] (news) ++(0,0.5) to[open] ++(0.1,-0.1) to[open, v^>=$\Delta V_{GS}$] (newg) ;
 \end{circuitikz}
 \end{document}
