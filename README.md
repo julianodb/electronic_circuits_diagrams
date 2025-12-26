@@ -180,6 +180,9 @@
 ## nmosfet
 ![nmosfet](nmosfet.png "nmosfet")
 
+## nmosfet_small_signal
+![nmosfet_small_signal](nmosfet_small_signal.png "nmosfet_small_signal")
+
 ## phototransistor
 ![phototransistor](phototransistor.png "phototransistor")
 
