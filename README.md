@@ -840,6 +840,9 @@
 ## ldo
 ![ldo](ldo.png "ldo")
 
+## ldo_pmos
+![ldo_pmos](ldo_pmos.png "ldo_pmos")
+
 ## boost_converter
 ![boost_converter](boost_converter.png "boost_converter")
 
