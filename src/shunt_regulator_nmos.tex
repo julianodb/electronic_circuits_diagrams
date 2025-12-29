@@ -1,0 +1,33 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[above]{$v_i$}
+to[short, o-] ++(1,0) coordinate(X)
+to[R=$R_z$] ++(0,-2) coordinate(Z)
+to[zzDo=$D_z$, invert] ++(0,-2) node[ground]{}
+
+(X) to[short, *-] ++(1.5,0)
+to[R=$R_S$] ++(2,0) 
+--++(2.5,0) coordinate(L)
+
+-- ++(0,-2)
+to[R=$R_1$] ++(0,-2) coordinate(R)
+to[R=$R_2$] ++ (0,-2) node[ground]{}
+
+(R) to[short, *-] ++ (-4.7,0)
+|- ++(0.3,1.5)
+node[op amp, anchor=+](OA){}
+
+(Z) to[short, *-] ++(1,0) |- (OA.-)
+
+(OA.out) node[nigfete, anchor=G](Q1){$Q_1$}
+(Q1.S) node[ground]{}
+(Q1.D) to[short, -*] (Q1.D |- L)
+
+(L) to[short, *-] ++ (2,0) node[above]{$v_o$}
+to[generic=$R_L$] ++(0,-2) node[ground]{}
+;
+\end{circuitikz}
+\end{document}

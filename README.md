@@ -171,6 +171,9 @@
 ## zener_regulator_generic
 ![zener_regulator_generic](zener_regulator_generic.png "zener_regulator_generic")
 
+## shunt_regulator_nmos
+![shunt_regulator_nmos](shunt_regulator_nmos.png "shunt_regulator_nmos")
+
 ## photodiode_photoconductive
 ![photodiode_photoconductive](photodiode_photoconductive.png "photodiode_photoconductive")
 
