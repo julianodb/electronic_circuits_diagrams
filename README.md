@@ -168,6 +168,9 @@
 ## zener_rectifier
 ![zener_rectifier](zener_rectifier.png "zener_rectifier")
 
+## zener_regulator_generic
+![zener_regulator_generic](zener_regulator_generic.png "zener_regulator_generic")
+
 ## photodiode_photoconductive
 ![photodiode_photoconductive](photodiode_photoconductive.png "photodiode_photoconductive")
 
