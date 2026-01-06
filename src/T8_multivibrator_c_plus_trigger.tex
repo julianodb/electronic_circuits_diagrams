@@ -8,9 +8,9 @@
 node[op amp, anchor=out](OA){}
 (OA.up) --++(0,0.2) node[vcc]{+2.5V}
 (OA.down) --++(0,-0.2) node[vee]{-2.5V}
-(OA.-) to[short, -o] ++(-1,0) node[above]{$v_i$}
+(OA.-) to[short, -o] ++(-0.5,0) node[above]{$v_i$}
 (OA.+) node[anchor=north east]{$V_{umbral}$}
--- ++(-2,0)
+-- ++(-1.6,0)
 node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
 (POT.right) node[ground]{}
 (POT.left) node[vcc]{+2.5V}
