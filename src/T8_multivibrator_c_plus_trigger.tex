@@ -28,8 +28,7 @@ node[pigfete, anchor=G](Q1){}
 --++(0,-1.5) coordinate(FB) 
 --++(1,0)
 node[op amp, noinv input up, anchor=+](OA2){}
-(R2)
-to[R=$R_{17}$, *-] (R2 -| OA2.out) -- (OA2.out)
+(R2) to[R=$R_{17}$, *-] (R2 -| OA2.out) -- (OA2.out)
 to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$} 
 (FB) to[R=$R_{16}$, *-] ++(0,-2) node[ground]{}
 (OA2.-) -- ++(0,-2) coordinate(OA1M)
