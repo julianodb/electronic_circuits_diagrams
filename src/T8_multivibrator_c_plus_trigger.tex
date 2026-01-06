@@ -24,12 +24,12 @@ to[R=$R_{14}$] ++(0,2) node[vcc]{+2.5V}
 node[pigfete, anchor=G](Q1){}
 (Q1.bulk) node[right]{$Q_1$}
 (Q1.S) node[vcc]{+2.5V}
-(Q1.D) to[short,-*] ++(0,-0.5) coordinate(R2) node[left]{$V_+$} 
+(Q1.D) -- ++(0,-0.5) coordinate(R2) node[left]{$V_+$} 
 --++(0,-1.5) coordinate(FB) 
 --++(1,0)
 node[op amp, noinv input up, anchor=+](OA2){}
 (R2)
-to[R=$R_{17}$] (R2 -| OA2.out) -- (OA2.out)
+to[R=$R_{17}$, *-] (R2 -| OA2.out) -- (OA2.out)
 to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$} 
 (FB) to[R=$R_{16}$, *-] ++(0,-2) node[ground]{}
 (OA2.-) -- ++(0,-2) coordinate(OA1M)
