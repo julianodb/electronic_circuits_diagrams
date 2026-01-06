@@ -1,0 +1,44 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw 
+(0,0) 
+node[op amp, anchor=out](OA){}
+(OA.up) --++(0,0.2) node[vcc]{+2.5V}
+(OA.down) --++(0,-0.2) node[vee]{-2.5V}
+(OA.-) to[short, -o] ++(-1,0) node[above]{$v_i$}
+(OA.+) node[anchor=north east]{$V_{umbral}$}
+-- ++(-2,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.right) node[ground]{}
+(POT.left) node[vcc]{+2.5V}
+(POT.270) node[left]{$R_{pot2}$}
+
+(OA.out) to[C, l_=$C_{12}$, -*] ++(2,0) coordinate(VO)
+to[R=$R_{13}$] ++(0,2) node[vcc]{+2.5V}
+(VO) to[Do=$D_2$, invert] ++(2,0) coordinate(R14)
+to[R=$R_{14}$] ++(0,2) node[vcc]{+2.5V}
+(R14) to[R=$R_{15}$, *-] ++(2,0)
+node[pigfete, anchor=G](Q1){}
+(Q1.S) node[vcc]{+2.5V}
+(Q1.D) to[short,*-*] ++(0,-0.5) coordinate(R2) --++(0,-1.5)
+coordinate(FB) --++(1,0)
+node[op amp, noinv input up, anchor=+](OA2){}
+(R2)
+to[R=$R_{17}$] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-o] ++(1,0) coordinate(MMOUT) node[above]{$v_o$} 
+(FB) to[R=$R_{16}$, *-] ++(0,-2) node[ground]{}
+(OA2.-) -- ++(0,-2) coordinate(OA1M)
+to[R=$R_{18}$, *-] (OA1M -| OA2.out)
+-- (OA2.out)
+(OA1M) coordinate(CD)
+to[C=$C_{13}$] ++(0,-2) node[ground]{}
+(CD) --++(-1,0)
+to[Do, l_=$D_3$, invert] ++(0,-2) node[ground]{}
+(OA2.up) node[vcc]{+2.5 V}
+(OA2.down) node[vee]{-2.5 V}
+;
+\end{circuitikz}
+\end{document}
