@@ -504,6 +504,9 @@
 ## T9_stethoscope_board_1
 ![T9_stethoscope_board_1](T9_stethoscope_board_1.png "T9_stethoscope_board_1")
 
+## T9_stethoscope_board_2
+![T9_stethoscope_board_2](T9_stethoscope_board_2.png "T9_stethoscope_board_2")
+
 ## full_bridge_rectifier
 ![full_bridge_rectifier](full_bridge_rectifier.png "full_bridge_rectifier")
 
