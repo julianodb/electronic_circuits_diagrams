@@ -1,0 +1,21 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages, americancurrents]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc]{$V_{CC}$} -- ++(-1,0)
+to[R={$R$}] ++(0,-2)
+node[nigfete, anchor=D](Q1){$Q_1$}
+(Q1.S) -- ++(1,0)
+to[isource, l=$I_B$] ++(0,-1.5) node[vee]{$-V_{CC}$}
+(Q1.G) to[short, -o] ++(-0.5,0) node[above]{$V_+$}
+
+(0,0) to[short, *-] ++(+1,0)
+to[R, l_={$R$}] ++(0,-2)
+node[nigfete, xscale=-1, anchor=D](Q1){\ctikzflipx{$Q_2$}}
+(Q1.S) to[short, -*] ++ (-1,0)
+(Q1.G) to[short, -o] ++(0.5,0) node[above]{$V_-$}
+(Q1.D) to[short, *-o] ++ (1,0)
+node[above]{$V_o$}
+;
+\end{circuitikz}
+\end{document}
