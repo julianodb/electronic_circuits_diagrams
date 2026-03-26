@@ -87,6 +87,9 @@
 ## resistance_led_5
 ![resistance_led_5](resistance_led_5.png "resistance_led_5")
 
+## five_resistance_leds
+![five_resistance_leds](five_resistance_leds.png "five_resistance_leds")
+
 ## resistance_1_led_plus_minus_5_volts
 ![resistance_1_led_plus_minus_5_volts](resistance_1_led_plus_minus_5_volts.png "resistance_1_led_plus_minus_5_volts")
 
