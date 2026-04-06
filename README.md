@@ -90,6 +90,9 @@
 ## five_resistance_leds
 ![five_resistance_leds](five_resistance_leds.png "five_resistance_leds")
 
+## five_resistance_leds_driver
+![five_resistance_leds_driver](five_resistance_leds_driver.png "five_resistance_leds_driver")
+
 ## resistance_1_led_plus_minus_5_volts
 ![resistance_1_led_plus_minus_5_volts](resistance_1_led_plus_minus_5_volts.png "resistance_1_led_plus_minus_5_volts")
 
