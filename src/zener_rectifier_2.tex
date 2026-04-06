@@ -1,0 +1,17 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+ to[american voltage source, l=8 V] ++(0,2)
+ to[R=20, -*] ++(2,0)
+ to[zzDo, l=$D_Z$, invert, mirror, -*] ++(0,-2)
+ node[ground](GND){}
+ -- ++(-2,0);
+\draw (2,2)
+ -- ++(2,0)
+ to[R, l={$R_{L}=1\ k\Omega$}] ++(0,-2)
+ -- ++(-2,0);
+ \draw[color=blue] (4,2) to[short, *-] ++(0.2,0.2) node[anchor=south west]{$V_{R_L}$};
+\end{circuitikz}
+\end{document}

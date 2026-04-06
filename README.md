@@ -174,6 +174,9 @@
 ## zener_rectifier
 ![zener_rectifier](zener_rectifier.png "zener_rectifier")
 
+## zener_rectifier_2
+![zener_rectifier_2](zener_rectifier_2.png "zener_rectifier_2")
+
 ## zener_regulator_generic
 ![zener_regulator_generic](zener_regulator_generic.png "zener_regulator_generic")
 
