@@ -8,7 +8,7 @@ to[leDo, l_=$D_1$] ++(0,-2)
 node[nigfete, anchor=D](Q1){$Q_1$}
 (Q1.S) node[vee]{-2.5V}
 (Q1.G) -| ++(-0.5,-1)
-to[short] ++(0,-1) node[below]{$V_1$} coordinate(V1)
+to[short] ++(0,-1) node[north east]{$V_1$} coordinate(V1)
 to[short, -o] ++(-0.5,0) node[left]{$V_i$}
 
 (2.5,0) node[vcc]{+2.5V}
@@ -17,7 +17,7 @@ to[leDo, l_=$D_2$] ++(0,-2)
 node[nigfete, anchor=D](Q2){$Q_2$}
 (Q2.S) node[vee]{-2.5V}
 (Q2.G) -| ++(-0.5,-1)
-to[short, -o] ++(0,-1) node[below]{$V_2$} coordinate(V2)
+to[short] ++(0,-1) node[north east]{$V_2$} coordinate(V2)
 
 (5,0) node[vcc]{+2.5V}
 to[R={$R_{3}$}] ++(0,-2)
@@ -25,7 +25,7 @@ to[leDo, l_=$D_3$] ++(0,-2)
 node[nigfete, anchor=D](Q3){$Q_3$}
 (Q3.S) node[vee]{-2.5V}
 (Q3.G) -| ++(-0.5,-1)
-to[short, -o] ++(0,-1) node[below]{$V_3$} coordinate(V3)
+to[short, -o] ++(0,-1) node[north east]{$V_3$} coordinate(V3)
 
 (7.5,0) node[vcc]{+2.5V}
 to[R={$R_{4}$}] ++(0,-2)
@@ -33,7 +33,7 @@ to[leDo, l_=$D_4$] ++(0,-2)
 node[nigfete, anchor=D](Q4){$Q_4$}
 (Q4.S) node[vee]{-2.5V}
 (Q4.G) -| ++(-0.5,-1)
-to[short, -o] ++(0,-1) node[below]{$V_4$} coordinate(V4)
+to[short, -o] ++(0,-1) node[north east]{$V_4$} coordinate(V4)
 
 (10,0) node[vcc]{+2.5V}
 to[R={$R_{5}$}] ++(0,-2)
@@ -41,7 +41,7 @@ to[leDo, l_=$D_5$] ++(0,-2)
 node[nigfete, anchor=D](Q5){$Q_5$}
 (Q5.S) node[vee]{-2.5V}
 (Q5.G) -| ++(-0.5,-1)
-to[short, -o] ++(0,-1) node[below]{$V_5$} coordinate(V5)
+to[short, -o] ++(0,-1) node[north east]{$V_5$} coordinate(V5)
 
 (V1) to[Do, l=$D_6$, *-] ++(1,0) 
 to[Do, l=$D_6$, -*] (V2)
