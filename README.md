@@ -111,6 +111,9 @@
 ## resistance_led_mosfet
 ![resistance_led_mosfet](resistance_led_mosfet.png "resistance_led_mosfet")
 
+## resistance_led_mosfet_2
+![resistance_led_mosfet_2](resistance_led_mosfet_2.png "resistance_led_mosfet_2")
+
 ## cny70_circuit
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")
 
