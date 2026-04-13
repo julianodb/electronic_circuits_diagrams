@@ -414,6 +414,9 @@
 ## T3_diode_ladder
 ![T3_diode_ladder](T3_diode_ladder.png "T3_diode_ladder")
 
+## T3_full_circuit_LED_ladder
+![T3_full_circuit_LED_ladder](T3_full_circuit_LED_ladder.png "T3_full_circuit_LED_ladder")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
