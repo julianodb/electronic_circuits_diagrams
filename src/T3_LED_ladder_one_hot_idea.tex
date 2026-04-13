@@ -1,0 +1,77 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc]{+2.5V}
+to[R={$R_{1}$}] ++(0,-2)
+to[leDo, l_=$D_1$] ++(0,-2) 
+node[nigfete, xscale=-1, anchor=D](Q6){\ctikzflipx{$Q_6$}}
+(Q6.S)
+node[nigfete, anchor=D](Q1){$Q_1$}
+(Q1.S) node[vee]{-2.5V}
+(Q1.G) -- ++(-0.5,0) 
+to[short] ++(0,-2)  coordinate(V1)
+to[short, -o] ++(-0.5,0) node[left]{$V_i$}
+
+(2.5,0) node[vcc]{+2.5V}
+to[R={$R_{2}$}] ++(0,-2)
+to[leDo, l_=$D_2$] ++(0,-2) 
+node[nigfete, xscale=-1, anchor=D](Q7){\ctikzflipx{$Q_7$}}
+(Q7.S)
+node[nigfete, anchor=D](Q2){$Q_2$}
+(Q2.S) node[vee]{-2.5V}
+(Q2.G) -- ++(-0.5,0)
+to[short] ++(0,-2) coordinate(V2)
+
+(5,0) node[vcc]{+2.5V}
+to[R={$R_{3}$}] ++(0,-2)
+to[leDo, l_=$D_3$] ++(0,-2) 
+node[nigfete, xscale=-1, anchor=D](Q8){\ctikzflipx{$Q_8$}}
+(Q8.S)
+node[nigfete, anchor=D](Q3){$Q_3$}
+(Q3.S) node[vee]{-2.5V}
+(Q3.G) -- ++(-0.5,0)
+to[short] ++(0,-2) coordinate(V3)
+
+(7.5,0) node[vcc]{+2.5V}
+to[R={$R_{4}$}] ++(0,-2)
+to[leDo, l_=$D_4$] ++(0,-2) 
+node[nigfete, xscale=-1, anchor=D](Q9){\ctikzflipx{$Q_9$}}
+(Q9.S)
+node[nigfete, anchor=D](Q4){$Q_4$}
+(Q4.S) node[vee]{-2.5V}
+(Q4.G) -- ++(-0.5,0) 
+to[short] ++(0,-2) coordinate(V4)
+
+(10,-1.55) node[vcc]{+2.5V}
+to[R={$R_{5}$}] ++(0,-2)
+to[leDo, l_=$D_5$] ++(0,-2) 
+node[nigfete, anchor=D](Q5){$Q_5$}
+(Q5.S) node[vee]{-2.5V}
+(Q5.G) -- ++(-0.5,0) 
+to[short] ++(0,-2) coordinate(V5)
+
+(V1) to[Do, l_=$D_6$, *-] ++(1.25,0) 
+to[Do, l_=$D_7$, -*] (V2)
+to[R=$R_6$] ++(0,-2) node[vee]{-2.5V}
+
+(V2) to[Do, l_=$D_8$] ++(1.25,0) 
+to[Do, l_=$D_9$, -*] (V3)
+to[R=$R_7$] ++(0,-2) node[vee]{-2.5V}
+
+(V3) to[Do, l_=$D_{10}$] ++(1.25,0) 
+to[Do, l_=$D_{11}$, -*] (V4)
+to[R=$R_8$] ++(0,-2) node[vee]{-2.5V}
+
+(V4) to[Do, l_=$D_{12}$] ++(1.25,0) 
+to[Do, l_=$D_{13}$, -*] (V5)
+to[R=$R_9$] ++(0,-2) node[vee]{-2.5V}
+
+(Q2.D) to[short, *-] ++(-1,0) |- (Q6.G)
+(Q3.D) to[short, *-] ++(-1,0) |- (Q7.G)
+(Q4.D) to[short, *-] ++(-1,0) |- (Q8.G)
+(Q5.D) to[short, *-] ++(-1,0) |- (Q9.G)
+
+;
+\end{circuitikz}
+\end{document}
