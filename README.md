@@ -411,6 +411,9 @@
 ## T3_high_pass
 ![T3_high_pass](T3_high_pass.png "T3_high_pass")
 
+## T3_diode_ladder
+![T3_diode_ladder](T3_diode_ladder.png "T3_diode_ladder")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
