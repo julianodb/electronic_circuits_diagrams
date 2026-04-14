@@ -435,6 +435,9 @@
 ## T4_electret_thevenin
 ![T4_electret_thevenin](T4_electret_thevenin.png "T4_electret_thevenin")
 
+## T4_difference_amplifier
+![T4_difference_amplifier](T4_difference_amplifier.png "T4_difference_amplifier")
+
 ## T5_materials
 ![T5_materials](T5_materials.png "T5_materials")
 
