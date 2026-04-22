@@ -360,6 +360,9 @@
 ## T4_G
 ![T4_G](T4_G.png "T4_G")
 
+## T4_placa_1
+![T4_placa_1](T4_placa_1.png "T4_placa_1")
+
 ## T2_latch
 ![T2_latch](T2_latch.png "T2_latch")
 
