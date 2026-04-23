@@ -4,7 +4,7 @@
 \begin{circuitikz}
 \draw
 (0,0) node[above]{$v_1$} to[R=$R_{14}$, o-*] ++(2,0) coordinate(RDA1)
--- ++(1,0) node[op amp, noinv input up, anchor=+](OA1){}
+-- ++(1,0) node[op amp, noinv input up, anchor=+](OA1){IC1}
 (RDA1) to[R, l_=$R_{15}$] ++(0,-2) node[ground]{}
 
 (OA1.-) -- ++(0,-2.5) coordinate(RG1)
