@@ -28,7 +28,7 @@ node[nigfete, anchor=D](Q1){$Q_1$}
 to[short] ++(0,-2)  coordinate(V1)
 |- (VO)
 
-(2.5,0) node[vcc]{+2.5V}
+(VO) ++(3,4) ++(2.5,0) node[vcc]{+2.5V}
 to[R={$R_{2}$}] ++(0,-2)
 to[leDo, l_=$D_2$] ++(0,-2) 
 node[nigfete, xscale=-1, anchor=D](Q7){\ctikzflipx{$Q_7$}}
@@ -39,7 +39,7 @@ node[nigfete, anchor=D](Q2){$Q_2$}
 (Q2.G) -- ++(-0.5,0)
 to[short] ++(0,-2) coordinate(V2)
 
-(5,0) node[vcc]{+2.5V}
+(VO) ++(3,4) ++(5,0) node[vcc]{+2.5V}
 to[R={$R_{3}$}] ++(0,-2)
 to[leDo, l_=$D_3$] ++(0,-2) 
 node[nigfete, xscale=-1, anchor=D](Q8){\ctikzflipx{$Q_8$}}
@@ -50,7 +50,7 @@ node[nigfete, anchor=D](Q3){$Q_3$}
 (Q3.G) -- ++(-0.5,0)
 to[short] ++(0,-2) coordinate(V3)
 
-(7.5,0) node[vcc]{+2.5V}
+(VO) ++(3,4) ++(7.5,0) node[vcc]{+2.5V}
 to[R={$R_{4}$}] ++(0,-2)
 to[leDo, l_=$D_4$] ++(0,-2) 
 node[nigfete, xscale=-1, anchor=D](Q9){\ctikzflipx{$Q_9$}}
@@ -61,7 +61,7 @@ node[nigfete, anchor=D](Q4){$Q_4$}
 (Q4.G) -- ++(-0.5,0) 
 to[short] ++(0,-2) coordinate(V4)
 
-(10,-1.55) node[vcc]{+2.5V}
+(VO) ++(3,4) ++(10,-1.55) node[vcc]{+2.5V}
 to[R={$R_{5}$}] ++(0,-2)
 to[leDo, l_=$D_5$] ++(0,-2) 
 node[nigfete, anchor=D](Q5){$Q_5$}
