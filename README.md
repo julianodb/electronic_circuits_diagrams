@@ -45,6 +45,9 @@
 ## battery_diode_zener_2R_alt2
 ![battery_diode_zener_2R_alt2](battery_diode_zener_2R_alt2.png "battery_diode_zener_2R_alt2")
 
+## battery_diode_zener_2R_alt2_with_currents
+![battery_diode_zener_2R_alt2_with_currents](battery_diode_zener_2R_alt2_with_currents.png "battery_diode_zener_2R_alt2_with_currents")
+
 ## battery_2diode_3R
 ![battery_2diode_3R](battery_2diode_3R.png "battery_2diode_3R")
 
