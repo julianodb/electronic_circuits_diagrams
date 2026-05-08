@@ -264,8 +264,8 @@
 ## mosfet_amplifier_small_signal
 ![mosfet_amplifier_small_signal](mosfet_amplifier_small_signal.png "mosfet_amplifier_small_signal")
 
-## mosfet_differencital_pair
-![mosfet_differencital_pair](mosfet_differencital_pair.png "mosfet_differencital_pair")
+## mosfet_differential_pair
+![mosfet_differential_pair](mosfet_differential_pair.png "mosfet_differential_pair")
 
 ## mosfet_differential_pair_small_signal
 ![mosfet_differential_pair_small_signal](mosfet_differential_pair_small_signal.png "mosfet_differential_pair_small_signal")
