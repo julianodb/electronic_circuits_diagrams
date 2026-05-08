@@ -747,6 +747,9 @@
 ## ecg_II
 ![ecg_II](ecg_II.png "ecg_II")
 
+## ecg_II_annotated
+![ecg_II_annotated](ecg_II_annotated.png "ecg_II_annotated")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
