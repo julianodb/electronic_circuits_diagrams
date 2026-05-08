@@ -14,5 +14,14 @@ to[Do=$D_2$] ++(0,-2)
 -- (2,0)
 (2,2) to[zzDo=$D_Z$, *-*, invert] ++(2,0)
 ;
+\draw[color=blue]
+(2,2.2) node[left]{$V_1$}
+(4,2.2) node[right]{$V_2$}
+(2,4) to[short, i=$I_1$] ++(0,-0.4)
+(4,4) to[short, i=$I_2$] ++(0,-0.4)
+(4,2) to[short, i_=$I_3$] ++(-0.4,0)
+(4,2) to[short, i=$I_4$] ++(0,-0.4)
+(2,2) to[short, i=$I_5$] ++(0,-0.4)
+;
 \end{circuitikz}
 \end{document}
