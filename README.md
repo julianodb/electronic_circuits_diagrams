@@ -300,6 +300,9 @@
 ## instrumentation_amplifier_plus_npn_with_annotations
 ![instrumentation_amplifier_plus_npn_with_annotations](instrumentation_amplifier_plus_npn_with_annotations.png "instrumentation_amplifier_plus_npn_with_annotations")
 
+## instrumentation_amplifier_annotated
+![instrumentation_amplifier_annotated](instrumentation_amplifier_annotated.png "instrumentation_amplifier_annotated")
+
 ## transimpedance_amplifier
 ![transimpedance_amplifier](transimpedance_amplifier.png "transimpedance_amplifier")
 
