@@ -507,6 +507,9 @@
 ## T6_comp2
 ![T6_comp2](T6_comp2.png "T6_comp2")
 
+## T6_high_pass
+![T6_high_pass](T6_high_pass.png "T6_high_pass")
+
 ## T7a
 ![T7a](T7a.png "T7a")
 
