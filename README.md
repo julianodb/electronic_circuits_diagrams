@@ -783,6 +783,9 @@
 ## sallen_key_bandpass_2
 ![sallen_key_bandpass_2](sallen_key_bandpass_2.png "sallen_key_bandpass_2")
 
+## sallen_key_bandpass_3
+![sallen_key_bandpass_3](sallen_key_bandpass_3.png "sallen_key_bandpass_3")
+
 ## sallen_key_high_2
 ![sallen_key_high_2](sallen_key_high_2.png "sallen_key_high_2")
 
