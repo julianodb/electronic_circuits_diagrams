@@ -534,6 +534,9 @@
 ## T7_amplifier_bandpass
 ![T7_amplifier_bandpass](T7_amplifier_bandpass.png "T7_amplifier_bandpass")
 
+## T7_astable
+![T7_astable](T7_astable.png "T7_astable")
+
 ## T8a
 ![T8a](T8a.png "T8a")
 
