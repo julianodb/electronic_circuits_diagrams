@@ -41,13 +41,13 @@ to[R, l_=$R_{19}$, *-] ++(0,-2) node[ground]{}
 coordinate(FB2) --++(1,0)
 node[op amp, noinv input up, anchor=+](OA3){OA3}
 (FB2) --++(0,1.5) coordinate(R3)
-to[R=$R_{25}$] (R3 -| OA3.out) -- (OA3.out)
+to[R=$R_{28}$] (R3 -| OA3.out) -- (OA3.out)
 to [short, *-] ++(1,0) coordinate(MMOUT2) 
-(FB2) to[R=$R_{26}$, *-] ++(0,-2) node[ground]{}
+(FB2) to[R=$R_{29}$, *-] ++(0,-2) node[ground]{}
 (OA3.-) -- ++(0,-2) coordinate(OA2M)
-to[R=$R_{24}$, *-] (OA2M -| OA3.out)
+to[R=$R_{27}$, *-] (OA2M -| OA3.out)
 -- (OA3.out)
-(OA2M) to[C=$C_5$] ++(0,-2) node[ground]{}
+(OA2M) to[C=$C_6$] ++(0,-2) node[ground]{}
 (OA2M) to[short, -o] ++(-1,0) node[below]{SENSOR 2}
 
 
