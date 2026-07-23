@@ -537,6 +537,9 @@
 ## T7_astable
 ![T7_astable](T7_astable.png "T7_astable")
 
+## T7_placa_2
+![T7_placa_2](T7_placa_2.png "T7_placa_2")
+
 ## T8a
 ![T8a](T8a.png "T8a")
 

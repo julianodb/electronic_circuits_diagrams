@@ -1,0 +1,71 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw 
+
+(0,0) 
+
+coordinate(FB1) --++(1,0)
+node[op amp, noinv input up, anchor=+](OA2){OA2}
+(FB1) --++(0,1.5) coordinate(R2)
+to[R=$R_{25}$] (R2 -| OA2.out) -- (OA2.out)
+to [short, *-] ++(1,0) coordinate(MMOUT) 
+(FB1) to[R=$R_{26}$, *-] ++(0,-2) node[ground]{}
+(OA2.-) -- ++(0,-2) coordinate(OA1M)
+to[R=$R_{24}$, *-] (OA1M -| OA2.out)
+-- (OA2.out)
+(OA1M) to[C=$C_5$] ++(0,-2) node[ground]{}
+(OA1M) to[short, -o] ++(-1,0) node[below]{SENSOR 1}
+
+(OA2.up) node[vcc]{+2.5 V}
+(OA2.down) node[vee]{-2.5 V}
+
+(MMOUT)
+
+node[above]{$JP4$} to[C=$C_{3}$, -*] ++(2,0) coordinate(A4)
+to[R=$R_{22}$] ++(0,-1.5) node[ground]{}
+(A4) to[short] ++(1,0) node[above]{$JP2$}
+
+to[short] ++(1,0) node[op amp, anchor=+, noinv input up](OPAMP1){}
+(OPAMP1.out) to[Do, l=$D_{14}$] ++(2,0) coordinate(A1)
+-- ++(1.5,0) coordinate(A2)
+to[short, *-o] ++(1,0) node[above]{$V_1$} 
+(A2) to[C=$C_{1}$] ++(0,-2) node[ground]{}
+(A1) to[R, l_=$R_{18}$, *-] ++(0,-2) coordinate(A3)
+to[R, l_=$R_{19}$, *-] ++(0,-2) node[ground]{}
+(OPAMP1.-) -- ++(-0.5,0) |- (A3)
+
+(0,-8) 
+
+coordinate(FB2) --++(1,0)
+node[op amp, noinv input up, anchor=+](OA3){OA3}
+(FB2) --++(0,1.5) coordinate(R3)
+to[R=$R_{25}$] (R3 -| OA3.out) -- (OA3.out)
+to [short, *-] ++(1,0) coordinate(MMOUT2) 
+(FB2) to[R=$R_{26}$, *-] ++(0,-2) node[ground]{}
+(OA3.-) -- ++(0,-2) coordinate(OA2M)
+to[R=$R_{24}$, *-] (OA2M -| OA3.out)
+-- (OA3.out)
+(OA2M) to[C=$C_5$] ++(0,-2) node[ground]{}
+(OA2M) to[short, -o] ++(-1,0) node[below]{SENSOR 2}
+
+
+(MMOUT2)
+
+node[above]{$JP5$} to[C=$C_{4}$, -*] ++(2,0) coordinate(B4)
+to[R=$R_{23}$] ++(0,-1.5) node[ground]{}
+(B4) to[short] ++(1,0) node[above]{$JP3$}
+
+to[short] ++(1,0) node[op amp, anchor=+, noinv input up](OPAMP2){}
+(OPAMP2.out) to[Do, l=$D_{15}$] ++(2,0) coordinate(B1)
+-- ++(1.5,0) coordinate(B2)
+to[short, *-o] ++(1,0) node[above]{$V_2$} 
+(B2) to[C=$C_{2}$] ++(0,-2) node[ground]{}
+(B1) to[R, l_=$R_{20}$, *-] ++(0,-2) coordinate(B3)
+to[R, l_=$R_{21}$, *-] ++(0,-2) node[ground]{}
+(OPAMP2.-) -- ++(-0.5,0) |- (B3)
+
+;
+\end{circuitikz}
+\end{document}
