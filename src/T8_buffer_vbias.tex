@@ -9,11 +9,10 @@ node[op amp, anchor=+, noinv input up](OPAMP){}
 (OPAMP.out) 
 to[short, *-] ++(0,-1.5)
 -| (OPAMP.-)
-(OPAMP.out) -- ++(1,0)
+(OPAMP.out) -- ++(1,0) coordinate(VO)
 to[C=$C_8$] ++(0,-2) node[vee]{-2.5V}
-coordinate(VO)
 (VO)
-to[short, -o] ++(1,0) node[above]{$V_{bias}$}
+to[short, *-o] ++(1,0) node[above]{$V_{bias}$}
 ;
 \end{circuitikz}
 \end{document}
