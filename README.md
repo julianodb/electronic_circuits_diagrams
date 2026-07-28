@@ -573,6 +573,9 @@
 ## T8_half_voltage_divider
 ![T8_half_voltage_divider](T8_half_voltage_divider.png "T8_half_voltage_divider")
 
+## T8_buffer_vbias
+![T8_buffer_vbias](T8_buffer_vbias.png "T8_buffer_vbias")
+
 ## T9_Q8
 ![T9_Q8](T9_Q8.png "T9_Q8")
 
