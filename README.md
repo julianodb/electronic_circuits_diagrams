@@ -399,6 +399,9 @@
 ## T2_stethoscope_so_far
 ![T2_stethoscope_so_far](T2_stethoscope_so_far.png "T2_stethoscope_so_far")
 
+## T2_instrumentation_amplifier
+![T2_instrumentation_amplifier](T2_instrumentation_amplifier.png "T2_instrumentation_amplifier")
+
 ## T3_comp
 ![T3_comp](T3_comp.png "T3_comp")
 
