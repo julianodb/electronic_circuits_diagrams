@@ -1,0 +1,32 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw (0,0) node[above]{$v_i$} to[short] ++(1,0)
+node[op amp, noinv input up, anchor=+](OA){OA1}
+(OA.-) -- ++(0,-2) coordinate(FB)
+to[R=$R_1$] ++(0,-2) node[ground]{}
+(FB) to[R=$R_2$, *-] (FB -| OA.out) -- (OA.out)
+to [short, *-o] ++(1,0) node[above]{$v_o$}
+
+(OA.up) node[vcc]{$V_{CC}$}
+(OA.down) node[ground]{}
+
+(0,0) 
+to[C=$C$, *-] ++(0,-2)
+to[sV, l_=$v_{AC}$] ++(0,-2) node[ground]{}
+;
+\ctikzset{resistors/width=1.5, resistors/zigs=5}
+\draw (0,0)
+--++(-0.5,0)
+node[potentiometershape, rotate=-90,  anchor=wiper](POT){} 
+(POT.270) node[left]{$R_{pot}$}
+(POT.right) node[ground]{}
+;
+\ctikzset{resistors/width=1, resistors/zigs=3}
+\draw
+(POT.left) --++(0,0.5)
+to[R=$R_3$] ++(0,2) node[vcc]{$V_{CC}$}
+;
+\end{circuitikz}
+\end{document}
