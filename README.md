@@ -402,6 +402,9 @@
 ## T2_instrumentation_amplifier
 ![T2_instrumentation_amplifier](T2_instrumentation_amplifier.png "T2_instrumentation_amplifier")
 
+## F1_full_circuit
+![F1_full_circuit](F1_full_circuit.png "F1_full_circuit")
+
 ## T3_comp
 ![T3_comp](T3_comp.png "T3_comp")
 

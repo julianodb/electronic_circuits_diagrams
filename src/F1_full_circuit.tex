@@ -1,0 +1,35 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw
+(0,0) node[above]{$V_1$} to[short, o-] ++(1,0)
+node[op amp, noinv input up, anchor=+](OA1){}
+(OA1.-) -- ++(0,-1) coordinate(RG1)
+to[R=$R_G$, *-*] ++(0,-2) coordinate(RG2)
+-- ++(0,-1)
+node[op amp, anchor=-](OA2){}
+(OA2.+) to[short, -o] ++(-1,0) node[above]{$V_2$}
+(RG1) to[R=$R_2$] (RG1 -| OA1.out)
+-- (OA1.out) to[R=$R_{10}$, *-*] ++(2,0) coordinate(R2a)
+to[R=$R_{11}$] ++(3,0) coordinate(R2b)
+-- (R2b |- RG1)
+-- ++(0,-1)
+node[op amp, anchor=out](OA3){}
+(RG2) to[R=$R_3$] (RG2 -| OA2.out)
+-- (OA2.out) to[R=$R_{12}$, *-*] ++(2,0) coordinate(R2c)
+to[R=$R_{13}$] ++(3,0) node[ground]{}
+(OA3.-) -| (R2a)
+(OA3.+) -| (R2c)
+;
+\ctikzset{resistors/scale=0.8, capacitors/scale=0.7}
+\draw
+(OA3.out) to[short, *-] ++(2,0)
+node[op amp, noinv input up, anchor=+](OA4){}
+(OA4.-) -- ++(0,-1) coordinate(FB)
+to[R=$R_9$] ++(0,-2) node[ground]{}
+(FB) to[R=$R_8$, *-] (FB -| OA4.out) -- (OA4.out)
+to[short, *-o] ++(1,0) node[above]{$V_o$}
+;
+\end{circuitikz}
+\end{document}
