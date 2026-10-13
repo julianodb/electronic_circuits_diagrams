@@ -771,6 +771,12 @@
 ## ecg_II_annotated
 ![ecg_II_annotated](ecg_II_annotated.png "ecg_II_annotated")
 
+## P1_cable_antes
+![P1_cable_antes](P1_cable_antes.png "P1_cable_antes")
+
+## P1_cable_despues
+![P1_cable_despues](P1_cable_despues.png "P1_cable_despues")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
