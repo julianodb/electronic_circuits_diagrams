@@ -1,0 +1,30 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8}
+
+% Nombre neutro: el diagrama no identifica el modo de operacion.
+\draw (0,0) node[op amp, noinv input up](OA){};
+
+% Primera fuente y divisor conectado a la entrada no inversora.
+\draw (-7,0) node[ground]{}
+to[american voltage source, l_=$V_a$] (-7,2)
+to[R=$R_1$, -*] (-4,2) coordinate(P)
+to[R, l_=$R_2$] (-4,0.5) node[ground]{};
+\draw (P) -- (-1.8,2) |- (OA.+);
+
+% Segunda fuente y divisor conectado a la entrada inversora.
+\draw (-7,-4) node[ground]{}
+to[american voltage source, l_=$V_b$] (-7,-2)
+to[R=$R_3$, -*] (-4,-2) coordinate(M)
+to[R, l_=$R_4$] (-4,-3.5) node[ground]{};
+\draw (M) -- (-1.8,-2) |- (OA.-);
+
+% Alimentacion simetrica y salida sin conexion a las entradas.
+\draw (OA.up) -- ++(0,0.5) node[vcc]{$+5\ V$};
+\draw (OA.down) -- ++(0,-0.5) node[vee]{$-5\ V$};
+\draw (OA.out) to[short, -o] ++(1.5,0) node[above]{$v_o$};
+
+\end{circuitikz}
+\end{document}
