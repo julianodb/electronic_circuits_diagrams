@@ -780,6 +780,12 @@
 ## P1_2_1
 ![P1_2_1](P1_2_1.png "P1_2_1")
 
+## P1_alarma_deteccion
+![P1_alarma_deteccion](P1_alarma_deteccion.png "P1_alarma_deteccion")
+
+## P1_alarma_temporizador
+![P1_alarma_temporizador](P1_alarma_temporizador.png "P1_alarma_temporizador")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 

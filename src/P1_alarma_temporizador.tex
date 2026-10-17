@@ -1,0 +1,43 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8,capacitors/scale=0.7}
+
+% Entrada comun u y rama de primer orden F.
+\draw (-8,3) node[left]{$u$} to[short,o-*] (-7,3) coordinate(U)
+to[R=$R_f$,-*] (-4,3) coordinate(VF) node[above]{$v_f$}
+to[C=$C_f$] (-4,1) node[ground]{};
+
+% Rama activa S: resistencia y capacitor en paralelo en la realimentacion.
+\draw (0,-2) node[op amp](OA2){OA2};
+\draw (U) -- (-7,-1.5) to[R=$R_i$,-*] (-3,-1.5) coordinate(N)
+-- (OA2.-);
+\draw (N) -- (-3,0.5) to[R=$R_t$] (2,0.5) -- (2,-2) coordinate(VS)
+-- (OA2.out);
+\draw (-3,-0.2) to[C=$C_t$,*-*] (2,-0.2);
+\node[below] at (VS) {$v_s$};
+
+% Polarizacion no inversora: Vb = 2.5 V.
+\draw (-4,-4) node[vcc]{$+5\ V$}
+to[R=$R_{b1}$,-*] (-4,-5.5) coordinate(VB) node[left]{$V_b$}
+to[R=$R_{b2}$] (-4,-7) node[ground]{};
+\draw (VB) -- (-1.8,-5.5) |- (OA2.+);
+
+% Divisor de salida de la rama S; OA3 no carga ninguna de las ramas.
+\draw (VS) -- (3,-2) -- (3,1) -- (4,1)
+to[R=$R_5$,-*] (4,-1) coordinate(VM) node[left]{$v_m$}
+to[R=$R_6$] (4,-3) node[ground]{};
+\draw (8,1) node[op amp](OA3){OA3};
+\draw (VF) -- (6,3) |- (OA3.-);
+\draw (VM) -- (5,-1) |- (OA3.+);
+\draw (OA3.out) to[short,-o] ++(1,0) node[above]{$v_A$}
+-- ++(0.5,0) node[draw,anchor=west,align=center]{Modulo de alarma\\activo a $+5\ V$};
+
+% Todos los operacionales se alimentan entre 0 y +5 V.
+\draw (OA2.up) node[vcc]{$+5\ V$};
+\draw (OA2.down) node[ground]{};
+\draw (OA3.up) node[vcc]{$+5\ V$};
+\draw (OA3.down) node[ground]{};
+\end{circuitikz}
+\end{document}

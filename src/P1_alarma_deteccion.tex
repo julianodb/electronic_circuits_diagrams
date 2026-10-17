@@ -1,0 +1,16 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8}
+\draw (0,0) node[op amp,noinv input up](OA1){OA1};
+\draw (OA1.+) to[short,-o] ++(-1,0) node[left]{$v_E$};
+\draw (-4,0) node[vcc]{$+5\ V$}
+to[R=$R_A$,-*] (-4,-2) coordinate(TH)
+to[R=$R_B$] (-4,-4) node[ground]{};
+\draw (TH) -- (-1.8,-2) |- (OA1.-);
+\draw (OA1.up) node[vcc]{$+5\ V$};
+\draw (OA1.down) node[ground]{};
+\draw (OA1.out) to[short,-o] ++(1.5,0) node[above]{$u$};
+\end{circuitikz}
+\end{document}
