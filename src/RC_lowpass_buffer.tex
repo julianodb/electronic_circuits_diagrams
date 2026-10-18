@@ -1,0 +1,14 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) 
+node[above]{$V_{in}$} to[R=$R_{promedio}$, o-*] ++(2,0)
+to[C=$C_{promedio}$] ++(0,-1.5) node[ground]{}
+(2,0) 
+
+
+to[short, -o] ++(1,0) node[above]{$V_{out}$}
+;
+\end{circuitikz}
+\end{document}
