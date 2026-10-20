@@ -450,8 +450,8 @@
 ## T3_howland_positiva
 ![T3_howland_positiva](T3_howland_positiva.png "T3_howland_positiva")
 
-## T3_howland_positiva
-![T3_howland_positiva](T3_howland_positiva.png "T3_howland_positiva")
+## T3_howland_invertida
+![T3_howland_invertida](T3_howland_invertida.png "T3_howland_invertida")
 
 ## T4a
 ![T4a](T4a.png "T4a")
