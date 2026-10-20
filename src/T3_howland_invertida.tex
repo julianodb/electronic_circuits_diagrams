@@ -1,0 +1,44 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+
+% Propuesta T3, segundo semestre de 2026.
+% Convenciones tomadas de electronic_circuits_diagrams/src.
+% Compilar con: pdflatex T3_howland_invertida.tex
+% La resistencia de seguridad forma parte del circuito desde el inicio.
+
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8}
+\draw (0,0) node[op amp, noinv input up](OA){};
+
+% Nodo de carga L: tambien es la entrada no inversora del operacional.
+\draw (-5.5,2) node[ground]{}
+    to[R, l=$R_{19}$, -*] (-3,2) coordinate(L)
+    to[R, l=$R_{20}$] (3,2) -- (3,0) coordinate(A);
+\draw (L) -- (-3,0.5) |- (OA.+);
+\node[below left] at (L) {$v_{L,N}$};
+
+% Divisor conectado a la entrada inversora.
+% En la fuente invertida se intercambian vi y tierra, NO los pines + y -.
+\draw (-5.5,-2) node[below]{$v_i$}
+    to[R, l_=$R_{21}$, o-*] (-3,-2) coordinate(M)
+    to[R, l_=$R_{22}$] (3,-2)
+    to[short, -*] (A);
+\draw (M) -- (-3,-0.5) |- (OA.-);
+\draw (OA.out) to[short, -*] (A) -- (3.8,0)
+    node[right]{$v_{A,N}$};
+
+% Alimentacion del operacional; tierra es 0 V.
+\draw (OA.up) -- ++(0,0.15) node[vcc]{$+2.5\,\mathrm{V}$};
+\draw (OA.down) -- ++(0,-0.15) node[vee]{$-2.5\,\mathrm{V}$};
+
+% Carga: anodo arriba, catodo al riel negativo.
+% La carga se toma de L, NO de la salida A del operacional.
+\draw (L) -- (-3,3.6) -- (5.5,3.6);
+\draw (5.5,3.6) to[R, l=$R_{23}$] (5.5,1.4);
+\draw (5.5,1.4) to[short, i=$i_N$] (5.5,0.8)
+    to[leDo, l=$\mathrm{LED7}$] (5.5,-1.2)
+    -- (5.5,-2.3) node[vee]{$-2.5\,\mathrm{V}$};
+    
+\end{circuitikz}
+\end{document}

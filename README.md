@@ -447,6 +447,12 @@
 ## T3_full_circuit_LED_ladder
 ![T3_full_circuit_LED_ladder](T3_full_circuit_LED_ladder.png "T3_full_circuit_LED_ladder")
 
+## T3_howland_positiva
+![T3_howland_positiva](T3_howland_positiva.png "T3_howland_positiva")
+
+## T3_howland_positiva
+![T3_howland_positiva](T3_howland_positiva.png "T3_howland_positiva")
+
 ## T4a
 ![T4a](T4a.png "T4a")
 
