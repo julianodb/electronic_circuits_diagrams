@@ -1,0 +1,26 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8,capacitors/scale=0.7}
+
+% Etapa RC pasiva, cargada por R2 (no se intercala un seguidor).
+\draw (-7,0) node[left]{$v_i$} to[short,o-] (-6.5,0)
+to[R=$R_1$,-*] (-4.5,0) coordinate(X) node[above]{$v_x$}
+to[R=$R_2$,-*] (-2,0) coordinate(N)
+-- (-1.2,0) node[op amp,anchor=-](OA1){OA1};
+\draw (X) to[C=$C_1$] (-4.5,-2) node[ground]{};
+
+% Entrada no inversora a tierra. R3 y C2 en paralelo en la realimentacion.
+\draw (OA1.+) node[ground]{};
+\draw (OA1.out) -- ++(1,0) coordinate(S)
+to[short,*-o] ++(1,0) node[above]{$v_s$};
+\draw (N) -- (-2,3) coordinate(FB)
+to[R=$R_3$] (FB -| S) -- (S);
+\draw (-2,1.5) coordinate(CAP) to[C=$C_2$,*-*] (CAP -| S);
+
+% Alimentacion simetrica. La salida termina en un terminal abierto.
+\draw (OA1.up) node[vcc]{$+5\ V$};
+\draw (OA1.down) node[vee]{$-5\ V$};
+\end{circuitikz}
+\end{document}
