@@ -1,0 +1,25 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (0,0) node[vcc](VCC){+5V}
+to[R, l2_=$R$ and $1\ k\Omega$] ++(0,-2)
+to[leDo] ++(0,-2)
+node[nigfete, anchor=D](Q1){$Q_1$}
+(Q1.S) node[ground](GND){}
+(Q1.D) ++(0.7,-0.7) node[right]{$BS170$}
+;
+\draw (Q1.G)
+to[short, -*] ++(-1,0) coordinate(G)
+to[R, l_={$R_G = 100\ k\Omega$}] ++(0,-2)
+node[ground]{}
+;
+\draw (G)
+-- ++(-3,0)
+node[potentiometershape, rotate=-90, anchor=wiper](POT){}
+(POT.270) node[left]{$R_{pot} = 10\ k\Omega$}
+(POT.right) node[ground]{}
+(POT.left) |- (VCC)
+;
+\end{circuitikz}
+\end{document}

@@ -126,6 +126,9 @@
 ## resistance_led_mosfet_2
 ![resistance_led_mosfet_2](resistance_led_mosfet_2.png "resistance_led_mosfet_2")
 
+## L3_L4_led_mosfet
+![L3_L4_led_mosfet](L3_L4_led_mosfet.png "L3_L4_led_mosfet")
+
 ## cny70_circuit
 ![cny70_circuit](cny70_circuit.png "cny70_circuit")
 
@@ -185,6 +188,9 @@
 
 ## forward_diode_resistance
 ![forward_diode_resistance](forward_diode_resistance.png "forward_diode_resistance")
+
+## L3_L4_diode
+![L3_L4_diode](L3_L4_diode.png "L3_L4_diode")
 
 ## zener_rectifier
 ![zener_rectifier](zener_rectifier.png "zener_rectifier")
