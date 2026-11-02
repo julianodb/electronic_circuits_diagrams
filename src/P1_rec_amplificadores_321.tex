@@ -1,0 +1,20 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\draw (-2,-2) node[ground]{} to[american voltage source,l_=$v_S$] (-2,0)
+to[R=$R_S$] (0,0) -- (1,0);
+\draw (1,-2) rectangle (4,1);
+\node at (2.5,0.1) {Amplificador 3};
+\draw (2.5,-2) node[ground]{};
+\draw (4,0) -- (5,0);
+\draw (5,-2) rectangle (8,1);
+\node at (6.5,0.1) {Amplificador 2};
+\draw (6.5,-2) node[ground]{};
+\draw (8,0) -- (9,0);
+\draw (9,-2) rectangle (12,1);
+\node at (10.5,0.1) {Amplificador 1};
+\draw (10.5,-2) node[ground]{};
+\draw (12,0) -- (13,0) node[above]{$v_o$} to[R=$R_L$] (13,-2) node[ground]{};
+\end{circuitikz}
+\end{document}

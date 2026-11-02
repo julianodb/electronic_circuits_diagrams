@@ -801,6 +801,18 @@
 ## P1_low_pass_2_poles
 ![P1_low_pass_2_poles](P1_low_pass_2_poles.png "P1_low_pass_2_poles")
 
+## P1_rec_amplificadores_123
+![P1_rec_amplificadores_123](P1_rec_amplificadores_123.png "P1_rec_amplificadores_123")
+
+## P1_rec_amplificadores_321
+![P1_rec_amplificadores_321](P1_rec_amplificadores_321.png "P1_rec_amplificadores_321")
+
+## P1_rec_comparador_inversor
+![P1_rec_comparador_inversor](P1_rec_comparador_inversor.png "P1_rec_comparador_inversor")
+
+## P1_rec_pasabanda_dos_polos
+![P1_rec_pasabanda_dos_polos](P1_rec_pasabanda_dos_polos.png "P1_rec_pasabanda_dos_polos")
+
 ## active_high_pass
 ![active_high_pass](active_high_pass.png "active_high_pass")
 
