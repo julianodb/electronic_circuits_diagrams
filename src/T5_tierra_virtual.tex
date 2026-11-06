@@ -1,0 +1,24 @@
+\documentclass[convert]{standalone}
+\usepackage[RPvoltages]{circuitikz}
+\begin{document}
+\begin{circuitikz}
+\ctikzset{resistors/scale=0.8,capacitors/scale=0.8}
+\draw (0,5) node[vcc]{$V_{CC}$}
+    to[R,l_=$R_{44}$] (0,2.5) coordinate(D)
+    to[R,l_=$R_{45}$,*-] (0,0);
+\node[above right] at (D) {$v_D$};
+\draw (D) -- (2,2.5) to[C,l=$C_6$,*-*] (2,0);
+\draw (0,0) -- (9,0) node[right]{$V_{EE}$};
+\draw (6,2.5) node[op amp,noinv input up](OA){IC1D};
+\draw (D) -- (3.8,2.5) |- (OA.+);
+\draw (OA.-) -- (4.2,0 |- OA.-) -- (4.2,1)
+    -- (7.5,1) to[short,-*] (7.5,2.5);
+\draw (OA.out) -- (9,2.5) node[right]{$\mathrm{GND}_{virt}$};
+\draw (OA.up) -- ++(0,0.3) node[vcc]{$V_{CC}$};
+\draw (OA.down) -- ++(0,-0.15) coordinate(VEE) node[vee]{};
+\node[right] at (VEE) {$V_{EE}$};
+% C7 se mantiene como componente previsto para el estudio de estabilidad.
+\draw[dashed] (9,2.5) to[C,l=$C_7$,*-*] (9,0);
+\node[right] at (10,1) {T7};
+\end{circuitikz}
+\end{document}

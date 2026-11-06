@@ -387,6 +387,12 @@
 ## T4_placa_1
 ![T4_placa_1](T4_placa_1.png "T4_placa_1")
 
+## T5_regulador
+![T5_regulador](T5_regulador.png "T5_regulador")
+
+## T5_tierra_virtual
+![T5_tierra_virtual](T5_tierra_virtual.png "T5_tierra_virtual")
+
 ## T2_latch
 ![T2_latch](T2_latch.png "T2_latch")
 
